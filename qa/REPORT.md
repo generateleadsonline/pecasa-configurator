@@ -24,6 +24,8 @@ Implementation tree on GitHub: `2c1920f8099870141b568444ca1006a83d516278`.
 
 ## Evidence
 
+The follow-up [PDF audit](PDF-AUDIT.md) corrected style-specific notes, small-room furniture placement, unsupported-name rendering and a Pergola callout. The refreshed example and page preview below include these fixes. The suite now has 20 passing tests.
+
 - [Desktop](live-desktop.jpg)
 - [Mobile](live-mobile.jpg)
 - [Unlocked mobile estimate](live-mobile-estimate.jpg)

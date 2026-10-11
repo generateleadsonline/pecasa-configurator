@@ -1,0 +1,632 @@
+{
+  "checkedDate": "2026-10-11",
+  "source": "https://webadminservices.com/api/configurator/priceCalculations",
+  "requestMethod": "POST",
+  "notes": [
+    "Anonymous calculation only. No lead or enquiry submitted.",
+    "Data must be a full building design using numeric enums, not visual option labels.",
+    "TaxRate is 0 in API response while live UI says inc. VAT; do not add VAT again.",
+    "Sample reconstruction differs from live UI reported default amount, so geometry/default fidelity is not verified.",
+    "Multiple duplicate type rates reflect variant matching; not safe to assign one generic rate per option."
+  ],
+  "sample": {
+    "style": "Ecke",
+    "width": 3.3,
+    "depth": 2.4,
+    "returnedPrice": 25989.6464,
+    "returnedTaxRate": 0,
+    "liveUiDefaultReportedPrice": 26639,
+    "priceFidelityValidated": false
+  },
+  "optionalRates": [
+    {
+      "type": "Basin",
+      "finish": null,
+      "unit": "Each",
+      "description": "Basin",
+      "rate": 350
+    },
+    {
+      "type": "ShowerTray",
+      "finish": null,
+      "unit": "Each",
+      "description": "Shower Tray",
+      "rate": 1800
+    },
+    {
+      "type": "Toilet",
+      "finish": null,
+      "unit": "Each",
+      "description": "Toilet",
+      "rate": 1000
+    },
+    {
+      "type": "VanityUnit",
+      "finish": null,
+      "unit": "Each",
+      "description": "Vanity unit",
+      "rate": 2000
+    },
+    {
+      "type": "PartitionHorizontal",
+      "finish": null,
+      "unit": "Each",
+      "description": "Horizontal Wall",
+      "rate": 800
+    },
+    {
+      "type": "PartitionVertical",
+      "finish": null,
+      "unit": "Each",
+      "description": "Vertical Wall",
+      "rate": 1000
+    },
+    {
+      "type": "AwningWindowHorizontal",
+      "finish": null,
+      "unit": "Each",
+      "description": "Awning Window Horizontal 1000 x 1000",
+      "rate": 800
+    },
+    {
+      "type": "AwningWindowHorizontal",
+      "finish": null,
+      "unit": "Each",
+      "description": "Awning Window Horizontal 1000 x 1000",
+      "rate": 417
+    },
+    {
+      "type": "AwningWindowHorizontal",
+      "finish": null,
+      "unit": "Each",
+      "description": "Awning Window Horizontal 1000 x 1000",
+      "rate": 700
+    },
+    {
+      "type": "AwningWindowVertical",
+      "finish": null,
+      "unit": "Each",
+      "description": "Awning Window Vertical 1000 x 1000",
+      "rate": 394
+    },
+    {
+      "type": "AwningWindowVertical",
+      "finish": null,
+      "unit": "Each",
+      "description": "Awning Window Vertical 1000 x 1000",
+      "rate": 600
+    },
+    {
+      "type": "BathroomWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Bathroom Window 1000 x 1000",
+      "rate": 450
+    },
+    {
+      "type": "BoxOutwardWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Box Outward Window 1000 x 1000",
+      "rate": 800
+    },
+    {
+      "type": "BoxWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Box Window 1000 x 1000",
+      "rate": 400
+    },
+    {
+      "type": "DoubleDoor",
+      "finish": null,
+      "unit": "Each",
+      "description": "Double Door 1000 x 1000",
+      "rate": 3000
+    },
+    {
+      "type": "DoubleDoorPanel",
+      "finish": null,
+      "unit": "Each",
+      "description": "Double Solid Door Panel 1000 x 1000",
+      "rate": 2500
+    },
+    {
+      "type": "FixedWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Fixed Window 1000 x 1000",
+      "rate": 285
+    },
+    {
+      "type": "FixedWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Fixed Window 1000 x 1000",
+      "rate": 2000
+    },
+    {
+      "type": "FixedWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Fixed Window 1000 x 1000",
+      "rate": 1000
+    },
+    {
+      "type": "FoldingSliding3",
+      "finish": null,
+      "unit": "Each",
+      "description": "Folding 3-Part Door 1000 x 1000",
+      "rate": 5500
+    },
+    {
+      "type": "FoldingSliding3",
+      "finish": null,
+      "unit": "Each",
+      "description": "Folding 3-Part Door 1000 x 1000",
+      "rate": 7000
+    },
+    {
+      "type": "FoldingSliding4",
+      "finish": null,
+      "unit": "Each",
+      "description": "Folding 4-Part Door 1000 x 1000",
+      "rate": 5500
+    },
+    {
+      "type": "FoldingSliding5",
+      "finish": null,
+      "unit": "Each",
+      "description": "Folding 5-Part Door 1000 x 1000",
+      "rate": 7500
+    },
+    {
+      "type": "InternalDoor",
+      "finish": null,
+      "unit": "Each",
+      "description": "Interior 1000 x 1000",
+      "rate": 649
+    },
+    {
+      "type": "SingleDoor",
+      "finish": null,
+      "unit": "Each",
+      "description": "Single Door 1000 x 1000",
+      "rate": 1600
+    },
+    {
+      "type": "SingleDoorPanel",
+      "finish": null,
+      "unit": "Each",
+      "description": "Solid Door Panel 1000 x 1000",
+      "rate": 810
+    },
+    {
+      "type": "SlidingDoor3",
+      "finish": null,
+      "unit": "Each",
+      "description": "Sliding 3-Part Door 1000 x 1000",
+      "rate": 3800
+    },
+    {
+      "type": "SlidingDoor4",
+      "finish": null,
+      "unit": "Each",
+      "description": "Sliding 4-Part Door 1000 x 1000",
+      "rate": 4100
+    },
+    {
+      "type": "SplitWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Split Window 1000 x 1000",
+      "rate": 500
+    },
+    {
+      "type": "StackerDoor",
+      "finish": null,
+      "unit": "Each",
+      "description": "Stacker Door 1000 x 1000",
+      "rate": 4200
+    },
+    {
+      "type": "TntOutwardWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Tnt Outward Window 1000 x 1000",
+      "rate": 483
+    },
+    {
+      "type": "TntOutwardWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Tnt Outword Window 1000 x 1000",
+      "rate": 418
+    },
+    {
+      "type": "TntWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Tilt'n'turn Window 1000 x 1000",
+      "rate": 950
+    },
+    {
+      "type": "TntWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Tilt'n'turn Window 1000 x 1000",
+      "rate": 800
+    },
+    {
+      "type": "TopOpenWindow",
+      "finish": null,
+      "unit": "Each",
+      "description": "Top Open Window 1000 x 1000",
+      "rate": 1000
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Anthracite",
+      "unit": "WxD",
+      "description": "Anthracite Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Pewter",
+      "unit": "WxD",
+      "description": "Pewter Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck",
+      "unit": "WxD",
+      "description": "Hardwood Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/treatedPlanksHorizontal",
+      "unit": "WxD",
+      "description": "Treated Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Agate",
+      "unit": "WxD",
+      "description": "Agate Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Ivory",
+      "unit": "WxD",
+      "description": "Ivory Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Natural",
+      "unit": "WxD",
+      "description": "Natural Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Clay",
+      "unit": "WxD",
+      "description": "Clay Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Fawn",
+      "unit": "WxD",
+      "description": "Fawn Wood Grain Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Slate",
+      "unit": "WxD",
+      "description": "Slate Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/CoolSand",
+      "unit": "WxD",
+      "description": "Cool Sand Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/IceGrey",
+      "unit": "WxD",
+      "description": "Ice Grey Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Mocca",
+      "unit": "WxD",
+      "description": "Mocca Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Decking",
+      "finish": "deck/wood-grain/Aura",
+      "unit": "WxD",
+      "description": "Aura Deck 1000, 1000 (mm)",
+      "rate": 234
+    },
+    {
+      "type": "Flooring",
+      "finish": "oxford",
+      "unit": "FloorArea",
+      "description": "Oxford Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "farm-house-dark-oak",
+      "unit": "FloorArea",
+      "description": "Farm House Dark Oak",
+      "rate": 117
+    },
+    {
+      "type": "Flooring",
+      "finish": "sicilia-oak",
+      "unit": "FloorArea",
+      "description": "Sicilia Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "liguiria-oak",
+      "unit": "FloorArea",
+      "description": "Liguiria Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "natural-oak",
+      "unit": "FloorArea",
+      "description": "Natural Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "farm-house-light-oak",
+      "unit": "FloorArea",
+      "description": "Farm House Light Oak",
+      "rate": 80
+    },
+    {
+      "type": "Flooring",
+      "finish": "westchester",
+      "unit": "FloorArea",
+      "description": "Westchester Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "loft-midnight-oak",
+      "unit": "FloorArea",
+      "description": "Loft Midnight Oak",
+      "rate": 80
+    },
+    {
+      "type": "Flooring",
+      "finish": "wiltshire-english",
+      "unit": "FloorArea",
+      "description": "White English Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "phantom",
+      "unit": "FloorArea",
+      "description": "Phantom Oak",
+      "rate": 80
+    },
+    {
+      "type": "Flooring",
+      "finish": "osb",
+      "unit": "FloorArea",
+      "description": "Osb",
+      "rate": 140
+    },
+    {
+      "type": "Flooring",
+      "finish": "loft-dark-grey",
+      "unit": "FloorArea",
+      "description": "Loft Dark Grey Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "floor-oak-farm",
+      "unit": "FloorArea",
+      "description": "Farm Oak",
+      "rate": 117
+    },
+    {
+      "type": "Flooring",
+      "finish": "floor-walnut",
+      "unit": "FloorArea",
+      "description": "Walnut",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "aspen-oak",
+      "unit": "FloorArea",
+      "description": "Aspen Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "rhino-oak",
+      "unit": "FloorArea",
+      "description": "Rhino Oak",
+      "rate": 80
+    },
+    {
+      "type": "Flooring",
+      "finish": "victorian",
+      "unit": "FloorArea",
+      "description": "Victorian Oak",
+      "rate": 120
+    },
+    {
+      "type": "Flooring",
+      "finish": "tiles03",
+      "unit": "FloorArea",
+      "description": "Tiles ",
+      "rate": 120
+    },
+    {
+      "type": "DataPoint",
+      "finish": null,
+      "unit": "Each",
+      "description": "Data point",
+      "rate": 300
+    },
+    {
+      "type": "DimmerSwitch",
+      "finish": null,
+      "unit": "Each",
+      "description": "Dimmer switch",
+      "rate": 100
+    },
+    {
+      "type": "ElectricShower",
+      "finish": null,
+      "unit": "Each",
+      "description": "Electric Shower",
+      "rate": 600
+    },
+    {
+      "type": "ExtSocket",
+      "finish": null,
+      "unit": "Each",
+      "description": "External socket",
+      "rate": 100
+    },
+    {
+      "type": "FCU",
+      "finish": null,
+      "unit": "Each",
+      "description": "FCU",
+      "rate": 100
+    },
+    {
+      "type": "FuseBoard",
+      "finish": "deck/wood-grain/Agate",
+      "unit": "Each",
+      "description": "Fuseboard",
+      "rate": 1500
+    },
+    {
+      "type": "IntSocket",
+      "finish": null,
+      "unit": "Each",
+      "description": "Double socket",
+      "rate": 180
+    },
+    {
+      "type": "IsolatorExtractor",
+      "finish": null,
+      "unit": "Each",
+      "description": "Fan isolator",
+      "rate": 100
+    },
+    {
+      "type": "IsolatorSwitch20",
+      "finish": null,
+      "unit": "Each",
+      "description": "Isolator 20A",
+      "rate": 100
+    },
+    {
+      "type": "IsolatorSwitch45",
+      "finish": null,
+      "unit": "Each",
+      "description": "Isolator 45A",
+      "rate": 100
+    },
+    {
+      "type": "LightSwitch",
+      "finish": null,
+      "unit": "Each",
+      "description": "Light switch",
+      "rate": 100
+    },
+    {
+      "type": "RotarySwitch",
+      "finish": null,
+      "unit": "Each",
+      "description": "Rotary switch",
+      "rate": 100
+    },
+    {
+      "type": "SingleSocket",
+      "finish": null,
+      "unit": "Each",
+      "description": "Single socket",
+      "rate": 120
+    },
+    {
+      "type": "SmokeAlarm",
+      "finish": null,
+      "unit": "Each",
+      "description": "Smoke alarm",
+      "rate": 100
+    },
+    {
+      "type": "TvSocket",
+      "finish": null,
+      "unit": "Each",
+      "description": "TV socket",
+      "rate": 90
+    },
+    {
+      "type": "ExternalWallLight",
+      "finish": null,
+      "unit": "Each",
+      "description": "Wall light",
+      "rate": 100
+    },
+    {
+      "type": "InternalLight",
+      "finish": null,
+      "unit": "Each",
+      "description": "Ceiling light",
+      "rate": 120
+    },
+    {
+      "type": "UpDownLight",
+      "finish": null,
+      "unit": "Each",
+      "description": "Up/down light",
+      "rate": 130
+    },
+    {
+      "type": "AirCon",
+      "finish": null,
+      "unit": "Each",
+      "description": "Climate control",
+      "rate": 2200
+    },
+    {
+      "type": "WallHeater",
+      "finish": null,
+      "unit": "Each",
+      "description": "Wall Heater",
+      "rate": 800
+    }
+  ]
+}

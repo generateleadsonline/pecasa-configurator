@@ -1,0 +1,86 @@
+[
+  {
+    "key": "levno",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/levno.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R201.png",
+    "size": 3591
+  },
+  {
+    "key": "apexo",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/apexo.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R202.png",
+    "size": 3602
+  },
+  {
+    "key": "pergola",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/pergola.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/Pergola.png",
+    "size": 2706
+  },
+  {
+    "key": "portal",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/portal.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R203.png",
+    "size": 3925
+  },
+  {
+    "key": "cabano",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/cabano.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R922.png",
+    "size": 4064
+  },
+  {
+    "key": "inspiro",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/inspiro.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R001-Pitch.png",
+    "size": 4540
+  },
+  {
+    "key": "quba",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/quba.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R009.png",
+    "size": 4174
+  },
+  {
+    "key": "roko",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/roko.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R204.png",
+    "size": 3106
+  },
+  {
+    "key": "ofiko",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/ofiko.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R003.png",
+    "size": 4210
+  },
+  {
+    "key": "ecke",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/ecke.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R002.png",
+    "size": 4620
+  },
+  {
+    "key": "edge",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/edge.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R004.png",
+    "size": 3498
+  },
+  {
+    "key": "lshape",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/lshape.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R208.png",
+    "size": 4068
+  },
+  {
+    "key": "veranda",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/veranda.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R207.png",
+    "size": 3635
+  },
+  {
+    "key": "angle",
+    "path": "/Users/johnparnell/projects/pecasa-configurator/public/assets/styles/angle.png",
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R215.png",
+    "size": 3674
+  }
+]

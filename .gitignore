@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.netlify/
+.env*
+qa/private/
+*.log
+research/*.html
+research/pdf-review/

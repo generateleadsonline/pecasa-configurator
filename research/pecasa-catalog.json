@@ -1,0 +1,3874 @@
+{
+  "checkedDate": "2026-10-11",
+  "source": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/configuration.json?v=23",
+  "styles": [
+    {
+      "key": "levno",
+      "name": "Levno",
+      "template": "201",
+      "thumbnail": "/assets/styles/levno.png",
+      "defaults": {
+        "width": 4.8,
+        "depth": 3.4,
+        "height": 2.7
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "apexo",
+      "name": "Apexo",
+      "template": "202",
+      "thumbnail": "/assets/styles/apexo.png",
+      "defaults": {
+        "width": 5.0,
+        "depth": 3.05,
+        "height": 2.616
+      },
+      "bounds": {
+        "minWidth": 3.7,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "pergola",
+      "name": "Pergola",
+      "template": "222",
+      "thumbnail": "/assets/styles/pergola.png",
+      "defaults": {
+        "width": 4.0,
+        "depth": 3.0,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 16.0,
+        "minDepth": 2.0,
+        "maxDepth": 10.0,
+        "minHeight": 2.0,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.01
+      },
+      "maxHeight": 4.0
+    },
+    {
+      "key": "portal",
+      "name": "Portal",
+      "template": "203",
+      "thumbnail": "/assets/styles/portal.png",
+      "defaults": {
+        "width": 4.0,
+        "depth": 3.3,
+        "height": 2.5666666666666664
+      },
+      "bounds": {
+        "minWidth": 2.7,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "cabano",
+      "name": "Cabano",
+      "template": "922",
+      "thumbnail": "/assets/styles/cabano.png",
+      "defaults": {
+        "width": 4.2,
+        "depth": 4.0,
+        "height": 3.3
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "inspiro",
+      "name": "Inspiro",
+      "template": "001-Pitch",
+      "thumbnail": "/assets/styles/inspiro.png",
+      "defaults": {
+        "width": 4.6,
+        "depth": 3.4,
+        "height": 3.27
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "quba",
+      "name": "Quba",
+      "template": "009",
+      "thumbnail": "/assets/styles/quba.png",
+      "defaults": {
+        "width": 4.0,
+        "depth": 2.7,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "roko",
+      "name": "Roko",
+      "template": "204",
+      "thumbnail": "/assets/styles/roko.png",
+      "defaults": {
+        "width": 6.0,
+        "depth": 3.25,
+        "height": 3.0
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "ofiko",
+      "name": "Ofiko",
+      "template": "003",
+      "thumbnail": "/assets/styles/ofiko.png",
+      "defaults": {
+        "width": 3.7,
+        "depth": 2.4,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "ecke",
+      "name": "Ecke",
+      "template": "002",
+      "thumbnail": "/assets/styles/ecke.png",
+      "defaults": {
+        "width": 3.3,
+        "depth": 2.4,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "edge",
+      "name": "Edge",
+      "template": "004",
+      "thumbnail": "/assets/styles/edge.png",
+      "defaults": {
+        "width": 4.1,
+        "depth": 3.4,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "lshape",
+      "name": "L-Shape",
+      "template": "208",
+      "thumbnail": "/assets/styles/lshape.png",
+      "defaults": {
+        "width": 4.0,
+        "depth": 3.3,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    },
+    {
+      "key": "veranda",
+      "name": "Veranda",
+      "template": "207",
+      "thumbnail": "/assets/styles/veranda.png",
+      "defaults": {
+        "width": 3.0,
+        "depth": 3.0,
+        "height": 3.25
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 16.0,
+        "minDepth": 2.0,
+        "maxDepth": 10.0,
+        "minHeight": 2.45,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.01
+      },
+      "maxHeight": 4.0
+    },
+    {
+      "key": "angle",
+      "name": "Angle",
+      "template": "215",
+      "thumbnail": "/assets/styles/angle.png",
+      "defaults": {
+        "width": 4.5,
+        "depth": 3.0,
+        "height": 2.5
+      },
+      "bounds": {
+        "minWidth": 2.0,
+        "maxWidth": 10.0,
+        "minDepth": 2.0,
+        "maxDepth": 8.0,
+        "minHeight": 2.5,
+        "resizeStep": 0.1,
+        "resizeStepHeight": 0.05
+      },
+      "maxHeight": 3.5
+    }
+  ],
+  "tabs": [
+    {
+      "name": "Style",
+      "items": [
+        {
+          "description": "Levno",
+          "template": "201",
+          "imageSrc": "content/images/items/ranges/R201.png"
+        },
+        {
+          "description": "Apexo",
+          "template": "202",
+          "imageSrc": "content/images/items/ranges/R202.png"
+        },
+        {
+          "description": "Pergola",
+          "template": "222",
+          "imageSrc": "content/images/items/ranges/Pergola.png"
+        },
+        {
+          "description": "Portal",
+          "template": "203",
+          "imageSrc": "content/images/items/ranges/R203.png"
+        },
+        {
+          "description": "Cabano",
+          "template": "922",
+          "imageSrc": "content/images/items/ranges/R922.png"
+        },
+        {
+          "description": "Inspiro",
+          "template": "001-Pitch",
+          "imageSrc": "content/images/items/ranges/R001-Pitch.png"
+        },
+        {
+          "description": "Quba",
+          "template": "009",
+          "imageSrc": "content/images/items/ranges/R009.png"
+        },
+        {
+          "description": "Roko",
+          "template": "204",
+          "imageSrc": "content/images/items/ranges/R204.png"
+        },
+        {
+          "description": "Ofiko",
+          "template": "003",
+          "imageSrc": "content/images/items/ranges/R003.png"
+        },
+        {
+          "description": "Ecke",
+          "template": "002",
+          "imageSrc": "content/images/items/ranges/R002.png"
+        },
+        {
+          "description": "Edge",
+          "template": "004",
+          "imageSrc": "content/images/items/ranges/R004.png"
+        },
+        {
+          "description": "L-Shape",
+          "template": "208",
+          "imageSrc": "content/images/items/ranges/R208.png"
+        },
+        {
+          "description": "Veranda",
+          "template": "207",
+          "imageSrc": "content/images/items/ranges/R207.png"
+        },
+        {
+          "description": "Angle",
+          "template": "215",
+          "imageSrc": "content/images/items/ranges/R215.png"
+        }
+      ]
+    },
+    {
+      "name": "Roof & Porch",
+      "items": [
+        {
+          "description": "Rooflight 1000 x 1400",
+          "template": "RoofWindow",
+          "imageSrc": "content/images/items/rooflights/RoofWindow-1500-1000.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ],
+          "width": 1000,
+          "depth": 1400
+        },
+        {
+          "description": "Rooflight 1400 x 1400",
+          "template": "RoofWindow",
+          "imageSrc": "content/images/items/rooflights/RoofWindow-1500-1500.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ],
+          "width": 1400,
+          "depth": 1400
+        },
+        {
+          "description": "Rooflight 2000 x 1400",
+          "template": "RoofWindow",
+          "imageSrc": "content/images/items/rooflights/RoofWindow-2000-1500.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ],
+          "width": 2000,
+          "depth": 1400
+        },
+        {
+          "description": "Trellis Canopy",
+          "template": "TrellisCanopy",
+          "imageSrc": "content/images/items/extras/Canopy.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Veranda",
+          "template": "Veranda",
+          "imageSrc": "content/images/items/extras/Veranda.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Pergola",
+          "template": "Pergola",
+          "imageSrc": "content/images/items/ranges/Pergola.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Side Fill",
+          "template": "GlassRoofGableWindow",
+          "imageSrc": "content/images/items/windows/GableWindowFront.png"
+        },
+        {
+          "description": "Solid Side Fill",
+          "template": "SolidRoofGableWindow",
+          "imageSrc": "content/images/items/windows/SolidRoofGableWindow.png"
+        }
+      ]
+    },
+    {
+      "name": "Layout & Bathroom",
+      "items": [
+        {
+          "description": "Bathroom",
+          "template": "BathroomStandard",
+          "imageSrc": "content/images/items/extras/ShowerRoomSet.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Cloakroom",
+          "template": "WC",
+          "imageSrc": "content/images/items/extras/CloakroomSet.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Sauna",
+          "template": "SaunaStandard",
+          "imageSrc": "content/images/items/extras/Sauna.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Vertical Wall",
+          "template": "PartitionVertical",
+          "imageSrc": "content/images/items/extras/PartitionVertical.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Horizontal Wall",
+          "template": "PartitionHorizontal",
+          "imageSrc": "content/images/items/extras/PartitionHorizontal.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "L-Shape Dwarf Wall",
+          "template": "DwarfWall",
+          "imageSrc": "content/images/items/furniture/LShapeDwarfWall.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Dwarf Wall",
+          "template": "DwarfWall",
+          "imageSrc": "content/images/items/furniture/DwarfWall.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ],
+          "width": 2000,
+          "depth": 120
+        },
+        {
+          "description": "Interior Door",
+          "template": "InternalDoor",
+          "imageSrc": "content/images/items/doors/InternalDoor.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Interior Glass Window",
+          "template": "FixedGlassWindow",
+          "imageSrc": "content/images/items/extras/FixedGlassWindow.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Interior Glass Door",
+          "template": "SingleGlassDoor",
+          "imageSrc": "content/images/items/extras/SingleGlassDoor.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Interior Cavity Door",
+          "template": "PocketDoor",
+          "imageSrc": "content/images/items/doors/CavitySlidingDoor.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Label",
+          "template": "Label",
+          "imageSrc": "content/images/items/extras/Label.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Dimension Label",
+          "template": "DimensionalLabel",
+          "imageSrc": "content/images/items/extras/DimensionLabel.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Mini Vanity",
+          "template": "MiniVanityUnit",
+          "imageSrc": "content/images/items/extras/MiniVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Small Vanity",
+          "template": "SmallVanityUnit",
+          "imageSrc": "content/images/items/extras/SmallVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Mid Vanity",
+          "template": "MidVanityUnit",
+          "imageSrc": "content/images/items/extras/MidVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Large Vanity",
+          "template": "LargeVanityUnit",
+          "imageSrc": "content/images/items/extras/LargeVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Toilet Vanity",
+          "template": "ToiletVanityUnit",
+          "imageSrc": "content/images/items/extras/ToiletVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Combined Toilet Vanity",
+          "template": "CombinedToiletVanityUnit",
+          "imageSrc": "content/images/items/extras/CombinedToiletVanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Combined Vanity",
+          "template": "VanityUnit",
+          "imageSrc": "content/images/items/extras/VanityUnit.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Shower Tray",
+          "template": "ShowerTray",
+          "imageSrc": "content/images/items/extras/ShowerTray.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Basin Pedestal",
+          "template": "BasinPedestal",
+          "imageSrc": "content/images/items/extras/BasinPedestal.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Basin",
+          "template": "Basin",
+          "imageSrc": "content/images/items/extras/Basin.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Toilet",
+          "template": "Toilet",
+          "imageSrc": "content/images/items/extras/Toilet.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Electric Shower",
+          "template": "ElectricShower",
+          "imageSrc": "content/images/items/extras/ElectricShower.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Electric Shower",
+          "template": "ElectricShowerChrome",
+          "imageSrc": "content/images/items/extras/ElectricShowerChrome.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Extractor Fan",
+          "template": "ExtractorFan",
+          "imageSrc": "content/images/items/extras/ExtractorFan.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Blow Heater",
+          "template": "BlowHeater",
+          "imageSrc": "content/images/items/extras/BlowHeater.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Towel Rail",
+          "template": "TowelRail",
+          "imageSrc": "content/images/items/extras/TowelRail.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Sauna Heater",
+          "template": "SaunaHeater",
+          "imageSrc": "content/images/items/extras/SaunaHeater.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "L-Shape Steam Bench",
+          "template": "LShapeSteamBench",
+          "imageSrc": "content/images/items/extras/LShapeSteamBench.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Steam Bench",
+          "template": "SteamBench",
+          "imageSrc": "content/images/items/extras/SteamBench.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ],
+          "width": 800
+        },
+        {
+          "description": "Backrest",
+          "template": "SaunaBackrest",
+          "imageSrc": "content/images/items/extras/SaunaBackrest.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        },
+        {
+          "description": "Sauna Light",
+          "template": "SaunaLight",
+          "imageSrc": "content/images/items/lighting/ExternalWallLight.png",
+          "usersExcludeFor": [
+            "Pergola"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Windows & Doors",
+      "items": [
+        {
+          "description": "Loggia panels",
+          "template": "LoggiaPanels",
+          "imageSrc": "content/images/items/pergola/LoggiaPanels.png"
+        },
+        {
+          "description": "Glass panels",
+          "template": "GlassPanels",
+          "imageSrc": "content/images/items/pergola/GlassPanels.png"
+        },
+        {
+          "description": "Windscreen",
+          "template": "Windscreen",
+          "imageSrc": "content/images/items/pergola/Windscreen.png"
+        },
+        {
+          "description": "Solid Panel",
+          "template": "SolidPanel",
+          "imageSrc": "content/images/items/pergola/SolidPanel.png"
+        },
+        {
+          "description": "Single",
+          "template": "SingleDoor",
+          "imageSrc": "content/images/items/doors/SingleDoor.png"
+        },
+        {
+          "description": "Double",
+          "template": "DoubleDoor",
+          "imageSrc": "content/images/items/doors/DoubleDoor.png"
+        },
+        {
+          "description": "Sliding 2-Part",
+          "template": "SlidingDoor",
+          "imageSrc": "content/images/items/doors/SlidingDoor.png"
+        },
+        {
+          "description": "Sliding 3-Part",
+          "template": "SlidingDoor3",
+          "imageSrc": "content/images/items/doors/SlidingDoor3.png"
+        },
+        {
+          "description": "Sliding 4-Part",
+          "template": "SlidingDoor4",
+          "imageSrc": "content/images/items/doors/SlidingDoor4.png"
+        },
+        {
+          "description": "Folding 3-Part",
+          "template": "FoldingSliding3",
+          "imageSrc": "content/images/items/doors/FoldingSliding3.png"
+        },
+        {
+          "description": "Folding 4-Part",
+          "template": "FoldingSliding4",
+          "imageSrc": "content/images/items/doors/FoldingSliding4.png"
+        },
+        {
+          "description": "Folding 5-Part",
+          "template": "FoldingSliding5",
+          "imageSrc": "content/images/items/doors/FoldingSliding5.png"
+        },
+        {
+          "description": "Stacker 2150",
+          "template": "StackerDoor",
+          "imageSrc": "content/images/items/doors/StackerDoor-2150.png",
+          "width": 2150
+        },
+        {
+          "description": "Stacker 3000",
+          "template": "StackerDoor",
+          "imageSrc": "content/images/items/doors/StackerDoor-3000.png",
+          "width": 3000
+        },
+        {
+          "description": "Solid",
+          "template": "SingleDoorPanel",
+          "imageSrc": "content/images/items/doors/SingleDoorPanel.png"
+        },
+        {
+          "description": "Double Solid",
+          "template": "DoubleDoorPanel",
+          "imageSrc": "content/images/items/doors/DoubleDoorPanel.png"
+        },
+        {
+          "description": "Clad Door",
+          "template": "CedarDoor",
+          "imageSrc": "content/images/items/doors/CedarDoor.png"
+        },
+        {
+          "description": "Georgian 6 Pane Single Door",
+          "template": "SingleDoor6Light_Georgian",
+          "imageSrc": "content/images/items/doors/SingleDoor6Light_Georgian.png"
+        },
+        {
+          "description": "Fixed 500",
+          "template": "FixedWindow",
+          "imageSrc": "content/images/items/windows/FixedWindow-500-2100.png",
+          "width": 500
+        },
+        {
+          "description": "Fixed 800",
+          "template": "FixedWindow",
+          "imageSrc": "content/images/items/windows/FixedWindow-800-2100.png",
+          "width": 800
+        },
+        {
+          "description": "Fixed 1200",
+          "template": "FixedWindow",
+          "imageSrc": "content/images/items/windows/FixedWindow-1200-2100.png",
+          "width": 1200
+        },
+        {
+          "description": "Tilt'n'turn 500",
+          "template": "TntWindow",
+          "imageSrc": "content/images/items/windows/TntWindow-500-2100.png",
+          "width": 500
+        },
+        {
+          "description": "Tilt'n'turn 800",
+          "template": "TntWindow",
+          "imageSrc": "content/images/items/windows/TntWindow-800-2100.png",
+          "width": 800
+        },
+        {
+          "description": "Tilt'n'turn Top",
+          "template": "BoxWindow",
+          "imageSrc": "content/images/items/windows/BoxWindow-800-1200.png",
+          "width": 800
+        },
+        {
+          "description": "Outward Open 500",
+          "template": "TntOutwardWindow",
+          "imageSrc": "content/images/items/windows/TntOutwardWindow-500.png",
+          "width": 500
+        },
+        {
+          "description": "Outward Open 800",
+          "template": "TntOutwardWindow",
+          "imageSrc": "content/images/items/windows/TntOutwardWindow-800.png",
+          "width": 800
+        },
+        {
+          "description": "Outward Open Top",
+          "template": "BoxOutwardWindow",
+          "imageSrc": "content/images/items/windows/BoxOutwardWindow-800.png",
+          "width": 800
+        },
+        {
+          "description": "Split / Outward",
+          "template": "SplitWindowOutward",
+          "imageSrc": "content/images/items/windows/SplitWindowOutward-1200-1200.png",
+          "width": 1200,
+          "height": 1200
+        },
+        {
+          "description": "Triple / Outward",
+          "template": "TripleWindowOutward",
+          "imageSrc": "content/images/items/windows/TripleWindowOutward-1500-1200.png",
+          "width": 1500,
+          "height": 1200
+        },
+        {
+          "description": "Awning 1200",
+          "template": "AwningWindowHorizontal",
+          "imageSrc": "content/images/items/windows/AwningWindowHorizontal-1200-400.png",
+          "width": 1200,
+          "height": 400
+        },
+        {
+          "description": "Awning 1500",
+          "template": "AwningWindowHorizontal",
+          "imageSrc": "content/images/items/windows/AwningWindowHorizontal-1500-400.png",
+          "width": 1500,
+          "height": 400
+        },
+        {
+          "description": "Awning 1800",
+          "template": "AwningWindowHorizontal",
+          "imageSrc": "content/images/items/windows/AwningWindowHorizontal-1800-500.png",
+          "width": 1800,
+          "height": 500
+        },
+        {
+          "description": "Awning 500",
+          "template": "AwningWindowVertical",
+          "imageSrc": "content/images/items/windows/AwningWindowVertical-500-1200.png",
+          "width": 500,
+          "height": 1200
+        },
+        {
+          "description": "Awning 500",
+          "template": "AwningWindowVertical",
+          "imageSrc": "content/images/items/windows/AwningWindowVertical-500-1800.png",
+          "width": 500,
+          "height": 1800
+        },
+        {
+          "description": "Bathroom Frost",
+          "template": "BathroomWindow",
+          "imageSrc": "content/images/items/windows/BathroomWindow-500-600.png",
+          "width": 500,
+          "height": 600
+        },
+        {
+          "description": "Top Open",
+          "template": "TopOpenWindow",
+          "imageSrc": "content/images/items/windows/TopOpenWindow-1200-800.png"
+        },
+        {
+          "description": "Split",
+          "template": "SplitWindow",
+          "imageSrc": "content/images/items/windows/SplitWindow.png",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "name": "Exterior Finish",
+      "items": []
+    },
+    {
+      "name": "Interior & Floor",
+      "items": []
+    },
+    {
+      "name": "Decking",
+      "items": [
+        {
+          "description": "Add decking",
+          "template": "Decking",
+          "imageSrc": "content/images/items/decking/Decking.png"
+        }
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "items": [
+        {
+          "description": "Open",
+          "template": "TopCabinetOpen",
+          "imageSrc": "content/images/items/cabinets/TopCabinetOpen.png"
+        },
+        {
+          "description": "Shelves",
+          "template": "TopCabinetShelves",
+          "imageSrc": "content/images/items/cabinets/TopCabinetShelves.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "TopCabinetDoor1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetDoor1.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "TopCabinetDoor1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetDoor1-755-850.png",
+          "width": 755,
+          "height": 850
+        },
+        {
+          "description": "1 Lift Door",
+          "template": "TopCabinetLifter1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetLifter1-600-240.png",
+          "width": 600,
+          "height": 240
+        },
+        {
+          "description": "1 Lift Door",
+          "template": "TopCabinetLifter1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetLifter1.png"
+        },
+        {
+          "description": "1 Lift Door",
+          "template": "TopCabinetSpace1Lifter1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetSpace1Lifter1.png"
+        },
+        {
+          "description": "1 Lift Door",
+          "template": "TopCabinetLifter1Space1",
+          "imageSrc": "content/images/items/cabinets/TopCabinetLifter1Space1.png"
+        },
+        {
+          "description": "2 Door",
+          "template": "TopCabinetDoor2",
+          "imageSrc": "content/images/items/cabinets/TopCabinetDoor2.png"
+        },
+        {
+          "description": "2 Lift Doors",
+          "template": "TopCabinetLifter2",
+          "imageSrc": "content/images/items/cabinets/TopCabinetLifter2.png"
+        },
+        {
+          "description": "Corner",
+          "template": "TopCabinetCorner",
+          "imageSrc": "content/images/items/cabinets/TopCabinetCorner.png"
+        },
+        {
+          "description": "Side Cover",
+          "template": "SideCover1",
+          "imageSrc": "content/images/items/cabinets/SideCover.png"
+        },
+        {
+          "description": "4 Drawers",
+          "template": "BaseCabinetDrawers4",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers4.png"
+        },
+        {
+          "description": "3 Drawers",
+          "template": "BaseCabinetDrawers3",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers3.png"
+        },
+        {
+          "description": "Drawer / Door",
+          "template": "BaseCabinetDrawers1Doors1",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers1Doors1.png"
+        },
+        {
+          "description": "2 Drawers",
+          "template": "BaseCabinetDrawers2",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers2.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "BaseCabinetDoors1",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoors1.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "BaseCabinetDoors1Narrow",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoors1Narrow.png"
+        },
+        {
+          "description": "Open",
+          "template": "BaseCabinetOpen",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetOpen.png"
+        },
+        {
+          "description": "Door / Shelves",
+          "template": "BaseCabinetDoorsShelves",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoorsShelves.png"
+        },
+        {
+          "description": "Corner",
+          "template": "BaseCabinetCorner",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetCorner.png"
+        },
+        {
+          "description": "2 Door",
+          "template": "BaseCabinetDoors2",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoors2.png"
+        },
+        {
+          "description": "Hob induction",
+          "template": "BaseCabinetInductionHob",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetInductionHob.png"
+        },
+        {
+          "description": "Hob gas",
+          "template": "BaseCabinetGasHob",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetGasHob.png"
+        },
+        {
+          "description": "Kitchen sink",
+          "template": "BaseCabinetKitchenSink",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetKitchenSink.png"
+        },
+        {
+          "description": "Kitchen sink",
+          "template": "BaseCabinetKitchenSinkSmall",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetKitchenSinkSmall.png"
+        },
+        {
+          "description": "Side Cover",
+          "template": "SideCover2",
+          "imageSrc": "content/images/items/cabinets/SideCover.png"
+        },
+        {
+          "description": "2 Doors",
+          "template": "TallCabinetDoors2",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors2.png",
+          "height": 2000
+        },
+        {
+          "description": "2 Doors",
+          "template": "TallCabinetDoorsSpaceDoor",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoorsSpaceDoor.png",
+          "height": 2000
+        },
+        {
+          "description": "2 Doors",
+          "template": "TallCabinetDoor2W",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoor2W.png",
+          "height": 2000
+        },
+        {
+          "description": "1 Door",
+          "template": "TallCabinetDoors1",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors1.png",
+          "height": 2000
+        },
+        {
+          "description": "Shelves",
+          "template": "TallCabinetShelves",
+          "imageSrc": "content/images/items/cabinets/TallCabinetShelves.png",
+          "height": 2000
+        },
+        {
+          "description": "C/W Oven and M/wave",
+          "template": "TallCabinetDoors2Appliances2",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors2Appliances2.png",
+          "height": 2000
+        },
+        {
+          "description": "C/W Oven and M/wave",
+          "template": "TallCabinetDrawers2Appliances2",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDrawers2Appliances2.png",
+          "height": 2000
+        },
+        {
+          "description": "C/W Oven",
+          "template": "TallCabinetDoors2Oven1",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors2Oven1.png",
+          "height": 2000
+        },
+        {
+          "description": "C/W Oven",
+          "template": "TallCabinetDoors2Drawers2Oven1",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors2Drawers2Oven1.png",
+          "height": 2000
+        },
+        {
+          "description": "C/W Microwave",
+          "template": "TallCabinetDoors2Micro1",
+          "imageSrc": "content/images/items/cabinets/TallCabinetDoors2Micro1.png",
+          "height": 2000
+        },
+        {
+          "description": "Side Cover",
+          "template": "SideCover3",
+          "imageSrc": "content/images/items/cabinets/SideCover.png",
+          "height": 2000
+        },
+        {
+          "description": "4 Drawers",
+          "template": "IslandCabinetDrawers4",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers4.png"
+        },
+        {
+          "description": "3 Drawers",
+          "template": "IslandCabinetDrawers3",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers3.png"
+        },
+        {
+          "description": "Drawer / Door",
+          "template": "IslandCabinetDrawers1Doors1",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers1Doors1.png"
+        },
+        {
+          "description": "2 Drawers",
+          "template": "IslandCabinetDrawers2",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDrawers2.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "IslandCabinetDoors1",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoors1.png"
+        },
+        {
+          "description": "1 Door",
+          "template": "IslandCabinetDoors1Narrow",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoors1Narrow.png"
+        },
+        {
+          "description": "Open",
+          "template": "IslandCabinetOpen",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetOpen.png"
+        },
+        {
+          "description": "Door / Shelves",
+          "template": "IslandCabinetDoorsShelves",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetDoorsShelves.png"
+        },
+        {
+          "description": "Hob induction",
+          "template": "IslandCabinetInductionHob",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetInductionHob.png"
+        },
+        {
+          "description": "Hob gas",
+          "template": "IslandCabinetGasHob",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetGasHob.png"
+        },
+        {
+          "description": "Kitchen sink",
+          "template": "IslandCabinetKitchenSink",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetKitchenSink.png"
+        },
+        {
+          "description": "Kitchen sink",
+          "template": "IslandCabinetKitchenSinkSmall",
+          "imageSrc": "content/images/items/cabinets/BaseCabinetKitchenSinkSmall.png"
+        },
+        {
+          "description": "Side Cover",
+          "template": "SideCover4",
+          "imageSrc": "content/images/items/cabinets/SideCover.png"
+        },
+        {
+          "description": "American Fridge",
+          "template": "AmericanFridge",
+          "imageSrc": "content/images/items/electrics/AmericanFridge.png"
+        },
+        {
+          "description": "Washing Machine",
+          "template": "WashingMachine",
+          "imageSrc": "content/images/items/electrics/WashingMachine.png"
+        }
+      ]
+    },
+    {
+      "name": "Furniture & Decorations",
+      "items": [
+        {
+          "description": "Adjustable Desk",
+          "template": "AdjustableDesk",
+          "imageSrc": "content/images/items/office/AdjustableDesk.png"
+        },
+        {
+          "description": "Computer Desk",
+          "template": "ComputerDesk",
+          "imageSrc": "content/images/items/office/ComputerDesk.png"
+        },
+        {
+          "description": "Glass Desk",
+          "template": "GlassDesk",
+          "imageSrc": "content/images/items/office/GlassDesk.png"
+        },
+        {
+          "description": "Office Desk",
+          "template": "OfficeDesk",
+          "imageSrc": "content/images/items/furniture/OfficeDesk.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair01",
+          "imageSrc": "content/images/items/office/OfficeChair01.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair02",
+          "imageSrc": "content/images/items/office/OfficeChair02.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair03",
+          "imageSrc": "content/images/items/office/OfficeChair03.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair04",
+          "imageSrc": "content/images/items/office/OfficeChair04.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair05",
+          "imageSrc": "content/images/items/office/OfficeChair05.png"
+        },
+        {
+          "description": "Office Chair",
+          "template": "OfficeChair06",
+          "imageSrc": "content/images/items/office/OfficeChair06.png"
+        },
+        {
+          "description": "Gaming Chair",
+          "template": "GamingChair",
+          "imageSrc": "content/images/items/furniture/GamingChair.png"
+        },
+        {
+          "description": "Carpet",
+          "template": "Carpet",
+          "imageSrc": "content/images/items/office/Carpet.png"
+        },
+        {
+          "description": "Cabinet",
+          "template": "OfficeWardrobeDoors2",
+          "imageSrc": "content/images/items/furniture/OfficeWardrobeDoors2.png"
+        },
+        {
+          "description": "Shelves",
+          "template": "OfficeShelves8",
+          "imageSrc": "content/images/items/furniture/OfficeShelves8.png"
+        },
+        {
+          "description": "Steel Frame Shelves",
+          "template": "SteelFrameShelves_01",
+          "imageSrc": "content/images/items/furniture/SteelFrameShelves_01.png"
+        },
+        {
+          "description": "Steel Frame Shelves",
+          "template": "SteelFrameShelves_02",
+          "imageSrc": "content/images/items/furniture/SteelFrameShelves_02.png"
+        },
+        {
+          "description": "Steel Frame Shelves",
+          "template": "SteelFrameShelves_03",
+          "imageSrc": "content/images/items/furniture/SteelFrameShelves_03.png"
+        },
+        {
+          "description": "Drawer Cabinet",
+          "template": "DrawerCabinet",
+          "imageSrc": "content/images/items/furniture/DrawerCabinet.png"
+        },
+        {
+          "description": "Wooden Display Shelves",
+          "template": "WoodenDisplayShelves",
+          "imageSrc": "content/images/items/furniture/WoodenDisplayShelves.png"
+        },
+        {
+          "description": "Book Shelf",
+          "template": "BookShelf",
+          "imageSrc": "content/images/items/furniture/BookShelf.png"
+        },
+        {
+          "description": "Large Rug",
+          "template": "LargeRug",
+          "imageSrc": "content/images/items/office/LargeRug.png"
+        },
+        {
+          "description": "Linen Rug",
+          "template": "LinenRug",
+          "imageSrc": "content/images/items/office/LinenRug.png"
+        },
+        {
+          "description": "Oat Beige Rug",
+          "template": "OatBeigeRug",
+          "imageSrc": "content/images/items/office/OatBeigeRug.png"
+        },
+        {
+          "description": "Straw Rug",
+          "template": "StrawRug",
+          "imageSrc": "content/images/items/office/StrawRug.png"
+        },
+        {
+          "description": "L-Shape Bar Table",
+          "template": "BarTable",
+          "imageSrc": "content/images/items/furniture/LShapeBarTable.png"
+        },
+        {
+          "description": "Straight  Bar Table",
+          "template": "BarTable",
+          "imageSrc": "content/images/items/furniture/StraightBarTable.png",
+          "width": 2000,
+          "depth": 500
+        },
+        {
+          "description": "Bar Stool",
+          "template": "FlyBarChair",
+          "imageSrc": "content/images/items/furniture/FlyBarChair.png"
+        },
+        {
+          "description": "Pool Table",
+          "template": "PoolTable",
+          "imageSrc": "content/images/items/furniture/PoolTable.png"
+        },
+        {
+          "description": "Dart Board",
+          "template": "DartBoard",
+          "imageSrc": "content/images/items/furniture/DartBoard.png"
+        },
+        {
+          "description": "TV",
+          "template": "TV",
+          "imageSrc": "content/images/items/electrics/TV.png"
+        },
+        {
+          "description": "Golf Simulator Screen",
+          "template": "GolfSimulatorScreen",
+          "imageSrc": "content/images/items/electrics/GolfSimulatorScreen.png"
+        },
+        {
+          "description": "Rowing Machine",
+          "template": "RowingMachine",
+          "imageSrc": "content/images/items/gym/RowingMachine.png"
+        },
+        {
+          "description": "Bench Back",
+          "template": "BenchBack",
+          "imageSrc": "content/images/items/gym/BenchBack.png"
+        },
+        {
+          "description": "Bench Press Back",
+          "template": "BenchPressBack",
+          "imageSrc": "content/images/items/gym/BenchPressBack.png"
+        },
+        {
+          "description": "Bike",
+          "template": "Bike",
+          "imageSrc": "content/images/items/gym/Bike.png"
+        },
+        {
+          "description": "Calf Machine Seat",
+          "template": "CalfMachineSeat",
+          "imageSrc": "content/images/items/gym/CalfMachineSeat.png"
+        },
+        {
+          "description": "Chest Press Machine",
+          "template": "ChestPressMachine",
+          "imageSrc": "content/images/items/gym/ChestPressMachine.png"
+        },
+        {
+          "description": "Circular Weight Rack",
+          "template": "CircularWeightRack",
+          "imageSrc": "content/images/items/gym/CircularWeightRack.png"
+        },
+        {
+          "description": "Crossover Structure",
+          "template": "CrossoverStructure",
+          "imageSrc": "content/images/items/gym/CrossoverStructure.png"
+        },
+        {
+          "description": "Declined Bench Press Back",
+          "template": "DeclinedBenchPressBack",
+          "imageSrc": "content/images/items/gym/DeclinedBenchPressBack.png"
+        },
+        {
+          "description": "Elliptical",
+          "template": "Elliptical",
+          "imageSrc": "content/images/items/gym/Elliptical.png"
+        },
+        {
+          "description": "Exercise Bike",
+          "template": "ExerciseBike",
+          "imageSrc": "content/images/items/gym/ExerciseBike.png"
+        },
+        {
+          "description": "Hack Squat Machine",
+          "template": "HackSquatMachine",
+          "imageSrc": "content/images/items/gym/HackSquatMachine.png"
+        },
+        {
+          "description": "Home Gym Machine",
+          "template": "HomeGymMachine",
+          "imageSrc": "content/images/items/gym/HomeGymMachine.png"
+        },
+        {
+          "description": "Inclined Bench Press Seat",
+          "template": "InclinedBenchPressSeat",
+          "imageSrc": "content/images/items/gym/InclinedBenchPressSeat.png"
+        },
+        {
+          "description": "Leg Curl Machine",
+          "template": "LegCurlMachine",
+          "imageSrc": "content/images/items/gym/LegCurlMachine.png"
+        },
+        {
+          "description": "Leg Extension Machine",
+          "template": "LegExtensionMachine",
+          "imageSrc": "content/images/items/gym/LegExtensionMachine.png"
+        },
+        {
+          "description": "Mats",
+          "template": "Mats",
+          "imageSrc": "content/images/items/gym/Mats.png"
+        },
+        {
+          "description": "Peck Deck Structure",
+          "template": "PeckDeckStructure",
+          "imageSrc": "content/images/items/gym/PeckDeckStructure.png"
+        },
+        {
+          "description": "Pulldown Machine",
+          "template": "PulldownMachine",
+          "imageSrc": "content/images/items/gym/PulldownMachine.png"
+        },
+        {
+          "description": "Running Machine",
+          "template": "RunningMachine",
+          "imageSrc": "content/images/items/gym/RunningMachine.png"
+        },
+        {
+          "description": "Treadmill",
+          "template": "Treadmill",
+          "imageSrc": "content/images/items/gym/Treadmill.png"
+        },
+        {
+          "description": "Smith Machine",
+          "template": "SmithMachine",
+          "imageSrc": "content/images/items/gym/SmithMachine.png"
+        },
+        {
+          "description": "Leg Press Machine",
+          "template": "LegPressMachine",
+          "imageSrc": "content/images/items/gym/LegPressMachine.png"
+        },
+        {
+          "description": "EZ Bar Stand",
+          "template": "EZBarStand",
+          "imageSrc": "content/images/items/gym/EZBarStand.png"
+        },
+        {
+          "description": "Small Dumbbell Rack",
+          "template": "DumbbellRack",
+          "imageSrc": "content/images/items/gym/DumbbellRack.png"
+        },
+        {
+          "description": "Dumbbells Rack",
+          "template": "DumbbellsRack",
+          "imageSrc": "content/images/items/gym/DumbbellsRack.png"
+        },
+        {
+          "description": "Wall Mirror",
+          "template": "MirrorWall",
+          "imageSrc": "content/images/items/furniture/MirrorWall.png"
+        },
+        {
+          "description": "Double Bed",
+          "template": "Bed2",
+          "imageSrc": "content/images/items/furniture/Bed2.png"
+        },
+        {
+          "description": "Armchair",
+          "template": "Armchair",
+          "imageSrc": "content/images/items/furniture/Armchair.png"
+        },
+        {
+          "description": "Double Sofa",
+          "template": "DoubleSofa",
+          "imageSrc": "content/images/items/furniture/DoubleSofa.png"
+        },
+        {
+          "description": "Single Bed",
+          "template": "SingleBed",
+          "imageSrc": "content/images/items/furniture/SingleBed.png"
+        },
+        {
+          "description": "Double Bed",
+          "template": "DoubleBed",
+          "imageSrc": "content/images/items/furniture/DoubleBed.png"
+        },
+        {
+          "description": "Double Bed",
+          "template": "Bed3",
+          "imageSrc": "content/images/items/furniture/Bed3.png"
+        },
+        {
+          "description": "Double Bed",
+          "template": "Bed4",
+          "imageSrc": "content/images/items/furniture/Bed4.png"
+        },
+        {
+          "description": "3 Seater Sofa",
+          "template": "3SeaterSofa",
+          "imageSrc": "content/images/items/furniture/3SeaterSofa.png"
+        },
+        {
+          "description": "Larger Corner Sofa",
+          "template": "LargerCornerSofa",
+          "imageSrc": "content/images/items/furniture/LargerCornerSofa.png"
+        },
+        {
+          "description": "Table And Chairs",
+          "template": "TableAndChairs",
+          "imageSrc": "content/images/items/furniture/TableAndChairs.png"
+        },
+        {
+          "description": "Washing Machine",
+          "template": "WashingMachine",
+          "imageSrc": "content/images/items/electrics/WashingMachine.png"
+        },
+        {
+          "description": "American Fridge",
+          "template": "AmericanFridge",
+          "imageSrc": "content/images/items/electrics/AmericanFridge.png"
+        },
+        {
+          "description": "Side Table",
+          "template": "SideTable",
+          "imageSrc": "content/images/items/furniture/SideTable.png"
+        },
+        {
+          "description": "Wooden Table",
+          "template": "WoodenTable",
+          "imageSrc": "content/images/items/furniture/WoodenTable.png"
+        },
+        {
+          "description": "Gravel surround",
+          "template": "Gravel",
+          "imageSrc": "content/images/items/misc/Gravel.jpg"
+        },
+        {
+          "description": "Water butt",
+          "template": "WaterButt",
+          "imageSrc": "content/images/items/misc/WaterButt.png"
+        },
+        {
+          "description": "Hot Tub",
+          "template": "HotTub",
+          "imageSrc": "content/images/items/accessories/HotTub.png"
+        },
+        {
+          "description": "Planter",
+          "template": "Planter",
+          "imageSrc": "content/images/items/accessories/PlanterSmall.png"
+        },
+        {
+          "description": "Hedge Planter",
+          "template": "HedgePlanter",
+          "imageSrc": "content/images/items/accessories/HedgePlanter.png"
+        },
+        {
+          "description": "Pool",
+          "template": "Pool",
+          "imageSrc": "content/images/items/accessories/Pool.png"
+        },
+        {
+          "description": "Pergola",
+          "template": "Pergola",
+          "imageSrc": "content/images/items/ranges/Pergola.png"
+        },
+        {
+          "description": "Car Canopy",
+          "template": "CarCanopy",
+          "imageSrc": "content/images/items/accessories/CarCanopy.png"
+        },
+        {
+          "description": "Greenhouse",
+          "template": "RoundedGreenhouse",
+          "imageSrc": "content/images/items/accessories/RoundedGreenhouse.png"
+        },
+        {
+          "description": "Greenhouse",
+          "template": "PitchedGreenhouse",
+          "imageSrc": "content/images/items/accessories/PitchedGreenhouse.png"
+        },
+        {
+          "description": "Shed",
+          "template": "Shed",
+          "imageSrc": "content/images/items/accessories/Shed.png"
+        },
+        {
+          "description": "Rattan Armchair",
+          "template": "RattanArmchair",
+          "imageSrc": "content/images/items/accessories/RattanArmchair.png"
+        },
+        {
+          "description": "Rattan Sofa",
+          "template": "RattanSofa",
+          "imageSrc": "content/images/items/accessories/RattanSofa.png"
+        },
+        {
+          "description": "Rattan Table",
+          "template": "RattanTable",
+          "imageSrc": "content/images/items/accessories/RattanTable.png"
+        },
+        {
+          "description": "Reclining Chair",
+          "template": "RecliningChair",
+          "imageSrc": "content/images/items/accessories/RecliningChair.png"
+        },
+        {
+          "description": "Barbeque Grill",
+          "template": "BarbequeGrill",
+          "imageSrc": "content/images/items/accessories/BarbequeGrill.png"
+        },
+        {
+          "description": "Corner Sofa",
+          "template": "ExteriorCornerSofaWithTable",
+          "imageSrc": "content/images/items/accessories/ExteriorCornerSofaWithTable.png"
+        },
+        {
+          "description": "Firepit",
+          "template": "Firepit",
+          "imageSrc": "content/images/items/accessories/Firepit.png"
+        },
+        {
+          "description": "Grill",
+          "template": "Grill",
+          "imageSrc": "content/images/items/accessories/Grill.png"
+        },
+        {
+          "description": "Inflatable Pool",
+          "template": "InflatablePool",
+          "imageSrc": "content/images/items/accessories/InflatablePool.png"
+        },
+        {
+          "description": "Table Chair Set",
+          "template": "OutdoorTableChairSet",
+          "imageSrc": "content/images/items/accessories/OutdoorTableChairSet.png"
+        },
+        {
+          "description": "Pillow Box",
+          "template": "PillowBox",
+          "imageSrc": "content/images/items/accessories/PillowBox.png"
+        },
+        {
+          "description": "Bench",
+          "template": "Bench",
+          "imageSrc": "content/images/items/furniture/Bench.png"
+        },
+        {
+          "description": "Table",
+          "template": "Table",
+          "imageSrc": "content/images/items/furniture/Table.png"
+        },
+        {
+          "description": "Wooden Garden Chair",
+          "template": "WoodenGardenChair",
+          "imageSrc": "content/images/items/furniture/WoodenGardenChair.png"
+        },
+        {
+          "description": "Small Half Table",
+          "template": "SmallHalfTable",
+          "imageSrc": "content/images/items/furniture/SmallHalfTable.png"
+        },
+        {
+          "description": "Large Half Table",
+          "template": "LargeHalfTable",
+          "imageSrc": "content/images/items/furniture/LargeHalfTable.png"
+        },
+        {
+          "description": "Audi",
+          "template": "AudiSportsCar",
+          "imageSrc": "content/images/items/accessories/AudiSportsCar.png"
+        },
+        {
+          "description": "Sports Car",
+          "template": "GenericSportsCar",
+          "imageSrc": "content/images/items/accessories/GenericSportsCar.png"
+        },
+        {
+          "description": "SUV",
+          "template": "GenericSUV",
+          "imageSrc": "content/images/items/accessories/GenericSUV.png"
+        },
+        {
+          "description": "Porsche",
+          "template": "Porsche",
+          "imageSrc": "content/images/items/accessories/Porsche.png"
+        },
+        {
+          "description": "Baltimore S",
+          "template": "Baltimore15S",
+          "imageSrc": "content/images/items/sofas/Baltimore15S.png"
+        },
+        {
+          "description": "Baltimore M",
+          "template": "Baltimore3S",
+          "imageSrc": "content/images/items/sofas/Baltimore3S.png"
+        },
+        {
+          "description": "Baltimore L",
+          "template": "Baltimore4S3Sxl",
+          "imageSrc": "content/images/items/sofas/Baltimore4S3Sxl.png"
+        },
+        {
+          "description": "Baltimore Puff",
+          "template": "BaltimorePuff",
+          "imageSrc": "content/images/items/sofas/BaltimorePuff.png"
+        },
+        {
+          "description": "Brooks S",
+          "template": "Brooks1S",
+          "imageSrc": "content/images/items/sofas/Brooks1S.png"
+        },
+        {
+          "description": "Brooks L",
+          "template": "Brooks1SBig",
+          "imageSrc": "content/images/items/sofas/Brooks1SBig.png"
+        },
+        {
+          "description": "Broom",
+          "template": "Broom1S",
+          "imageSrc": "content/images/items/sofas/Broom1S.png"
+        },
+        {
+          "description": "Broom Puff",
+          "template": "BroomPuff",
+          "imageSrc": "content/images/items/sofas/BroomPuff.png"
+        },
+        {
+          "description": "Cassie 1 Seater",
+          "template": "Cassie15S",
+          "imageSrc": "content/images/items/sofas/Cassie15S.png"
+        },
+        {
+          "description": "Cassie 3 Seater",
+          "template": "Cassie3S",
+          "imageSrc": "content/images/items/sofas/Cassie3S.png"
+        },
+        {
+          "description": "Cassie Puff",
+          "template": "CassiePuff",
+          "imageSrc": "content/images/items/sofas/CassiePuff.png"
+        },
+        {
+          "description": "Dixon",
+          "template": "Dixon15S",
+          "imageSrc": "content/images/items/sofas/Dixon15S.png"
+        },
+        {
+          "description": "Duffy 1 Seater",
+          "template": "Duffy1S",
+          "imageSrc": "content/images/items/sofas/Duffy1S.png"
+        },
+        {
+          "description": "Duffy 2 Seater",
+          "template": "Duffy2S",
+          "imageSrc": "content/images/items/sofas/Duffy2S.png"
+        },
+        {
+          "description": "Flora",
+          "template": "Flora",
+          "imageSrc": "content/images/items/sofas/Flora.png"
+        },
+        {
+          "description": "Krona",
+          "template": "Krona3S",
+          "imageSrc": "content/images/items/sofas/Krona3S.png"
+        },
+        {
+          "description": "Krona L Shape",
+          "template": "Krona3SChg",
+          "imageSrc": "content/images/items/sofas/Krona3SChg.png"
+        },
+        {
+          "description": "Lance 1 Seater",
+          "template": "Lance1S",
+          "imageSrc": "content/images/items/sofas/Lance1S.png"
+        },
+        {
+          "description": "Lance 2 Seater",
+          "template": "Lance25S",
+          "imageSrc": "content/images/items/sofas/Lance25S.png"
+        },
+        {
+          "description": "Lance Chg Left",
+          "template": "LanceChgLeft",
+          "imageSrc": "content/images/items/sofas/LanceChgLeft.png"
+        },
+        {
+          "description": "Lance Chg Right",
+          "template": "LanceChgRight",
+          "imageSrc": "content/images/items/sofas/LanceChgRight.png"
+        },
+        {
+          "description": "Lance Corner Right",
+          "template": "LanceCrRight",
+          "imageSrc": "content/images/items/sofas/LanceCrRight.png"
+        },
+        {
+          "description": "Lilly",
+          "template": "Lilly3S",
+          "imageSrc": "content/images/items/sofas/Lilly3S.png"
+        },
+        {
+          "description": "Lilly Fotel",
+          "template": "LillyFotel",
+          "imageSrc": "content/images/items/sofas/LillyFotel.png"
+        },
+        {
+          "description": "Michelin Chg Right S",
+          "template": "MichelinChgRight",
+          "imageSrc": "content/images/items/sofas/MichelinChgRight.png"
+        },
+        {
+          "description": "Michelin Chg Right L",
+          "template": "Michelin3SChgRight",
+          "imageSrc": "content/images/items/sofas/Michelin3SChgRight.png"
+        },
+        {
+          "description": "Plaza",
+          "template": "Plaza3S",
+          "imageSrc": "content/images/items/sofas/Plaza3S.png"
+        },
+        {
+          "description": "Poetic",
+          "template": "PoeticA",
+          "imageSrc": "content/images/items/sofas/PoeticA.png"
+        },
+        {
+          "description": "Poetic Corner",
+          "template": "PoeticD",
+          "imageSrc": "content/images/items/sofas/PoeticD.png"
+        },
+        {
+          "description": "Praia S",
+          "template": "Praia000D",
+          "imageSrc": "content/images/items/sofas/Praia000D.png"
+        },
+        {
+          "description": "Praia M",
+          "template": "Praia000G",
+          "imageSrc": "content/images/items/sofas/Praia000G.png"
+        },
+        {
+          "description": "Praia L",
+          "template": "Praia35S",
+          "imageSrc": "content/images/items/sofas/Praia35S.png"
+        },
+        {
+          "description": "Praia 1 Seater",
+          "template": "Praia000HL",
+          "imageSrc": "content/images/items/sofas/Praia000HL.png"
+        },
+        {
+          "description": "Praia 2 Seater",
+          "template": "Praia00OR",
+          "imageSrc": "content/images/items/sofas/Praia00OR.png"
+        },
+        {
+          "description": "Praia 0F 2 Seater",
+          "template": "Praia0F3L001",
+          "imageSrc": "content/images/items/sofas/Praia0F3L001.png"
+        },
+        {
+          "description": "Praia 0F 2 Seater",
+          "template": "Praia0F3L",
+          "imageSrc": "content/images/items/sofas/Praia0F3L.png"
+        },
+        {
+          "description": "Praia Puff",
+          "template": "PraiaPuff",
+          "imageSrc": "content/images/items/sofas/PraiaPuff.png"
+        },
+        {
+          "description": "Silluet",
+          "template": "Silluet1S",
+          "imageSrc": "content/images/items/sofas/Silluet1S.png"
+        },
+        {
+          "description": "Aloe Vera",
+          "template": "AloeVera",
+          "imageSrc": "content/images/items/plants/AloeVera.png"
+        },
+        {
+          "description": "Aspidistra",
+          "template": "Aspidistra",
+          "imageSrc": "content/images/items/plants/Aspidistra.png"
+        },
+        {
+          "description": "Boston Fern",
+          "template": "BostonFern",
+          "imageSrc": "content/images/items/plants/BostonFern.png"
+        },
+        {
+          "description": "Cactus Opuntia",
+          "template": "CactusOpuntia",
+          "imageSrc": "content/images/items/plants/CactusOpuntia.png"
+        },
+        {
+          "description": "Calathea Lutea",
+          "template": "CalatheaLutea",
+          "imageSrc": "content/images/items/plants/CalatheaLutea.png"
+        },
+        {
+          "description": "Cereus Peruvianus",
+          "template": "CereusPeruvianus",
+          "imageSrc": "content/images/items/plants/CereusPeruvianus.png"
+        },
+        {
+          "description": "Chamaedorea Seifrizii",
+          "template": "ChamaedoreaSeifrizii",
+          "imageSrc": "content/images/items/plants/ChamaedoreaSeifrizii.png"
+        },
+        {
+          "description": "Dieffenbachia",
+          "template": "Dieffenbachia",
+          "imageSrc": "content/images/items/plants/Dieffenbachia.png"
+        },
+        {
+          "description": "Dracaena Marginata",
+          "template": "DracaenaMarginata",
+          "imageSrc": "content/images/items/plants/DracaenaMarginata.png"
+        },
+        {
+          "description": "Euphorbia Trigona",
+          "template": "EuphorbiaTrigona",
+          "imageSrc": "content/images/items/plants/EuphorbiaTrigona.png"
+        },
+        {
+          "description": "Howea Forsteriana",
+          "template": "HoweaForsteriana",
+          "imageSrc": "content/images/items/plants/HoweaForsteriana.png"
+        },
+        {
+          "description": "Licuala Palm",
+          "template": "LicualaPalm",
+          "imageSrc": "content/images/items/plants/LicualaPalm.png"
+        },
+        {
+          "description": "Monstera Deliciosa",
+          "template": "MonsteraDeliciosa",
+          "imageSrc": "content/images/items/plants/MonsteraDeliciosa.png"
+        },
+        {
+          "description": "Pachira Aquatica",
+          "template": "PachiraAquatica",
+          "imageSrc": "content/images/items/plants/PachiraAquatica.png"
+        },
+        {
+          "description": "Rhapis Excelsa",
+          "template": "RhapisExcelsa",
+          "imageSrc": "content/images/items/plants/RhapisExcelsa.png"
+        },
+        {
+          "description": "Sago Palm",
+          "template": "SagoPalm",
+          "imageSrc": "content/images/items/plants/SagoPalm.png"
+        },
+        {
+          "description": "Sansevieria",
+          "template": "Sansevieria",
+          "imageSrc": "content/images/items/plants/Sansevieria.png"
+        },
+        {
+          "description": "Spathiphyllum",
+          "template": "Spathiphyllum",
+          "imageSrc": "content/images/items/plants/Spathiphyllum.png"
+        },
+        {
+          "description": "Strelitzia Nicolai",
+          "template": "StrelitziaNicolaiSmall",
+          "imageSrc": "content/images/items/plants/StrelitziaNicolaiSmall.png"
+        },
+        {
+          "description": "Zamioculcas Zamiifolia",
+          "template": "ZamioculcasZamiifolia",
+          "imageSrc": "content/images/items/plants/ZamioculcasZamiifolia.png"
+        },
+        {
+          "description": "Ash Tree",
+          "template": "AshTree",
+          "imageSrc": "content/images/items/trees/AshTree.png"
+        },
+        {
+          "description": "Aspen Tree",
+          "template": "AspenTree",
+          "imageSrc": "content/images/items/trees/AspenTree.png"
+        },
+        {
+          "description": "Pine Tree",
+          "template": "PineTree",
+          "imageSrc": "content/images/items/trees/PineTree.png"
+        },
+        {
+          "description": "Oak Tree",
+          "template": "OakTree",
+          "imageSrc": "content/images/items/trees/OakTree.png"
+        },
+        {
+          "description": "Acacia Tree",
+          "template": "AcaciaTree",
+          "imageSrc": "content/images/items/trees/AcaciaTree.png"
+        },
+        {
+          "description": "Bamboo",
+          "template": "Bamboo",
+          "imageSrc": "content/images/items/trees/Bamboo.png"
+        },
+        {
+          "description": "Beech Tree",
+          "template": "BeechTree",
+          "imageSrc": "content/images/items/trees/BeechTree.png"
+        },
+        {
+          "description": "Birch Tree",
+          "template": "BirchTree",
+          "imageSrc": "content/images/items/trees/BirchTree.png"
+        },
+        {
+          "description": "Fir Tree",
+          "template": "FirTree",
+          "imageSrc": "content/images/items/trees/FirTree.png"
+        },
+        {
+          "description": "Maple Tree",
+          "template": "MapleTree",
+          "imageSrc": "content/images/items/trees/MapleTree.png"
+        },
+        {
+          "description": "Green Oak Tree",
+          "template": "GreenOakTree",
+          "imageSrc": "content/images/items/trees/GreenOakTree.png"
+        },
+        {
+          "description": "Spruce Tree",
+          "template": "SpruceTree",
+          "imageSrc": "content/images/items/trees/SpruceTree.png"
+        },
+        {
+          "description": "Willow Tree",
+          "template": "WillowTree",
+          "imageSrc": "content/images/items/trees/WillowTree.png"
+        },
+        {
+          "description": "Date Palm",
+          "template": "DatePalm",
+          "imageSrc": "content/images/items/trees/DatePalm.png"
+        },
+        {
+          "description": "Palm",
+          "template": "Palm",
+          "imageSrc": "content/images/items/trees/Palm.png"
+        },
+        {
+          "description": "Curly Palm",
+          "template": "CurlyPalm",
+          "imageSrc": "content/images/items/trees/CurlyPalm.png"
+        },
+        {
+          "description": "Coconut Palm",
+          "template": "CoconutPalm",
+          "imageSrc": "content/images/items/trees/CoconutPalm.png"
+        },
+        {
+          "description": "Banana Plant",
+          "template": "BananaPlant",
+          "imageSrc": "content/images/items/trees/BananaPlant.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "SimpleWardrobe",
+          "imageSrc": "content/images/items/furniture/SimpleWardrobe.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "DesignedWardrobe",
+          "imageSrc": "content/images/items/furniture/DesignedWardrobe.png"
+        },
+        {
+          "description": "Dresser",
+          "template": "DresserDrawers4",
+          "imageSrc": "content/images/items/furniture/DresserDrawers4.png"
+        },
+        {
+          "description": "Dresser",
+          "template": "DresserDrawers8",
+          "imageSrc": "content/images/items/furniture/DresserDrawers8.png"
+        },
+        {
+          "description": "Dresser",
+          "template": "DresserDoors1Drawers6Shelves2",
+          "imageSrc": "content/images/items/furniture/DresserDoors1Drawers6Shelves2.png"
+        },
+        {
+          "description": "Nightstand",
+          "template": "NightstandDrawers1Open1",
+          "imageSrc": "content/images/items/furniture/NightstandDrawers1Open1.png"
+        },
+        {
+          "description": "2 Drawer Nightstand",
+          "template": "NightstandDrawers2",
+          "imageSrc": "content/images/items/furniture/NightstandDrawers2.png"
+        },
+        {
+          "description": "3 Drawer Nightstand",
+          "template": "NightstandDrawers3",
+          "imageSrc": "content/images/items/furniture/NightstandDrawers3.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "WardrobeDoors1",
+          "imageSrc": "content/images/items/furniture/WardrobeDoors1.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "WardrobeDoors2LeftBottomDrawers3",
+          "imageSrc": "content/images/items/furniture/WardrobeDoors2LeftBottomDrawers3.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "WardrobeDoors3MiddleBottomDrawers3",
+          "imageSrc": "content/images/items/furniture/WardrobeDoors3MiddleBottomDrawers3.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "WardrobeDoors3RightBottomDrawers3",
+          "imageSrc": "content/images/items/furniture/WardrobeDoors3RightBottomDrawers3.png"
+        },
+        {
+          "description": "Wardrobe",
+          "template": "WardrobeDoors3",
+          "imageSrc": "content/images/items/furniture/WardrobeDoors3.png"
+        },
+        {
+          "description": "Fruit Bowl",
+          "template": "FruitBowl",
+          "imageSrc": "content/images/items/furniture/FruitBowl.png"
+        }
+      ]
+    },
+    {
+      "name": "Electrics & Lighting",
+      "items": [
+        {
+          "description": "Double socket",
+          "template": "IntSocket",
+          "imageSrc": "content/images/items/electrics/IntSocket.png"
+        },
+        {
+          "description": "Single socket",
+          "template": "SingleSocket",
+          "imageSrc": "content/images/items/electrics/SingleSocket.png"
+        },
+        {
+          "description": "TV socket",
+          "template": "TvSocket",
+          "imageSrc": "content/images/items/electrics/TvSocket.png"
+        },
+        {
+          "description": "Data point",
+          "template": "DataPoint",
+          "imageSrc": "content/images/items/electrics/DataPoint.png"
+        },
+        {
+          "description": "External socket",
+          "template": "ExtSocket",
+          "imageSrc": "content/images/items/electrics/ExtSocket.png"
+        },
+        {
+          "description": "Dimmer switch",
+          "template": "DimmerSwitch",
+          "imageSrc": "content/images/items/electrics/DimmerSwitch.png"
+        },
+        {
+          "description": "Light switch",
+          "template": "LightSwitch",
+          "imageSrc": "content/images/items/electrics/LightSwitch.png"
+        },
+        {
+          "description": "Rotary switch",
+          "template": "RotarySwitch",
+          "imageSrc": "content/images/items/electrics/RotarySwitch.png"
+        },
+        {
+          "description": "FCU",
+          "template": "FCU",
+          "imageSrc": "content/images/items/electrics/FCU.png"
+        },
+        {
+          "description": "Fan isolator",
+          "template": "IsolatorExtractor",
+          "imageSrc": "content/images/items/electrics/IsolatorExtractor.png"
+        },
+        {
+          "description": "Isolator 20A",
+          "template": "IsolatorSwitch20",
+          "imageSrc": "content/images/items/electrics/IsolatorSwitch20.png"
+        },
+        {
+          "description": "Isolator 45A",
+          "template": "IsolatorSwitch45",
+          "imageSrc": "content/images/items/electrics/IsolatorSwitch45.png"
+        },
+        {
+          "description": "Strip Light",
+          "template": "StripLight",
+          "imageSrc": "content/images/items/lighting/StripLight.png"
+        },
+        {
+          "description": "Wall light",
+          "template": "ExternalWallLight",
+          "imageSrc": "content/images/items/lighting/ExternalWallLight.png"
+        },
+        {
+          "description": "Ceiling light",
+          "template": "InternalLight",
+          "imageSrc": "content/images/items/lighting/InternalLight.png"
+        },
+        {
+          "description": "External Ceiling light",
+          "template": "ExternalLight",
+          "imageSrc": "content/images/items/lighting/ExternalLight.png"
+        },
+        {
+          "description": "Up/down light",
+          "template": "UpDownLight",
+          "imageSrc": "content/images/items/lighting/UpDownLight.png"
+        },
+        {
+          "description": "Security Light with PIR",
+          "template": "SecurityLight",
+          "imageSrc": "content/images/items/lighting/SecurityLight.png"
+        },
+        {
+          "description": "Track light",
+          "template": "TrackLightWall",
+          "imageSrc": "content/images/items/lighting/TrackLight.png"
+        },
+        {
+          "description": "Track light ceiling",
+          "template": "TrackLightCeiling",
+          "imageSrc": "content/images/items/lighting/TrackLight.png"
+        },
+        {
+          "description": "Panel Light",
+          "template": "PanelLight",
+          "imageSrc": "content/images/items/lighting/PanelLight.png"
+        },
+        {
+          "description": "Linear Wall Light",
+          "template": "LinearLight",
+          "imageSrc": "content/images/items/lighting/LinearLight.png"
+        },
+        {
+          "description": "Smoke alarm",
+          "template": "SmokeAlarm",
+          "imageSrc": "content/images/items/electrics/SmokeAlarm.png"
+        },
+        {
+          "description": "Fuseboard",
+          "template": "FuseBoard",
+          "imageSrc": "content/images/items/electrics/FuseBoard.png"
+        },
+        {
+          "description": "Wall Heater",
+          "template": "WallHeater",
+          "imageSrc": "content/images/items/electrics/WallHeater.png"
+        },
+        {
+          "description": "Climate control",
+          "template": "AirCon",
+          "imageSrc": "content/images/items/electrics/AirCon.png"
+        },
+        {
+          "description": "Climate control",
+          "template": "AcUnit",
+          "imageSrc": "content/images/items/electrics/AirCon.png"
+        }
+      ]
+    },
+    {
+      "name": "Save",
+      "items": []
+    }
+  ],
+  "finishOptions": {
+    "ExternalWallFinishes": [
+      {
+        "name": "Vertical Cedar",
+        "value": "cedarPlanks",
+        "menuValue": "content/images/controls/Cedar.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Horizontal Cedar",
+        "value": "cedarPlanksHorizontal",
+        "menuValue": "content/images/controls/CedarHoriz.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Render",
+        "value": "renderWhite",
+        "menuValue": "content/images/controls/Render.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Granite Vertical",
+        "value": "envirobuild-cladding/granite-vertical",
+        "menuValue": "content/images/items/claddings/Granite-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Stone Vertical",
+        "value": "envirobuild-cladding/stone-vertical",
+        "menuValue": "content/images/items/claddings/Stone-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Silver Birch Vertical",
+        "value": "envirobuild-cladding/silver-birch-vertical",
+        "menuValue": "content/images/items/claddings/Silver-birch-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Granite Horizontal",
+        "value": "envirobuild-cladding/granite-horizontal",
+        "menuValue": "content/images/items/claddings/Granite-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Stone Horizontal",
+        "value": "envirobuild-cladding/stone-horizontal",
+        "menuValue": "content/images/items/claddings/Stone-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Silver Birch Horizontal",
+        "value": "envirobuild-cladding/silver-birch-horizontal",
+        "menuValue": "content/images/items/claddings/Silver-birch-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Walnut Vertical",
+        "value": "envirobuild-cladding/walnut-vertical",
+        "menuValue": "content/images/items/claddings/Walnut-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Oak Vertical",
+        "value": "envirobuild-cladding/oak-vertical",
+        "menuValue": "content/images/items/claddings/Oak-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Stone 01",
+        "value": "stone01",
+        "menuValue": "content/images/controls/stone01.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Walnut Horizontal",
+        "value": "envirobuild-cladding/walnut-horizontal",
+        "menuValue": "content/images/items/claddings/Walnut-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Composite Oak Horizontal",
+        "value": "envirobuild-cladding/oak-horizontal",
+        "menuValue": "content/images/items/claddings/Oak-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Stone 02",
+        "value": "stone02",
+        "menuValue": "content/images/controls/stone02.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Burnt Cedar Vertical",
+        "value": "shadow-line/burnt-cedar-vertical",
+        "menuValue": "content/images/items/claddings/shadow-line/burnt-cedar-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Antique Oak Vertical",
+        "value": "shadow-line/antique-oak-vertical",
+        "menuValue": "content/images/items/claddings/shadow-line/antique-oak-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Golden Oak Vertical",
+        "value": "shadow-line/golden-oak-vertical",
+        "menuValue": "content/images/items/claddings/shadow-line/golden-oak-vertical.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Burnt Cedar Horizontal",
+        "value": "shadow-line/burnt-cedar-horizontal",
+        "menuValue": "content/images/items/claddings/shadow-line/burnt-cedar-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Antique Oak Horizontal",
+        "value": "shadow-line/antique-oak-horizontal",
+        "menuValue": "content/images/items/claddings/shadow-line/antique-oak-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shadow Line Golden Oak Horizontal",
+        "value": "shadow-line/golden-oak-horizontal",
+        "menuValue": "content/images/items/claddings/shadow-line/golden-oak-horizontal.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Board & Batten Burnt Cedar",
+        "value": "board-and-batten/burnt-cedar",
+        "menuValue": "content/images/items/claddings/board-and-batten/burnt-cedar.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Board & Batten Antique Oak",
+        "value": "board-and-batten/antique-oak",
+        "menuValue": "content/images/items/claddings/board-and-batten/antique-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Board & Batten Golden Oak",
+        "value": "board-and-batten/golden-oak",
+        "menuValue": "content/images/items/claddings/board-and-batten/golden-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shiplap Black",
+        "value": "shiplap01",
+        "menuValue": "content/images/controls/shiplap01.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shiplap White",
+        "value": "shiplap02",
+        "menuValue": "content/images/controls/shiplap02.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Shiplap Gray",
+        "value": "shiplap03",
+        "menuValue": "content/images/controls/shiplap03.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pine",
+        "value": "planks",
+        "menuValue": "content/images/controls/planks.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "VerticalFasciaFinishes": [
+      {
+        "name": "White - 9016",
+        "value": "RAL9016",
+        "menuValue": "#F6FAF4",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pastel Green - 6019",
+        "value": "RAL6019",
+        "menuValue": "#b9ceac",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pearl Blue - 5025",
+        "value": "RAL5025",
+        "menuValue": "#21697c",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Saffron Yellow - 1017",
+        "value": "RAL1017",
+        "menuValue": "#f6a950",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Silver Grey - 7004",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Slate Grey - 7015",
+        "value": "RAL7015",
+        "menuValue": "#51565C",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Dark Grey - 7016",
+        "value": "RAL7016",
+        "menuValue": "#383e42",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pebble Grey - 7032",
+        "value": "RAL7032",
+        "menuValue": "#B8B8A7",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Black - 9011",
+        "value": "RAL9011",
+        "menuValue": "#27292B",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "HorizontalFasciaFinishes": [
+      {
+        "name": "White - 9016",
+        "value": "RAL9016",
+        "menuValue": "#F6FAF4"
+      },
+      {
+        "name": "Pastel Green - 6019",
+        "value": "RAL6019",
+        "menuValue": "#b9ceac"
+      },
+      {
+        "name": "Pearl Blue - 5025",
+        "value": "RAL5025",
+        "menuValue": "#21697c"
+      },
+      {
+        "name": "Saffron Yellow - 1017",
+        "value": "RAL1017",
+        "menuValue": "#f6a950"
+      },
+      {
+        "name": "Silver Grey - 7004",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0"
+      },
+      {
+        "name": "Slate Grey - 7015",
+        "value": "RAL7015",
+        "menuValue": "#51565C"
+      },
+      {
+        "name": "Dark Grey - 7016",
+        "value": "RAL7016",
+        "menuValue": "#383e42"
+      },
+      {
+        "name": "Pebble Grey - 7032",
+        "value": "RAL7032",
+        "menuValue": "#B8B8A7"
+      },
+      {
+        "name": "Black - 9011",
+        "value": "RAL9011",
+        "menuValue": "#27292B"
+      }
+    ],
+    "InternalFinishes": [
+      {
+        "name": "White",
+        "value": "plaster-ffffff",
+        "menuValue": "#f7f6f6",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Light Blue",
+        "value": "plaster-cbd4d9",
+        "menuValue": "#cbd4d9",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Light Yellow",
+        "value": "plaster-f0dcc0",
+        "menuValue": "#f0dcc0",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Light Green",
+        "value": "plaster-e5f3dc",
+        "menuValue": "#e5f3dc",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Light Blue",
+        "value": "plaster-ddf2fc",
+        "menuValue": "#ddf2fc",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Plywood",
+        "value": "plywood",
+        "menuValue": "content/images/items/wood/plywood.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "WindoorFinishes": [
+      {
+        "name": "White - 9016",
+        "value": "RAL9016",
+        "menuValue": "#F6FAF4",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pastel Green - 6019",
+        "value": "RAL6019",
+        "menuValue": "#b9ceac",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pearl Blue - 5025",
+        "value": "RAL5025",
+        "menuValue": "#21697c",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Saffron Yellow - 1017",
+        "value": "RAL1017",
+        "menuValue": "#f6a950",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Silver Grey - 7004",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Slate Grey - 7015",
+        "value": "RAL7015",
+        "menuValue": "#51565C",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Dark Grey - 7016",
+        "value": "RAL7016",
+        "menuValue": "#383e42",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pebble Grey - 7032",
+        "value": "RAL7032",
+        "menuValue": "#B8B8A7",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Black - 9011",
+        "value": "RAL9011",
+        "menuValue": "#27292B",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "FlooringFinishes": [
+      {
+        "name": "Osb",
+        "value": "osb",
+        "menuValue": "content/images/items/wood/osb.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Oak",
+        "value": "floor-oak",
+        "menuValue": "content/images/items/floor/oak.jpg",
+        "usersIncludeFor": [
+          ""
+        ]
+      },
+      {
+        "name": "Beech",
+        "value": "floor-beech",
+        "menuValue": "content/images/items/floor/beech.jpg",
+        "usersIncludeFor": [
+          ""
+        ]
+      },
+      {
+        "name": "Walnut",
+        "value": "floor-walnut",
+        "menuValue": "content/images/items/floor/walnut.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Farm Oak",
+        "value": "floor-oak-farm",
+        "menuValue": "content/images/items/floor/oak-farm.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Tiles",
+        "value": "tiles03",
+        "menuValue": "content/images/items/floor/tiles03.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Aspen Oak",
+        "value": "aspen-oak",
+        "menuValue": "content/images/items/floor/aspen-oak.png",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Aster Staggered Oak",
+        "value": "aster-staggered",
+        "menuValue": "content/images/items/floor/aster-staggered.png",
+        "usersIncludeFor": [
+          ""
+        ]
+      },
+      {
+        "name": "Hadley Tiles",
+        "value": "hadley-tiles",
+        "menuValue": "content/images/items/floor/hadley.jpg",
+        "usersIncludeFor": [
+          ""
+        ]
+      },
+      {
+        "name": "Oxford Oak",
+        "value": "oxford",
+        "menuValue": "content/images/items/floor/oxford.png",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Phantom Oak",
+        "value": "phantom",
+        "menuValue": "content/images/items/floor/phantom.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Victorian Oak",
+        "value": "victorian",
+        "menuValue": "content/images/items/floor/victorian.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Westchester Oak",
+        "value": "westchester",
+        "menuValue": "content/images/items/floor/westchester.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Wiltshire English Oak",
+        "value": "wiltshire-english",
+        "menuValue": "content/images/items/floor/wiltshire-english.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Wiltshire Weathered Grey Parquet",
+        "value": "wiltshire-weathered-grey-parquet",
+        "menuValue": "content/images/items/floor/wiltshire-weathered-grey-parquet.jpg",
+        "usersIncludeFor": [
+          ""
+        ]
+      },
+      {
+        "name": "Loft Midnight Oak",
+        "value": "loft-midnight-oak",
+        "menuValue": "content/images/items/floor/loft-midnight-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Loft Dark Grey Oak",
+        "value": "loft-dark-grey",
+        "menuValue": "content/images/items/floor/loft-dark-grey.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Sicilia Oak",
+        "value": "sicilia-oak",
+        "menuValue": "content/images/items/floor/sicilia-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Farm House Dark Oak",
+        "value": "farm-house-dark-oak",
+        "menuValue": "content/images/items/floor/farm-house-dark-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Liguiria Oak",
+        "value": "liguiria-oak",
+        "menuValue": "content/images/items/floor/liguiria-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Rhino Oak",
+        "value": "rhino-oak",
+        "menuValue": "content/images/items/floor/rhino-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Natural Oak",
+        "value": "natural-oak",
+        "menuValue": "content/images/items/floor/natural-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Farm House Light Oak",
+        "value": "farm-house-light-oak",
+        "menuValue": "content/images/items/floor/farm-house-light-oak.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "OutsideLightsOptions": [
+      {
+        "name": null,
+        "value": null,
+        "menuValue": null
+      }
+    ],
+    "WallDownlightOptions": [
+      {
+        "name": null,
+        "value": null,
+        "menuValue": null
+      }
+    ],
+    "RoofFinishes": [
+      {
+        "name": "Corrugated",
+        "value": "corrugated-metal-004-sd",
+        "menuValue": "content/images/items/roof/corrugated.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "EPDM Black",
+        "value": "roof",
+        "menuValue": "content/images/items/roof/epdm.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Terracotta",
+        "value": "roof-terracotta",
+        "menuValue": "content/images/items/roof/terracotta.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Copper",
+        "value": "roof-copper",
+        "menuValue": "content/images/items/roof/copper.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "DeckingFinishes": [
+      {
+        "name": "Hardwood",
+        "value": "deck",
+        "menuValue": "content/images/items/decking/decking.jpg"
+      },
+      {
+        "name": "Treated",
+        "value": "deck/treatedPlanksHorizontal",
+        "menuValue": "content/images/items/decking/treated-planks.jpg"
+      },
+      {
+        "name": "Ivory Wood Grain",
+        "value": "deck/wood-grain/Ivory",
+        "menuValue": "content/images/items/decking/wood_grain_ivory.jpg"
+      },
+      {
+        "name": "Clay Wood Grain",
+        "value": "deck/wood-grain/Clay",
+        "menuValue": "content/images/items/decking/wood_grain_clay.jpg"
+      },
+      {
+        "name": "Fawn Wood Grain",
+        "value": "deck/wood-grain/Fawn",
+        "menuValue": "content/images/items/decking/wood_grain_fawn.jpg"
+      },
+      {
+        "name": "Natural Wood Grain",
+        "value": "deck/wood-grain/Natural",
+        "menuValue": "content/images/items/decking/wood_grain_natural.jpg"
+      },
+      {
+        "name": "Agate Wood Grain",
+        "value": "deck/wood-grain/Agate",
+        "menuValue": "content/images/items/decking/wood_grain_agate.jpg"
+      },
+      {
+        "name": "Pewter Wood Grain",
+        "value": "deck/wood-grain/Pewter",
+        "menuValue": "content/images/items/decking/wood_grain_pewter.jpg"
+      },
+      {
+        "name": "Anthracite Wood Grain",
+        "value": "deck/wood-grain/Anthracite",
+        "menuValue": "content/images/items/decking/wood_grain_anthracite.jpg"
+      },
+      {
+        "name": "Aura",
+        "value": "deck/wood-grain/Aura",
+        "menuValue": "content/images/items/decking/wood_grain_aura.jpg"
+      },
+      {
+        "name": "Slate",
+        "value": "deck/wood-grain/Slate",
+        "menuValue": "content/images/items/decking/wood_grain_slate.jpg"
+      },
+      {
+        "name": "Mocca",
+        "value": "deck/wood-grain/Mocca",
+        "menuValue": "content/images/items/decking/wood_grain_mocca.jpg"
+      },
+      {
+        "name": "Ice Grey",
+        "value": "deck/wood-grain/IceGrey",
+        "menuValue": "content/images/items/decking/wood_grain_icegrey.jpg"
+      },
+      {
+        "name": "Cool Sand",
+        "value": "deck/wood-grain/CoolSand",
+        "menuValue": "content/images/items/decking/wood_grain_coolsand.jpg"
+      }
+    ],
+    "MasisaCabinetFinishes": [
+      {
+        "name": "White",
+        "value": "Masisa/Blanco-Liso",
+        "menuValue": "#efefef"
+      },
+      {
+        "name": "Beach",
+        "value": "Masisa/Santorini",
+        "menuValue": "content/images/items/cabinets/Masisa_Santorini_2494x3147.jpg"
+      },
+      {
+        "name": "Elm",
+        "value": "Abet-Laminati/Olmo-Perlato",
+        "menuValue": "content/images/items/cabinets/HPL_Collection_Legni_Light_Olmo_Perlato_1394.jpg"
+      },
+      {
+        "name": "Oak",
+        "value": "Masisa/Olmo-Alpino",
+        "menuValue": "content/images/items/cabinets/Masisa_Olmo_Alpino_alta.jpg"
+      },
+      {
+        "name": "Teak",
+        "value": "Masisa/Teca-Italia",
+        "menuValue": "content/images/items/cabinets/Masisa_Teca_Italia_alta.jpg"
+      },
+      {
+        "name": "Cream",
+        "value": "Kitchen/Cream",
+        "menuValue": "#fffdd0"
+      },
+      {
+        "name": "Gray",
+        "value": "Kitchen/Gray",
+        "menuValue": "#8d9091"
+      },
+      {
+        "name": "Black",
+        "value": "Kitchen/Black",
+        "menuValue": "#424242"
+      },
+      {
+        "name": "Green",
+        "value": "Kitchen/Green",
+        "menuValue": "#b9ceac"
+      },
+      {
+        "name": "Blue",
+        "value": "Kitchen/Blue",
+        "menuValue": "#4d668f"
+      },
+      {
+        "name": "Silver Ash",
+        "value": "slatted/ash",
+        "menuValue": "content/images/items/claddings/SilverAshVertical.png"
+      },
+      {
+        "name": "Midnight Charcoal",
+        "value": "slatted/midnight",
+        "menuValue": "content/images/items/claddings/MidnightCharcoalVertical.png"
+      },
+      {
+        "name": "Smoked Oak",
+        "value": "slatted/spiced-oak",
+        "menuValue": "content/images/items/claddings/SmoakedOakVertical.png"
+      },
+      {
+        "name": "Natural Oak",
+        "value": "slatted/natural-oak",
+        "menuValue": "content/images/items/claddings/NaturalOak-vertical.png"
+      },
+      {
+        "name": "Light Oak",
+        "value": "slatted/light-oak",
+        "menuValue": "content/images/items/claddings/LightOak-vertical.png"
+      },
+      {
+        "name": "Silver Grey",
+        "value": "slatted/silver-grey-vertical",
+        "menuValue": "content/images/items/claddings/slatted/silver-grey-vertical.jpg"
+      },
+      {
+        "name": "Charcoal",
+        "value": "slatted/charcoal-vertical",
+        "menuValue": "content/images/items/claddings/slatted/charcoal-vertical.jpg"
+      },
+      {
+        "name": "Coffee",
+        "value": "slatted/coffee-vertical",
+        "menuValue": "content/images/items/claddings/slatted/coffee-vertical.jpg"
+      },
+      {
+        "name": "Teak",
+        "value": "slatted/teak-vertical",
+        "menuValue": "content/images/items/claddings/slatted/teak-vertical.jpg"
+      },
+      {
+        "name": "Stone Grey",
+        "value": "slatted/stone-grey-vertical",
+        "menuValue": "content/images/items/claddings/slatted/stone-grey-vertical.jpg"
+      },
+      {
+        "name": "Walnut",
+        "value": "slatted/walnut-vertical",
+        "menuValue": "content/images/items/claddings/slatted/walnut-vertical.jpg"
+      }
+    ],
+    "WorktopFinishes": [
+      {
+        "name": "Rocks Alicante",
+        "value": "Rocks/Alicante",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rock_Alicante.jpg"
+      },
+      {
+        "name": "Rocks Ardesia",
+        "value": "Rocks/Ardesia",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Ardesia_1455.jpg"
+      },
+      {
+        "name": "Rocks Royale",
+        "value": "Rocks/Royale",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Royale_1456.jpg"
+      },
+      {
+        "name": "Rocks Statuario",
+        "value": "Rocks/Statuario",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Statuario_1459.jpg"
+      },
+      {
+        "name": "Rocks Greige",
+        "value": "Rocks/Greige",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Tivoli_Greige_547.jpg"
+      },
+      {
+        "name": "Rocks Urban",
+        "value": "Rocks/Urban-Style",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Urban_Style_1451_1.jpg"
+      },
+      {
+        "name": "Rocks Zement",
+        "value": "Rocks/Zement",
+        "menuValue": "content/images/items/worktops/HPL_Collection_Rocks_Zement_1460_2.jpg"
+      },
+      {
+        "name": "Graniot Negro",
+        "value": "Graniot/Negro-San",
+        "menuValue": "content/images/items/worktops/GRANITO-NEGRO-SAN-GABRIEL-PREMIUM_9429.jpg"
+      },
+      {
+        "name": "Granito Gris",
+        "value": "Granito/Gris-Mara",
+        "menuValue": "content/images/items/worktops/Granito-Gris-Mara.jpg"
+      },
+      {
+        "name": "Apple Tree",
+        "value": "worktop",
+        "menuValue": "content/images/items/worktops/worktop.jpg"
+      }
+    ],
+    "HandleTypes": [
+      {
+        "name": "Concealed",
+        "value": "Concealed",
+        "menuValue": "#fafafa"
+      },
+      {
+        "name": "Bar",
+        "value": "Bar",
+        "menuValue": "content/images/items/handles/Bar.png"
+      },
+      {
+        "name": "Knob",
+        "value": "Knob",
+        "menuValue": "content/images/items/handles/Knob.png"
+      },
+      {
+        "name": "Mushroom",
+        "value": "Mushroom",
+        "menuValue": "content/images/items/handles/Mushroom.png"
+      }
+    ],
+    "BlindsFinishes": [
+      {
+        "name": "No Blinds",
+        "value": "Blinds",
+        "menuValue": "#FCFCFC"
+      },
+      {
+        "name": "White",
+        "value": "Blinds",
+        "menuValue": "#F3F3F1"
+      },
+      {
+        "name": "Silver",
+        "value": "Blinds",
+        "menuValue": "#A8A99E"
+      },
+      {
+        "name": "Brown",
+        "value": "Blinds",
+        "menuValue": "#4E3524"
+      },
+      {
+        "name": "Grey",
+        "value": "Blinds",
+        "menuValue": "#373A36"
+      }
+    ],
+    "FrameStructureFinishes": [
+      {
+        "name": "Oyster White - 1013",
+        "value": "RAL1013",
+        "menuValue": "#EAE6CA"
+      },
+      {
+        "name": "Signal Red - 3001",
+        "value": "RAL3001",
+        "menuValue": "#A52019"
+      },
+      {
+        "name": "Silver Grey - 7004",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0"
+      },
+      {
+        "name": "Slate Grey - 7015",
+        "value": "RAL7015",
+        "menuValue": "#51565C"
+      },
+      {
+        "name": "Graphite Black - 9011",
+        "value": "RAL9011",
+        "menuValue": "#27292B"
+      }
+    ],
+    "BarTableBaseFinishes": [
+      {
+        "name": "White",
+        "value": "Masisa/Blanco-Liso",
+        "menuValue": "#efefef"
+      },
+      {
+        "name": "Beach",
+        "value": "Masisa/Santorini",
+        "menuValue": "content/images/items/cabinets/Masisa_Santorini_2494x3147.jpg"
+      },
+      {
+        "name": "Elm",
+        "value": "Abet-Laminati/Olmo-Perlato",
+        "menuValue": "content/images/items/cabinets/HPL_Collection_Legni_Light_Olmo_Perlato_1394.jpg"
+      },
+      {
+        "name": "Oak",
+        "value": "Masisa/Olmo-Alpino",
+        "menuValue": "content/images/items/cabinets/Masisa_Olmo_Alpino_alta.jpg"
+      },
+      {
+        "name": "Teak",
+        "value": "Masisa/Teca-Italia",
+        "menuValue": "content/images/items/cabinets/Masisa_Teca_Italia_alta.jpg"
+      },
+      {
+        "name": "Cream",
+        "value": "Kitchen/Cream",
+        "menuValue": "#fffdd0"
+      },
+      {
+        "name": "Gray",
+        "value": "Kitchen/Gray",
+        "menuValue": "#8d9091"
+      },
+      {
+        "name": "Black",
+        "value": "Kitchen/Black",
+        "menuValue": "#424242"
+      },
+      {
+        "name": "Green",
+        "value": "Kitchen/Green",
+        "menuValue": "#b9ceac"
+      },
+      {
+        "name": "Blue",
+        "value": "Kitchen/Blue",
+        "menuValue": "#4d668f"
+      },
+      {
+        "name": "Silver Ash",
+        "value": "slatted/ash",
+        "menuValue": "content/images/items/claddings/SilverAshVertical.png"
+      },
+      {
+        "name": "Midnight Charcoal",
+        "value": "slatted/midnight",
+        "menuValue": "content/images/items/claddings/MidnightCharcoalVertical.png"
+      },
+      {
+        "name": "Smoked Oak",
+        "value": "slatted/spiced-oak",
+        "menuValue": "content/images/items/claddings/SmoakedOakVertical.png"
+      },
+      {
+        "name": "Natural Oak",
+        "value": "slatted/natural-oak",
+        "menuValue": "content/images/items/claddings/NaturalOak-vertical.png"
+      },
+      {
+        "name": "Light Oak",
+        "value": "slatted/light-oak",
+        "menuValue": "content/images/items/claddings/LightOak-vertical.png"
+      },
+      {
+        "name": "Silver Grey",
+        "value": "slatted/silver-grey-vertical",
+        "menuValue": "content/images/items/claddings/slatted/silver-grey-vertical.jpg"
+      },
+      {
+        "name": "Charcoal",
+        "value": "slatted/charcoal-vertical",
+        "menuValue": "content/images/items/claddings/slatted/charcoal-vertical.jpg"
+      },
+      {
+        "name": "Coffee",
+        "value": "slatted/coffee-vertical",
+        "menuValue": "content/images/items/claddings/slatted/coffee-vertical.jpg"
+      },
+      {
+        "name": "Teak",
+        "value": "slatted/teak-vertical",
+        "menuValue": "content/images/items/claddings/slatted/teak-vertical.jpg"
+      },
+      {
+        "name": "Stone Grey",
+        "value": "slatted/stone-grey-vertical",
+        "menuValue": "content/images/items/claddings/slatted/stone-grey-vertical.jpg"
+      },
+      {
+        "name": "Walnut",
+        "value": "slatted/walnut-vertical",
+        "menuValue": "content/images/items/claddings/slatted/walnut-vertical.jpg"
+      }
+    ],
+    "TrimsOptions": [
+      {
+        "name": "No Vertical Trims",
+        "value": null,
+        "menuValue": "#efefef",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Vertical Trims",
+        "value": "Trims",
+        "menuValue": "#4fad34",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "FridgeFinishes": [
+      {
+        "name": "White",
+        "value": "fridge-white",
+        "menuValue": "#f2f2f2"
+      },
+      {
+        "name": "Grey",
+        "value": "fridge-grey",
+        "menuValue": "#595959"
+      }
+    ],
+    "ShedFinishes": [
+      {
+        "name": "White",
+        "value": "shed-color-ecd7a9",
+        "menuValue": "#ecd7a9"
+      },
+      {
+        "name": "Black",
+        "value": "shed-color-084a39",
+        "menuValue": "#084a39"
+      },
+      {
+        "name": "Gold",
+        "value": "shed-color-263b50",
+        "menuValue": "#263b50"
+      },
+      {
+        "name": "Chrome",
+        "value": "shed-color-54362d",
+        "menuValue": "#54362d"
+      }
+    ],
+    "CubicleFinishes": [
+      {
+        "name": "White Marble",
+        "value": "cubicle/WhiteMarble",
+        "menuValue": "content/images/items/cubicle/WhiteMarble.jpg"
+      },
+      {
+        "name": "White Concrete",
+        "value": "cubicle/WhiteConcrete",
+        "menuValue": "content/images/items/cubicle/WhiteConcrete.jpg"
+      },
+      {
+        "name": "Pergamon",
+        "value": "cubicle/Pergamon",
+        "menuValue": "content/images/items/cubicle/Pergamon.jpg"
+      },
+      {
+        "name": "White",
+        "value": "cubicle/WhiteTiles",
+        "menuValue": "#e3e3e3"
+      },
+      {
+        "name": "Cream",
+        "value": "Kitchen/Cream",
+        "menuValue": "#fffdd0"
+      },
+      {
+        "name": "Gray",
+        "value": "Kitchen/Gray",
+        "menuValue": "#8d9091"
+      },
+      {
+        "name": "Black",
+        "value": "Kitchen/Black",
+        "menuValue": "#424242"
+      },
+      {
+        "name": "Green",
+        "value": "Kitchen/Green",
+        "menuValue": "#b9ceac"
+      },
+      {
+        "name": "Blue",
+        "value": "Kitchen/Blue",
+        "menuValue": "#4d668f"
+      }
+    ],
+    "InternalDoorFinishes": [
+      {
+        "name": "Oak",
+        "value": "internal-door-oak",
+        "menuValue": "content/images/items/wood/plywood.jpg"
+      },
+      {
+        "name": "White",
+        "value": "internal-door-white",
+        "menuValue": "#f6f6f6"
+      }
+    ],
+    "SaunaFinishes": [
+      {
+        "name": "Tongue And Groove",
+        "value": "sauna-tongue-and-groove-walls",
+        "menuValue": "content/images/items/claddings/Tongue-groove.jpg"
+      },
+      {
+        "name": "Alder Wood",
+        "value": "sauna-alder-wood-walls",
+        "menuValue": "content/images/items/claddings/Alder-wood.jpg"
+      }
+    ],
+    "BasicColorFinishes": [
+      {
+        "name": "White",
+        "value": "#e3e3e3",
+        "menuValue": "#e3e3e3"
+      },
+      {
+        "name": "Green",
+        "value": "#b9ceac",
+        "menuValue": "#b9ceac"
+      },
+      {
+        "name": "Gray",
+        "value": "#8d9090",
+        "menuValue": "#8d9090"
+      },
+      {
+        "name": "Black",
+        "value": "#424242",
+        "menuValue": "#424242"
+      }
+    ],
+    "PergolaFinishes": [
+      {
+        "name": "Anthracite",
+        "value": "RAL7016",
+        "menuValue": "#383e42",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pebble Grey",
+        "value": "RAL7032",
+        "menuValue": "#B8B8A7",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Signal Black",
+        "value": "RAL9004",
+        "menuValue": "#2B2B2C",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Jet Black",
+        "value": "RAL9005",
+        "menuValue": "#0A0A0A",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Graphite",
+        "value": "RAL9011",
+        "menuValue": "#27292B",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Traffic White",
+        "value": "RAL9016",
+        "menuValue": "#F6FAF4",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Fawn Brown",
+        "value": "RAL8007",
+        "menuValue": "#70462B",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Oyster White",
+        "value": "RAL1013",
+        "menuValue": "#EAE6CA",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Saffron Yellow",
+        "value": "RAL1017",
+        "menuValue": "#f6a950",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Pearl Blue",
+        "value": "RAL5025",
+        "menuValue": "#21697c",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Light Green",
+        "value": "RAL6019",
+        "menuValue": "#b9ceac",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Signal Red",
+        "value": "RAL3001",
+        "menuValue": "#A3171A",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Signal Grey",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Slate Grey",
+        "value": "RAL7015",
+        "menuValue": "#51565C",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Sapphire Blue",
+        "value": "RAL5003",
+        "menuValue": "#36465e",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "SedumRoof": [
+      {
+        "name": "None",
+        "value": "",
+        "menuValue": "#fafafa",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Green roof",
+        "value": "GreenRoof",
+        "menuValue": "content/images/items/misc/SedumRoof.jpg",
+        "usersExcludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "PergolaRoofOptions": [
+      {
+        "name": "Blades Roof",
+        "value": "RoofType.BladesVertical",
+        "menuValue": "#F5F5F5",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      },
+      {
+        "name": "Glazed Roof",
+        "value": "RoofType.Glass",
+        "menuValue": "#4FAD34",
+        "usersIncludeFor": [
+          "Pergola"
+        ]
+      }
+    ],
+    "WindscreenFinishes": [
+      {
+        "name": "Pebble",
+        "value": "SCM31",
+        "menuValue": "content/images/items/windscreen/SCM31.png"
+      },
+      {
+        "name": "Gold",
+        "value": "SCM73",
+        "menuValue": "content/images/items/windscreen/SCM73.jpg"
+      },
+      {
+        "name": "Grey",
+        "value": "SCM33",
+        "menuValue": "content/images/items/windscreen/SCM33.jpg"
+      },
+      {
+        "name": "Black",
+        "value": "SC3030",
+        "menuValue": "content/images/items/windscreen/SC3030.jpg"
+      },
+      {
+        "name": "White",
+        "value": "N0207",
+        "menuValue": "content/images/items/windscreen/N0207.jpg"
+      }
+    ],
+    "PanelsFinishes": [
+      {
+        "name": "Anthracite",
+        "value": "RAL7016",
+        "menuValue": "#383e42"
+      },
+      {
+        "name": "Pebble Grey",
+        "value": "RAL7032",
+        "menuValue": "#B8B8A7"
+      },
+      {
+        "name": "Fawn Brown",
+        "value": "RAL8007",
+        "menuValue": "#70462B"
+      },
+      {
+        "name": "Signal Grey",
+        "value": "RAL7004",
+        "menuValue": "#9D9FA0"
+      },
+      {
+        "name": "Slate Grey",
+        "value": "RAL7015",
+        "menuValue": "#51565C"
+      }
+    ]
+  },
+  "saveForm": [
+    {
+      "name": "firstName",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "name": "lastName",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "name": "email",
+      "required": true,
+      "type": "email"
+    },
+    {
+      "name": "phone",
+      "required": true,
+      "type": "tel"
+    },
+    {
+      "name": "postcode",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "name": "message",
+      "required": false,
+      "type": "textarea"
+    }
+  ]
+}

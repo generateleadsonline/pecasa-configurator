@@ -20,3 +20,9 @@ The standard four-page example and five stress variants were checked after corre
 - Page size is A4 throughout; document titles, references, page numbering, footers and source wording remain consistent.
 
 The updated [example](../docs/examples/pecasa-example-design-pack.pdf) and [four-page preview](live-pdf-pages.png) are included alongside the source. Private stress fixtures and receipts are excluded from Git.
+
+## Fresh production verification
+
+The corrected generator was published in [commit d516c4d4](https://github.com/generateleadsonline/pecasa-configurator/commit/d516c4d4ff22e319a8276661c5eff164b2d5838c) and [Netlify deployment 6acb81bf](https://app.netlify.com/projects/pecasa-garden-room-configurator/deploys/6acb81bf9f486c0f057dfcdc). A clearly marked synthetic submission on the production origin returned HTTP 201; its PDF downloaded with HTTP 200 in about 3.0 seconds and contained the exact accepted scene JPEG. A request without a saved enquiry token returned HTTP 401.
+
+All four fresh production pages were rendered and visually reviewed, bringing the total to 28 checked pages. Checks confirmed A4 page sizes, both embedded Manrope font streams, the safe heading for an unsupported name, the corrected rectangular plan note, the £28,300 VAT-inclusive guide and matching specification. Both public reopen links restore the exact submitted design. The QR code was decoded from the actual production PDF at 300 dpi and also restored that design on the live origin. The PDF response remained private and non-cacheable. No material layout issues were found; private receipts and access tokens remain excluded from this report and Git.

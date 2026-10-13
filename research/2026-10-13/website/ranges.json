@@ -1,0 +1,1157 @@
+{
+  "date_checked": "2026-10-13",
+  "summary": "No style has a dedicated product page, strapline or written description anywhere on www.pecasa.co.uk. Style information exists in only three places: (1) the /our-products/ cards (10 of the 14 styles; title, dimensions, height, \"From\" price, image), (2) the 3D configurator at /design-your-building/ (all 14; name, thumbnail, default size, size limits, displayed estimate), and (3) page 10 of the brochure PDF (8 styles; name and 3D render only). Standard specification is published company-wide, not per style.",
+  "company_wide_standard_spec_sources": [
+    {
+      "url": "https://www.pecasa.co.uk/",
+      "exact": "SIP construction, Radix ground screw foundations, an EPDM roof, Cortizo aluminium doors and windows, external cladding, plasterboard walls with a tape-and-joint finish, 12 mm premium laminate flooring, and lighting and electrics designed to your requirements. Site clearance, electrical supply connections to the building, water and drainage connections, skips and parking permits are priced separately."
+    },
+    {
+      "url": "https://www.pecasa.co.uk/the-pecasa-standard/",
+      "exact_summary": "10 features \"included in every build\": ground screw foundations; SIPs; EPDM rubber roofing; British-made composite fascias; tape-and-joint walls; bespoke LED lighting; luxury composite flooring; \"Wi-Fi Smart AC Installation – Heating or A/C Included\"; aluminium French or bi-fold doors; British-made composite decking. CONFLICTS with homepage — see CONFLICTS.md."
+    },
+    {
+      "url": "https://www.pecasa.co.uk/garden-rooms-london/",
+      "exact_summary": "What's included as standard: SIP construction (walls, roof & floor); Ground screw foundation system; EPDM rubber roof; High performance windows & doors; External cladding (choice of finishes); Electrical & data (internal fittings); Tape-and-joint internal finish; Decoration (painting & lighting)."
+    }
+  ],
+  "styles": [
+    {
+      "style": "Levno",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA LEVNO CLASSIC 16m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2450,
+          2700
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "4.8m x 3.4m. Height 2.5m.",
+        "width_m": 4.8,
+        "depth_m": 3.4,
+        "height_m": 2.5,
+        "area_in_title": "16 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4.8,
+        "depth_m": 3.4,
+        "height_m": 2.7,
+        "floor_outline_extent_mm": {
+          "x": 4800,
+          "y": 3400
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap03",
+          "shiplap03",
+          "cedarPlanks",
+          "shiplap03"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "201"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Levno, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £25,457 (inc. Vat)",
+          "price_gbp": 25457,
+          "size": "4.8m x 3.4m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £28,109 (inc. VAT)",
+          "price_gbp": 28109,
+          "size": "4.8 × 3.4 m, height 2.7 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R201.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-LEVNO-CLASSIC-16m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-LEVNO-CLASSIC-16m2-300x179.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Lenvo\")"
+      }
+    },
+    {
+      "style": "Apexo",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA APEXO CLASSIC 15m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2350,
+          2507,
+          2561,
+          2617
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "5m x 3.05m. Hight 2.5m.",
+        "width_m": 5.0,
+        "depth_m": 3.05,
+        "height_m": 2.5,
+        "area_in_title": "15 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 5,
+        "depth_m": 3.05,
+        "height_m": 2.616,
+        "floor_outline_extent_mm": {
+          "x": 5000,
+          "y": 3050
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap02",
+          "shiplap02",
+          "shiplap02",
+          "cedarPlanks",
+          "cedarPlanks",
+          "shiplap02",
+          "shiplap02",
+          "shiplap02"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "202"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 3700,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Apexo, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £32,345 (inc. Vat)",
+          "price_gbp": 32345,
+          "size": "5m x 3.05m. Hight 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £35,423 (inc. VAT)",
+          "price_gbp": 35423,
+          "size": "5 × 3.05 m, height 2.616 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R202.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-APEXO-CLASSIC-15m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-APEXO-CLASSIC-15m2-300x161.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Apexo\")"
+      }
+    },
+    {
+      "style": "Pergola",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "not found (not listed on /our-products/)",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "not found (configurator label only: \"Pergola\")",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "RoofType.BladesVertical",
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": "not found on website (configurator default only)",
+      "configurator_default": {
+        "width_m": 4,
+        "depth_m": 3,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 4000,
+          "y": 3000
+        },
+        "default_exterior_finishes_keys": [
+          "RAL7015",
+          "RAL7015",
+          "RAL7015",
+          "RAL7015"
+        ],
+        "default_roof_finish_key": "RAL7004",
+        "template_id": "222"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 16000,
+          "minDepth": 2000,
+          "maxDepth": 10000,
+          "minHeight": 2000,
+          "maxHeights": [
+            {
+              "roofType": "RoofType.Flat",
+              "height": 3000
+            },
+            {
+              "roofType": "RoofType.Pitched",
+              "height": 4000
+            },
+            {
+              "roofType": "RoofType.BladesVertical",
+              "height": 3000
+            },
+            {
+              "roofType": "RoofType.BladesHorizontal",
+              "height": 3000
+            },
+            {
+              "roofType": "RoofType.Glass",
+              "height": 3000
+            }
+          ],
+          "resizeStep": 100,
+          "resizeStepHeight": 10
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Pergola, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £9,832 (inc. VAT)",
+          "price_gbp": 9832,
+          "size": "4 × 3 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/Pergola.png",
+        "our_products_card": "not found",
+        "brochure_render": "not in brochure"
+      }
+    },
+    {
+      "style": "Portal",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA PORTAL CLASSIC 15m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2300,
+          2498,
+          2567
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "4.6M x 3.3m. Height 2.5m.",
+        "width_m": 4.6,
+        "depth_m": 3.3,
+        "height_m": 2.5,
+        "area_in_title": "15 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4,
+        "depth_m": 3.3,
+        "height_m": 2.5667,
+        "floor_outline_extent_mm": {
+          "x": 4000,
+          "y": 3300
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap01",
+          "shiplap01",
+          "cedarPlanks",
+          "shiplap01",
+          "shiplap01",
+          "shiplap01"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "203"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2700,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Portal, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £33.200 (inc. Vat)",
+          "price_gbp": 33200,
+          "size": "4.6M x 3.3m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £29,979 (inc. VAT)",
+          "price_gbp": 29979,
+          "size": "4 × 3.3 m, height 2.5667 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R203.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-PORTAL-CLASSIC-15m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-PORTAL-CLASSIC-15m2-300x168.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Portal\")"
+      }
+    },
+    {
+      "style": "Cabano",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA CABANO CLASSIC 21m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "RoofType.Pitched",
+        "configurator_default_wall_top_heights_mm": [
+          3300
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "5.1m x 4.1m. Height 3.32m.",
+        "width_m": 5.1,
+        "depth_m": 4.1,
+        "height_m": 3.32,
+        "area_in_title": "21 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4.2,
+        "depth_m": 4,
+        "height_m": 3.3,
+        "floor_outline_extent_mm": {
+          "x": 4200,
+          "y": 4000
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap02",
+          "shiplap02",
+          "shiplap02",
+          "shiplap02"
+        ],
+        "default_roof_finish_key": "roof-copper",
+        "template_id": "922"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Cabano, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £34.559 (inc. Vat)",
+          "price_gbp": 34559,
+          "size": "5.1m x 4.1m. Height 3.32m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £35,977 (inc. VAT)",
+          "price_gbp": 35977,
+          "size": "4.2 × 4 m, height 3.3 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R922.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CABANO-CLASSIC-21m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CABANO-CLASSIC-21m2-300x192.webp"
+        ],
+        "brochure_render": "not in brochure"
+      }
+    },
+    {
+      "style": "Inspiro",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA NSPIRO CLASSIC 27m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "RoofType.Pitched",
+        "configurator_default_wall_top_heights_mm": [
+          3270
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "6.1m x 4.5m. Height 3.27m.",
+        "width_m": 6.1,
+        "depth_m": 4.5,
+        "height_m": 3.27,
+        "area_in_title": "27 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4.6,
+        "depth_m": 3.4,
+        "height_m": 3.27,
+        "floor_outline_extent_mm": {
+          "x": 4600,
+          "y": 3400
+        },
+        "default_exterior_finishes_keys": [
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal"
+        ],
+        "default_roof_finish_key": "roof",
+        "template_id": "001-Pitch"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Inspiro, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £38.456 (inc. Vat)",
+          "price_gbp": 38456,
+          "size": "6.1m x 4.5m. Height 3.27m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £28,906 (inc. VAT)",
+          "price_gbp": 28906,
+          "size": "4.6 × 3.4 m, height 3.27 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R001-Pitch.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-NSPIRO-CLASSIC-27m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-NSPIRO-CLASSIC-27m2-300x173.webp"
+        ],
+        "brochure_render": "not in brochure"
+      }
+    },
+    {
+      "style": "Quba",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "not found (not listed on /our-products/)",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "not found (configurator label only: \"Quba\")",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": "not found on website (configurator default only)",
+      "configurator_default": {
+        "width_m": 4,
+        "depth_m": 2.7,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 4000,
+          "y": 2700
+        },
+        "default_exterior_finishes_keys": [
+          "renderWhite",
+          "renderWhite",
+          "renderWhite",
+          "renderWhite"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "009"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Quba, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £29,964 (inc. VAT)",
+          "price_gbp": 29964,
+          "size": "4 × 2.7 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R009.png",
+        "our_products_card": "not found",
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Quba\")"
+      }
+    },
+    {
+      "style": "Roko",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA ROKO CLASSIC 19m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2750,
+          3000
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "6m x 3.25m. Height 2.5m.",
+        "width_m": 6.0,
+        "depth_m": 3.25,
+        "height_m": 2.5,
+        "area_in_title": "19 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 6,
+        "depth_m": 3.25,
+        "height_m": 3,
+        "floor_outline_extent_mm": {
+          "x": 6000,
+          "y": 3250
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap01",
+          "shiplap02",
+          "shiplap02",
+          "shiplap01"
+        ],
+        "default_roof_finish_key": "roof",
+        "template_id": "204"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Roko, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £35,670 (inc. Vat)",
+          "price_gbp": 35670,
+          "size": "6m x 3.25m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £31,019 (inc. VAT)",
+          "price_gbp": 31019,
+          "size": "6 × 3.25 m, height 3 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R204.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ROKO-CLASSIC-19m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ROKO-CLASSIC-19m2-300x143.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Roko\")"
+      }
+    },
+    {
+      "style": "Ofiko",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA OFIKO CLASSIC 24.5m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "6.8m x 3.6m. Height 2.5m.",
+        "width_m": 6.8,
+        "depth_m": 3.6,
+        "height_m": 2.5,
+        "area_in_title": "24.5 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 3.7,
+        "depth_m": 2.4,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 3700,
+          "y": 2400
+        },
+        "default_exterior_finishes_keys": [
+          "renderWhite",
+          "renderWhite",
+          "renderWhite",
+          "renderWhite"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "003"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Ofiko, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £31,157 (inc. Vat)",
+          "price_gbp": 31157,
+          "size": "6.8m x 3.6m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £27,280 (inc. VAT)",
+          "price_gbp": 27280,
+          "size": "3.7 × 2.4 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R003.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-OFIKO-CLASSIC-24.5m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-OFIKO-CLASSIC-24.5m2-300x170.webp"
+        ],
+        "brochure_render": "not in brochure"
+      }
+    },
+    {
+      "style": "Ecke",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA ECKE CLASSIC 8m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "3.3m x 2.4m. Height 2.5m.",
+        "width_m": 3.3,
+        "depth_m": 2.4,
+        "height_m": 2.5,
+        "area_in_title": "8 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 3.3,
+        "depth_m": 2.4,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 3300,
+          "y": 2400
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap01",
+          "cedarPlanksHorizontal",
+          "cedarPlanksHorizontal",
+          "shiplap01"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "002"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Ecke, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £25,500 (inc. Vat)",
+          "price_gbp": 25500,
+          "size": "3.3m x 2.4m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £26,639 (inc. VAT)",
+          "price_gbp": 26639,
+          "size": "3.3 × 2.4 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R002.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ECKE-CLASSIC-8m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ECKE-CLASSIC-8m2-300x200.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Ecke\")"
+      }
+    },
+    {
+      "style": "Edge",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA EDGE CLASSIC 20m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": "not set in configurator default (no roofType key)",
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "5.2m x 3.7m. Height 2.5m.",
+        "width_m": 5.2,
+        "depth_m": 3.7,
+        "height_m": 2.5,
+        "area_in_title": "20 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4.1,
+        "depth_m": 3.4,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 4100,
+          "y": 3400
+        },
+        "default_exterior_finishes_keys": [
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks"
+        ],
+        "default_roof_finish_key": null,
+        "template_id": "004"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Edge, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £30,250 (inc Vat)",
+          "price_gbp": 30250,
+          "size": "5.2m x 3.7m. Height 2.5m.",
+          "vat_wording": "inc Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £27,043 (inc. VAT)",
+          "price_gbp": 27043,
+          "size": "4.1 × 3.4 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R004.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-EDGE-CLASSIC-20m2.png",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-EDGE-CLASSIC-20m2-300x160.png",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-EDGE-CLASSIC-20m2-600x320.png"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"Edge\")"
+      }
+    },
+    {
+      "style": "L-Shape",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "https://www.pecasa.co.uk/our-products/",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "PECASA L-SHAPE CLASSIC 16m2",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": 1,
+        "configurator_default_wall_top_heights_mm": [
+          2385,
+          2465,
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": {
+        "exact": "4.8m x 3.6m. Height 2.5m.",
+        "width_m": 4.8,
+        "depth_m": 3.6,
+        "height_m": 2.5,
+        "area_in_title": "16 m2",
+        "external_or_internal": "not stated",
+        "source": "https://www.pecasa.co.uk/our-products/"
+      },
+      "configurator_default": {
+        "width_m": 4,
+        "depth_m": 3.3,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 4000,
+          "y": 3300
+        },
+        "default_exterior_finishes_keys": [
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks"
+        ],
+        "default_roof_finish_key": "roof",
+        "template_id": "208"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=L-Shape, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/our-products/",
+          "exact": "From £34.099 (inc. Vat)",
+          "price_gbp": 34099,
+          "size": "4.8m x 3.6m. Height 2.5m.",
+          "vat_wording": "inc. Vat"
+        },
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £28,207 (inc. VAT)",
+          "price_gbp": 28207,
+          "size": "4 × 3.3 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R208.png",
+        "our_products_card": [
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-L-SHAPE-CLASSIC-16m2.webp",
+          "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-L-SHAPE-CLASSIC-16m2-300x179.webp"
+        ],
+        "brochure_render": "https://www.pecasa.co.uk/wp-content/uploads/2025/05/final-brochure.pdf (page 10, labelled \"L-Shape\")"
+      }
+    },
+    {
+      "style": "Veranda",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "not found (not listed on /our-products/)",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "not found (configurator label only: \"Veranda\")",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": 2,
+        "configurator_default_wall_top_heights_mm": [
+          3250
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": "not found on website (configurator default only)",
+      "configurator_default": {
+        "width_m": 3,
+        "depth_m": 3,
+        "height_m": 3.25,
+        "floor_outline_extent_mm": {
+          "x": 3000,
+          "y": 3000
+        },
+        "default_exterior_finishes_keys": [
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks",
+          "cedarPlanks"
+        ],
+        "default_roof_finish_key": "roof",
+        "template_id": "207"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 16000,
+          "minDepth": 2000,
+          "maxDepth": 10000,
+          "minHeight": 2450,
+          "maxHeights": [
+            {
+              "roofType": "RoofType.Flat",
+              "height": 3000
+            },
+            {
+              "roofType": "RoofType.Pitched",
+              "height": 4000
+            }
+          ],
+          "resizeStep": 100,
+          "resizeStepHeight": 10
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Veranda, admin=false]"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £35,434 (inc. VAT)",
+          "price_gbp": 35434,
+          "size": "3 × 3 m, height 3.25 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R207.png",
+        "our_products_card": "not found",
+        "brochure_render": "not in brochure"
+      }
+    },
+    {
+      "style": "Angle",
+      "product_page_url": "not found (no dedicated page; sitemap, WP REST pages/posts/case-studies and site search checked)",
+      "listing_url": "not found (not listed on /our-products/)",
+      "configurator_url": "https://www.pecasa.co.uk/design-your-building/",
+      "marketing_name": "not found (configurator label only: \"Angle\")",
+      "strapline": "not found",
+      "description": "not found",
+      "roof_type": {
+        "website_text": "not stated",
+        "configurator_data": 1,
+        "configurator_default_wall_top_heights_mm": [
+          2500
+        ],
+        "note": "Configurator Roof tab offers \"Flat\" and \"Pitched\" roof-type tiles; Pergola uses louvre \"Blades\" roof types. Numeric roofType values (1, 2) are unlabelled in the public data."
+      },
+      "stated_dimensions": "not found on website (configurator default only)",
+      "configurator_default": {
+        "width_m": 4.5,
+        "depth_m": 3,
+        "height_m": 2.5,
+        "floor_outline_extent_mm": {
+          "x": 4500,
+          "y": 3000
+        },
+        "default_exterior_finishes_keys": [
+          "shiplap01",
+          "shiplap01",
+          "shiplap01",
+          "shiplap01"
+        ],
+        "default_roof_finish_key": "roof",
+        "template_id": "215"
+      },
+      "available_sizes": {
+        "website_text": "not stated per style (\"Buildings typically range from 4 m² to 90 m², and our most popular size is around 30 m²\" — homepage, all styles)",
+        "configurator_limits_mm": {
+          "minWidth": 2000,
+          "maxWidth": 10000,
+          "minDepth": 2000,
+          "maxDepth": 8000,
+          "minHeight": 2500,
+          "maxHeight": 3500,
+          "resizeStep": 100,
+          "resizeStepHeight": 50
+        },
+        "configurator_limits_source": "configuration.json?v=23 sizes.rangeOptions[range=Angle, admin=false] (falls back to Default)"
+      },
+      "standard_specification": "not stated per style — see company_wide_standard_spec_sources",
+      "published_prices": [
+        {
+          "source": "https://www.pecasa.co.uk/design-your-building/ (configurator iframe, default design)",
+          "exact": "Estimated price £32,407 (inc. VAT)",
+          "price_gbp": 32407,
+          "size": "4.5 × 3 m, height 2.5 m (configurator default)",
+          "vat_wording": "inc. VAT"
+        }
+      ],
+      "images": {
+        "configurator_thumbnail": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R215.png",
+        "our_products_card": "not found",
+        "brochure_render": "not in brochure"
+      }
+    }
+  ],
+  "unnamed_card": {
+    "title_exact": "PECASA CLASSIC 30m2",
+    "dimensions_exact": "7m x 4.5m. Hight 2.5m.",
+    "price_exact": "From £48,500 (inc. Vat)",
+    "images": [
+      "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CLASSIC-30m2.png",
+      "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CLASSIC-30m2-300x156.png",
+      "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CLASSIC-30m2-600x311.png"
+    ],
+    "note": "No style named; the image is a photo of a completed flat-roof project."
+  }
+}

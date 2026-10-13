@@ -1,0 +1,5299 @@
+{
+ "checkedDate": "2026-10-13",
+ "source": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/configuration.json?v=23 (textures + finishOptions)",
+ "textureBasePath": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/",
+ "axisConvention": "Axis convention: counts are in IMAGE space. physicalWidth/Height (mm) give the tile's world size. Evidence in config (deck vs deckRotated swap physical dims together with rotation 90) indicates physical dims are post-rotation world axes; for rotation-90 textures this report states which mapping was used.",
+ "notDownloaded": "displacement maps (disp.png) were skipped; their URLs are listed in planner-options.json",
+ "count": 188,
+ "files": [
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/Cedar.jpg",
+   "localPath": "swatches/cladding/menu/controls__Cedar.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "cedarPlanks"
+   ],
+   "displayNames": [
+    "Vertical Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/cedar/map.jpg",
+   "localPath": "swatches/cladding/map/textures__cedar__map.jpg",
+   "pixelSize": [
+    1024,
+    1095
+   ],
+   "usedByFinishValues": [
+    "cedarPlanks",
+    "cedarPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Horizontal Cedar",
+    "Vertical Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2600,
+     2600,
+     0
+    ],
+    [
+     2600,
+     2600,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards",
+    "countPerTile": 20,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 2600,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; normal-map autocorrelation peak 52 px",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/cedar/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__cedar__normal.jpg",
+   "pixelSize": [
+    1024,
+    1095
+   ],
+   "usedByFinishValues": [
+    "cedarPlanks",
+    "cedarPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Horizontal Cedar",
+    "Vertical Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2600,
+     2600,
+     0
+    ],
+    [
+     2600,
+     2600,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards",
+    "countPerTile": 20,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 2600,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; normal-map autocorrelation peak 52 px",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/CedarHoriz.jpg",
+   "localPath": "swatches/cladding/menu/controls__CedarHoriz.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "cedarPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Horizontal Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/Render.jpg",
+   "localPath": "swatches/cladding/menu/controls__Render.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "renderWhite"
+   ],
+   "displayNames": [
+    "Render"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/render/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__render__normal.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "renderWhite"
+   ],
+   "displayNames": [
+    "Render"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "render (no boards)",
+    "tileExtentMm": 500,
+    "boardPitchMm": "not applicable",
+    "note": "normal map only, colour #ffffff, mirrored repeat"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Granite-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Granite-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/granite-vertical"
+   ],
+   "displayNames": [
+    "Composite Granite Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/envirobuild/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__envirobuild__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/granite-horizontal",
+    "envirobuild-cladding/granite-vertical",
+    "envirobuild-cladding/oak-horizontal",
+    "envirobuild-cladding/oak-vertical",
+    "envirobuild-cladding/silver-birch-horizontal",
+    "envirobuild-cladding/silver-birch-vertical",
+    "envirobuild-cladding/stone-horizontal",
+    "envirobuild-cladding/stone-vertical",
+    "envirobuild-cladding/walnut-horizontal",
+    "envirobuild-cladding/walnut-vertical"
+   ],
+   "displayNames": [
+    "Composite Granite Horizontal",
+    "Composite Granite Vertical",
+    "Composite Oak Horizontal",
+    "Composite Oak Vertical",
+    "Composite Silver Birch Horizontal",
+    "Composite Silver Birch Vertical",
+    "Composite Stone Horizontal",
+    "Composite Stone Vertical",
+    "Composite Walnut Horizontal",
+    "Composite Walnut Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     726,
+     726,
+     0
+    ],
+    [
+     726,
+     726,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "boards horizontal in image (normal/AO only; colour per variant)",
+    "countPerTile": 6,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 726,
+    "boardPitchMm": 121.0,
+    "method": "visual count of seam lines on full texture map on normal map; AO ACF 171 px (0.91)",
+    "confidence": "high",
+    "note": "Base rotation 90 -> '-vertical' variants render vertical boards; '-horizontal' variants set rotation 0. Square tile so axis mapping does not change pitch."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/envirobuild/ao.jpg",
+   "localPath": "swatches/cladding/aoMap/textures__envirobuild__ao.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/granite-horizontal",
+    "envirobuild-cladding/granite-vertical",
+    "envirobuild-cladding/oak-horizontal",
+    "envirobuild-cladding/oak-vertical",
+    "envirobuild-cladding/silver-birch-horizontal",
+    "envirobuild-cladding/silver-birch-vertical",
+    "envirobuild-cladding/stone-horizontal",
+    "envirobuild-cladding/stone-vertical",
+    "envirobuild-cladding/walnut-horizontal",
+    "envirobuild-cladding/walnut-vertical"
+   ],
+   "displayNames": [
+    "Composite Granite Horizontal",
+    "Composite Granite Vertical",
+    "Composite Oak Horizontal",
+    "Composite Oak Vertical",
+    "Composite Silver Birch Horizontal",
+    "Composite Silver Birch Vertical",
+    "Composite Stone Horizontal",
+    "Composite Stone Vertical",
+    "Composite Walnut Horizontal",
+    "Composite Walnut Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     726,
+     726,
+     0
+    ],
+    [
+     726,
+     726,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "boards horizontal in image (normal/AO only; colour per variant)",
+    "countPerTile": 6,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 726,
+    "boardPitchMm": 121.0,
+    "method": "visual count of seam lines on full texture map on normal map; AO ACF 171 px (0.91)",
+    "confidence": "high",
+    "note": "Base rotation 90 -> '-vertical' variants render vertical boards; '-horizontal' variants set rotation 0. Square tile so axis mapping does not change pitch."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Stone-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Stone-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/stone-vertical"
+   ],
+   "displayNames": [
+    "Composite Stone Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Silver-birch-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Silver-birch-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/silver-birch-vertical"
+   ],
+   "displayNames": [
+    "Composite Silver Birch Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Granite-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Granite-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/granite-horizontal"
+   ],
+   "displayNames": [
+    "Composite Granite Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Stone-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Stone-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/stone-horizontal"
+   ],
+   "displayNames": [
+    "Composite Stone Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Silver-birch-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Silver-birch-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/silver-birch-horizontal"
+   ],
+   "displayNames": [
+    "Composite Silver Birch Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Walnut-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Walnut-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/walnut-vertical"
+   ],
+   "displayNames": [
+    "Composite Walnut Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Oak-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Oak-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/oak-vertical"
+   ],
+   "displayNames": [
+    "Composite Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/stone01.jpg",
+   "localPath": "swatches/cladding/menu/controls__stone01.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "stone01"
+   ],
+   "displayNames": [
+    "Stone 01"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/stone01/texture.jpg",
+   "localPath": "swatches/cladding/map/textures__stone01__texture.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "stone01"
+   ],
+   "displayNames": [
+    "Stone 01"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "stone (no boards)",
+    "tileExtentMm": 1000,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/stone01/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__stone01__normal.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "stone01"
+   ],
+   "displayNames": [
+    "Stone 01"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "stone (no boards)",
+    "tileExtentMm": 1000,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Walnut-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Walnut-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/walnut-horizontal"
+   ],
+   "displayNames": [
+    "Composite Walnut Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/Oak-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__Oak-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "envirobuild-cladding/oak-horizontal"
+   ],
+   "displayNames": [
+    "Composite Oak Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/stone02.jpg",
+   "localPath": "swatches/cladding/menu/controls__stone02.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "stone02"
+   ],
+   "displayNames": [
+    "Stone 02"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/stone02/texture.jpg",
+   "localPath": "swatches/cladding/map/textures__stone02__texture.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "stone02"
+   ],
+   "displayNames": [
+    "Stone 02"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "stone (no boards)",
+    "tileExtentMm": 2000,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/stone02/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__stone02__normal.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "stone02"
+   ],
+   "displayNames": [
+    "Stone 02"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "stone (no boards)",
+    "tileExtentMm": 2000,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/burnt-cedar-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__burnt-cedar-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/burnt-cedar-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Burnt Cedar Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shadow-line/burnt-cedar.jpg",
+   "localPath": "swatches/cladding/map/textures__shadow-line__burnt-cedar.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "shadow-line/burnt-cedar-horizontal",
+    "shadow-line/burnt-cedar-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Burnt Cedar Horizontal",
+    "Shadow Line Burnt Cedar Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1040,
+     1040,
+     0
+    ],
+    [
+     1040,
+     1040,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards in image (horizontal variants rotation 90)",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1040,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.91-0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shadow-line/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__shadow-line__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "shadow-line/antique-oak-horizontal",
+    "shadow-line/antique-oak-vertical",
+    "shadow-line/burnt-cedar-horizontal",
+    "shadow-line/burnt-cedar-vertical",
+    "shadow-line/golden-oak-horizontal",
+    "shadow-line/golden-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Antique Oak Horizontal",
+    "Shadow Line Antique Oak Vertical",
+    "Shadow Line Burnt Cedar Horizontal",
+    "Shadow Line Burnt Cedar Vertical",
+    "Shadow Line Golden Oak Horizontal",
+    "Shadow Line Golden Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1040,
+     1040,
+     0
+    ],
+    [
+     1040,
+     1040,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards in image (horizontal variants rotation 90)",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1040,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.91-0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shadow-line/ao.jpg",
+   "localPath": "swatches/cladding/aoMap/textures__shadow-line__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "shadow-line/antique-oak-horizontal",
+    "shadow-line/antique-oak-vertical",
+    "shadow-line/burnt-cedar-horizontal",
+    "shadow-line/burnt-cedar-vertical",
+    "shadow-line/golden-oak-horizontal",
+    "shadow-line/golden-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Antique Oak Horizontal",
+    "Shadow Line Antique Oak Vertical",
+    "Shadow Line Burnt Cedar Horizontal",
+    "Shadow Line Burnt Cedar Vertical",
+    "Shadow Line Golden Oak Horizontal",
+    "Shadow Line Golden Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1040,
+     1040,
+     0
+    ],
+    [
+     1040,
+     1040,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards in image (horizontal variants rotation 90)",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1040,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.91-0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/antique-oak-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__antique-oak-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/antique-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Antique Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shadow-line/antique-oak.jpg",
+   "localPath": "swatches/cladding/map/textures__shadow-line__antique-oak.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "shadow-line/antique-oak-horizontal",
+    "shadow-line/antique-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Antique Oak Horizontal",
+    "Shadow Line Antique Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1040,
+     1040,
+     0
+    ],
+    [
+     1040,
+     1040,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards in image (horizontal variants rotation 90)",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1040,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.91-0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/golden-oak-vertical.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__golden-oak-vertical.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/golden-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Golden Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shadow-line/golden-oak.jpg",
+   "localPath": "swatches/cladding/map/textures__shadow-line__golden-oak.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "shadow-line/golden-oak-horizontal",
+    "shadow-line/golden-oak-vertical"
+   ],
+   "displayNames": [
+    "Shadow Line Golden Oak Horizontal",
+    "Shadow Line Golden Oak Vertical"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1040,
+     1040,
+     0
+    ],
+    [
+     1040,
+     1040,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards in image (horizontal variants rotation 90)",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1040,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.91-0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/burnt-cedar-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__burnt-cedar-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/burnt-cedar-horizontal"
+   ],
+   "displayNames": [
+    "Shadow Line Burnt Cedar Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/antique-oak-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__antique-oak-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/antique-oak-horizontal"
+   ],
+   "displayNames": [
+    "Shadow Line Antique Oak Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/shadow-line/golden-oak-horizontal.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__shadow-line__golden-oak-horizontal.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "shadow-line/golden-oak-horizontal"
+   ],
+   "displayNames": [
+    "Shadow Line Golden Oak Horizontal"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/board-and-batten/burnt-cedar.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__board-and-batten__burnt-cedar.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/burnt-cedar"
+   ],
+   "displayNames": [
+    "Board & Batten Burnt Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/board-and-batten/burnt-cedar.jpg",
+   "localPath": "swatches/cladding/map/textures__board-and-batten__burnt-cedar.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/burnt-cedar"
+   ],
+   "displayNames": [
+    "Board & Batten Burnt Cedar"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical board-and-batten; repeat module contains two raised strips of unequal width and two recesses",
+    "countPerTile": 4,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 500,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map on AO map; ACF 128 px (0.90-0.99)",
+    "confidence": "high",
+    "note": "Approximate widths within the 125 mm module from AO map: raised ~44 mm and ~24 mm, recesses ~17 mm and ~40 mm (low confidence)."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/board-and-batten/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__board-and-batten__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/antique-oak",
+    "board-and-batten/burnt-cedar",
+    "board-and-batten/golden-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Antique Oak",
+    "Board & Batten Burnt Cedar",
+    "Board & Batten Golden Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical board-and-batten; repeat module contains two raised strips of unequal width and two recesses",
+    "countPerTile": 4,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 500,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map on AO map; ACF 128 px (0.90-0.99)",
+    "confidence": "high",
+    "note": "Approximate widths within the 125 mm module from AO map: raised ~44 mm and ~24 mm, recesses ~17 mm and ~40 mm (low confidence)."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/board-and-batten/ao.jpg",
+   "localPath": "swatches/cladding/aoMap/textures__board-and-batten__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/antique-oak",
+    "board-and-batten/burnt-cedar",
+    "board-and-batten/golden-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Antique Oak",
+    "Board & Batten Burnt Cedar",
+    "Board & Batten Golden Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical board-and-batten; repeat module contains two raised strips of unequal width and two recesses",
+    "countPerTile": 4,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 500,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map on AO map; ACF 128 px (0.90-0.99)",
+    "confidence": "high",
+    "note": "Approximate widths within the 125 mm module from AO map: raised ~44 mm and ~24 mm, recesses ~17 mm and ~40 mm (low confidence)."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/board-and-batten/antique-oak.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__board-and-batten__antique-oak.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/antique-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Antique Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/board-and-batten/antique-oak.jpg",
+   "localPath": "swatches/cladding/map/textures__board-and-batten__antique-oak.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/antique-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Antique Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical board-and-batten; repeat module contains two raised strips of unequal width and two recesses",
+    "countPerTile": 4,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 500,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map on AO map; ACF 128 px (0.90-0.99)",
+    "confidence": "high",
+    "note": "Approximate widths within the 125 mm module from AO map: raised ~44 mm and ~24 mm, recesses ~17 mm and ~40 mm (low confidence)."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/claddings/board-and-batten/golden-oak.jpg",
+   "localPath": "swatches/cladding/menu/items__claddings__board-and-batten__golden-oak.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/golden-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Golden Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/board-and-batten/golden-oak.jpg",
+   "localPath": "swatches/cladding/map/textures__board-and-batten__golden-oak.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "board-and-batten/golden-oak"
+   ],
+   "displayNames": [
+    "Board & Batten Golden Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical board-and-batten; repeat module contains two raised strips of unequal width and two recesses",
+    "countPerTile": 4,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 500,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map on AO map; ACF 128 px (0.90-0.99)",
+    "confidence": "high",
+    "note": "Approximate widths within the 125 mm module from AO map: raised ~44 mm and ~24 mm, recesses ~17 mm and ~40 mm (low confidence)."
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/shiplap01.jpg",
+   "localPath": "swatches/cladding/menu/controls__shiplap01.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "shiplap01"
+   ],
+   "displayNames": [
+    "Shiplap Black"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shiplap/shiplap01.jpg",
+   "localPath": "swatches/cladding/map/textures__shiplap__shiplap01.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "shiplap01"
+   ],
+   "displayNames": [
+    "Shiplap Black"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "horizontal boards, staggered end joints (repeat every 4 rows)",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; seam spacing alternates ~62/66 px, mean 64 px",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shiplap/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__shiplap__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "shiplap01",
+    "shiplap02",
+    "shiplap03"
+   ],
+   "displayNames": [
+    "Shiplap Black",
+    "Shiplap Gray",
+    "Shiplap White"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "horizontal boards, staggered end joints (repeat every 4 rows)",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; seam spacing alternates ~62/66 px, mean 64 px",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/shiplap02.jpg",
+   "localPath": "swatches/cladding/menu/controls__shiplap02.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "shiplap02"
+   ],
+   "displayNames": [
+    "Shiplap White"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shiplap/shiplap02.jpg",
+   "localPath": "swatches/cladding/map/textures__shiplap__shiplap02.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "shiplap02"
+   ],
+   "displayNames": [
+    "Shiplap White"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "horizontal boards, staggered end joints (repeat every 4 rows)",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; seam spacing alternates ~62/66 px, mean 64 px",
+    "confidence": "high",
+    "note": "same geometry as shiplap01 (shared normal/displacement maps; albedo autocorrelation identical)"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/shiplap03.jpg",
+   "localPath": "swatches/cladding/menu/controls__shiplap03.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "shiplap03"
+   ],
+   "displayNames": [
+    "Shiplap Gray"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/shiplap/shiplap03.jpg",
+   "localPath": "swatches/cladding/map/textures__shiplap__shiplap03.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "shiplap03"
+   ],
+   "displayNames": [
+    "Shiplap Gray"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "horizontal boards, staggered end joints (repeat every 4 rows)",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; seam spacing alternates ~62/66 px, mean 64 px",
+    "confidence": "high",
+    "note": "same geometry as shiplap01 (shared normal/displacement maps; albedo autocorrelation identical)"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/controls/planks.jpg",
+   "localPath": "swatches/cladding/menu/controls__planks.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "planks"
+   ],
+   "displayNames": [
+    "Pine"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "cladding",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/planks/texture.jpg",
+   "localPath": "swatches/cladding/map/textures__planks__texture.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "planks"
+   ],
+   "displayNames": [
+    "Pine"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF 128 px (0.92)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "cladding",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/planks/normal.jpg",
+   "localPath": "swatches/cladding/normalMap/textures__planks__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "planks"
+   ],
+   "displayNames": [
+    "Pine"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "vertical boards",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF 128 px (0.92)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/roof/corrugated.jpg",
+   "localPath": "swatches/roof/menu/items__roof__corrugated.jpg",
+   "pixelSize": [
+    158,
+    150
+   ],
+   "usedByFinishValues": [
+    "corrugated-metal-004-sd"
+   ],
+   "displayNames": [
+    "Corrugated"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "roof",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/corrugated-metal-004-sd/normal.jpg",
+   "localPath": "swatches/roof/normalMap/textures__corrugated-metal-004-sd__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "corrugated-metal-004-sd"
+   ],
+   "displayNames": [
+    "Corrugated"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "corrugated ribs (normal/AO only; colour #383e42)",
+    "countPerTile": 18,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 111.1,
+    "method": "visual count of seam lines on full texture map on normal map; ACF 28/57 px",
+    "confidence": "high",
+    "note": "value is rib pitch"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/corrugated-metal-004-sd/ao.jpg",
+   "localPath": "swatches/roof/aoMap/textures__corrugated-metal-004-sd__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "corrugated-metal-004-sd"
+   ],
+   "displayNames": [
+    "Corrugated"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "corrugated ribs (normal/AO only; colour #383e42)",
+    "countPerTile": 18,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 111.1,
+    "method": "visual count of seam lines on full texture map on normal map; ACF 28/57 px",
+    "confidence": "high",
+    "note": "value is rib pitch"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/roof/epdm.jpg",
+   "localPath": "swatches/roof/menu/items__roof__epdm.jpg",
+   "pixelSize": [
+    270,
+    270
+   ],
+   "usedByFinishValues": [
+    "roof"
+   ],
+   "displayNames": [
+    "EPDM Black"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "roof",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/rubber-normal.jpg",
+   "localPath": "swatches/roof/normalMap/textures__rubber-normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "roof"
+   ],
+   "displayNames": [
+    "EPDM Black"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "EPDM membrane (no module)",
+    "tileExtentMm": 1000,
+    "boardPitchMm": "not applicable",
+    "note": "normal map rubber-normal.jpg, colour #2B2B2C, mirrored repeat"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/roof/terracotta.jpg",
+   "localPath": "swatches/roof/menu/items__roof__terracotta.jpg",
+   "pixelSize": [
+    300,
+    300
+   ],
+   "usedByFinishValues": [
+    "roof-terracotta"
+   ],
+   "displayNames": [
+    "Terracotta"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "roof",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-terracotta/texture.jpg",
+   "localPath": "swatches/roof/map/textures__roof-terracotta__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "roof-terracotta"
+   ],
+   "displayNames": [
+    "Terracotta"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "clay tiles, 8 x 8 per tile",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x and y (512 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px both axes (0.99)",
+    "confidence": "high",
+    "note": "tile module 125 x 125 mm"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-terracotta/normal.jpg",
+   "localPath": "swatches/roof/normalMap/textures__roof-terracotta__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "roof-terracotta"
+   ],
+   "displayNames": [
+    "Terracotta"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "clay tiles, 8 x 8 per tile",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x and y (512 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px both axes (0.99)",
+    "confidence": "high",
+    "note": "tile module 125 x 125 mm"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-terracotta/ao.jpg",
+   "localPath": "swatches/roof/aoMap/textures__roof-terracotta__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "roof-terracotta"
+   ],
+   "displayNames": [
+    "Terracotta"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "clay tiles, 8 x 8 per tile",
+    "countPerTile": 8,
+    "countedAlongImageAxis": "x and y (512 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF 64 px both axes (0.99)",
+    "confidence": "high",
+    "note": "tile module 125 x 125 mm"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/roof/copper.jpg",
+   "localPath": "swatches/roof/menu/items__roof__copper.jpg",
+   "pixelSize": [
+    300,
+    300
+   ],
+   "usedByFinishValues": [
+    "roof-copper"
+   ],
+   "displayNames": [
+    "Copper"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "roof",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-copper/texture.jpg",
+   "localPath": "swatches/roof/map/textures__roof-copper__texture.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "roof-copper"
+   ],
+   "displayNames": [
+    "Copper"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "copper shingles, half-bond: 16 columns x 12 courses",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF x 64 px, y 85.3 px",
+    "confidence": "high",
+    "note": "shingle width 125 mm x course height 166.7 mm (2000/12)"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-copper/normal.jpg",
+   "localPath": "swatches/roof/normalMap/textures__roof-copper__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "roof-copper"
+   ],
+   "displayNames": [
+    "Copper"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "copper shingles, half-bond: 16 columns x 12 courses",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF x 64 px, y 85.3 px",
+    "confidence": "high",
+    "note": "shingle width 125 mm x course height 166.7 mm (2000/12)"
+   }
+  },
+  {
+   "category": "roof",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/roof-copper/ao.jpg",
+   "localPath": "swatches/roof/aoMap/textures__roof-copper__ao.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "roof-copper"
+   ],
+   "displayNames": [
+    "Copper"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2000,
+     2000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "copper shingles, half-bond: 16 columns x 12 courses",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (1024 px)",
+    "tileExtentUsedMm": 2000,
+    "boardPitchMm": 125.0,
+    "method": "visual count of seam lines on full texture map; ACF x 64 px, y 85.3 px",
+    "confidence": "high",
+    "note": "shingle width 125 mm x course height 166.7 mm (2000/12)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/wood/osb.jpg",
+   "localPath": "swatches/flooring/menu/items__wood__osb.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "osb"
+   ],
+   "displayNames": [
+    "Osb"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/osb/map.jpg",
+   "localPath": "swatches/flooring/map/textures__osb__map.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "osb"
+   ],
+   "displayNames": [
+    "Osb"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "OSB (no boards)",
+    "tileExtentMm": 500,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/osb/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__osb__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "osb"
+   ],
+   "displayNames": [
+    "Osb"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     500,
+     500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "OSB (no boards)",
+    "tileExtentMm": 500,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "floor-oak"
+   ],
+   "displayNames": [
+    "Oak"
+   ],
+   "hiddenFromPublic": true,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__oak__texture.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-oak"
+   ],
+   "displayNames": [
+    "Oak"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 1500,
+    "boardPitchMm": 125.0,
+    "method": "autocorrelation of seam-gradient profile 85 px (0.84)",
+    "confidence": "medium",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__oak__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-oak"
+   ],
+   "displayNames": [
+    "Oak"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 1500,
+    "boardPitchMm": 125.0,
+    "method": "autocorrelation of seam-gradient profile 85 px (0.84)",
+    "confidence": "medium",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/beech.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__beech.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "floor-beech"
+   ],
+   "displayNames": [
+    "Beech"
+   ],
+   "hiddenFromPublic": true,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/beech/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__beech__texture.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-beech"
+   ],
+   "displayNames": [
+    "Beech"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 1500,
+    "boardPitchMm": 125.0,
+    "method": "autocorrelation of seam-gradient profile 85 px (0.87)",
+    "confidence": "medium",
+    "note": "HIDDEN from public users; column seams every 171 px (~250 mm)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/beech/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__beech__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-beech"
+   ],
+   "displayNames": [
+    "Beech"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 1500,
+    "boardPitchMm": 125.0,
+    "method": "autocorrelation of seam-gradient profile 85 px (0.87)",
+    "confidence": "medium",
+    "note": "HIDDEN from public users; column seams every 171 px (~250 mm)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/walnut.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__walnut.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "floor-walnut"
+   ],
+   "displayNames": [
+    "Walnut"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/walnut/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__walnut__texture.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-walnut"
+   ],
+   "displayNames": [
+    "Walnut"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2500,
+     2500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 18,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2500,
+    "boardPitchMm": 138.9,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 57 px (0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/walnut/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__walnut__normal.jpg",
+   "pixelSize": [
+    1024,
+    1024
+   ],
+   "usedByFinishValues": [
+    "floor-walnut"
+   ],
+   "displayNames": [
+    "Walnut"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2500,
+     2500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 18,
+    "countedAlongImageAxis": "y (1024 px)",
+    "tileExtentUsedMm": 2500,
+    "boardPitchMm": 138.9,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 57 px (0.95)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/oak-farm.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__oak-farm.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "floor-oak-farm"
+   ],
+   "displayNames": [
+    "Farm Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oak-farm/map.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__oak-farm__map.jpg",
+   "pixelSize": [
+    512,
+    768
+   ],
+   "usedByFinishValues": [
+    "floor-oak-farm"
+   ],
+   "displayNames": [
+    "Farm Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     800,
+     800,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 5,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 800,
+    "boardPitchMm": 160.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 102 px (0.64)",
+    "confidence": "high",
+    "note": "tile 800 x 800 mm on a 768 x 512 px image"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oak-farm/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__oak-farm__normal.jpg",
+   "pixelSize": [
+    768,
+    512
+   ],
+   "usedByFinishValues": [
+    "floor-oak-farm"
+   ],
+   "displayNames": [
+    "Farm Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     800,
+     800,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 5,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 800,
+    "boardPitchMm": 160.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 102 px (0.64)",
+    "confidence": "high",
+    "note": "tile 800 x 800 mm on a 768 x 512 px image"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/tiles03.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__tiles03.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "tiles03"
+   ],
+   "displayNames": [
+    "Tiles"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/tiles03/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__tiles03__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "tiles03"
+   ],
+   "displayNames": [
+    "Tiles"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "square tiles 4 x 4 per tile",
+    "countPerTile": 4,
+    "tileExtentUsedMm": 1500,
+    "tileSizeMm": 375.0,
+    "method": "visual count of seam lines on full texture map; ACF 128 px (0.99 normal map)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/tiles03/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__tiles03__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "tiles03"
+   ],
+   "displayNames": [
+    "Tiles"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "square tiles 4 x 4 per tile",
+    "countPerTile": 4,
+    "tileExtentUsedMm": 1500,
+    "tileSizeMm": 375.0,
+    "method": "visual count of seam lines on full texture map; ACF 128 px (0.99 normal map)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/aspen-oak.png",
+   "localPath": "swatches/flooring/menu/items__floor__aspen-oak.png",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "aspen-oak"
+   ],
+   "displayNames": [
+    "Aspen Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aspen-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__aspen-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    391
+   ],
+   "usedByFinishValues": [
+    "aspen-oak"
+   ],
+   "displayNames": [
+    "Aspen Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1600,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (391 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 144.4,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 44 px (0.80)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aspen-oak/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__aspen-oak__normal.png",
+   "pixelSize": [
+    512,
+    391
+   ],
+   "usedByFinishValues": [
+    "aspen-oak"
+   ],
+   "displayNames": [
+    "Aspen Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1600,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (391 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 144.4,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 44 px (0.80)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aspen-oak/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__aspen-oak__ao.png",
+   "pixelSize": [
+    512,
+    391
+   ],
+   "usedByFinishValues": [
+    "aspen-oak"
+   ],
+   "displayNames": [
+    "Aspen Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1600,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (391 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 144.4,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 44 px (0.80)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/aster-staggered.png",
+   "localPath": "swatches/flooring/menu/items__floor__aster-staggered.png",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "aster-staggered"
+   ],
+   "displayNames": [
+    "Aster Staggered Oak"
+   ],
+   "hiddenFromPublic": true,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aster-staggered/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__aster-staggered__texture.jpg",
+   "pixelSize": [
+    512,
+    401
+   ],
+   "usedByFinishValues": [
+    "aster-staggered"
+   ],
+   "displayNames": [
+    "Aster Staggered Oak"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "staggered boards",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users; autocorrelation ambiguous (34/68 px)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aster-staggered/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__aster-staggered__normal.png",
+   "pixelSize": [
+    512,
+    405
+   ],
+   "usedByFinishValues": [
+    "aster-staggered"
+   ],
+   "displayNames": [
+    "Aster Staggered Oak"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "staggered boards",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users; autocorrelation ambiguous (34/68 px)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/aster-staggered/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__aster-staggered__ao.png",
+   "pixelSize": [
+    512,
+    405
+   ],
+   "usedByFinishValues": [
+    "aster-staggered"
+   ],
+   "displayNames": [
+    "Aster Staggered Oak"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "staggered boards",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users; autocorrelation ambiguous (34/68 px)"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/hadley.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__hadley.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "hadley-tiles"
+   ],
+   "displayNames": [
+    "Hadley Tiles"
+   ],
+   "hiddenFromPublic": true,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/hadley/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__hadley__texture.jpg",
+   "pixelSize": [
+    512,
+    481
+   ],
+   "usedByFinishValues": [
+    "hadley-tiles"
+   ],
+   "displayNames": [
+    "Hadley Tiles"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     780,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "tiles",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/hadley/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__hadley__normal.png",
+   "pixelSize": [
+    512,
+    482
+   ],
+   "usedByFinishValues": [
+    "hadley-tiles"
+   ],
+   "displayNames": [
+    "Hadley Tiles"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     780,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "tiles",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/hadley/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__hadley__ao.png",
+   "pixelSize": [
+    512,
+    482
+   ],
+   "usedByFinishValues": [
+    "hadley-tiles"
+   ],
+   "displayNames": [
+    "Hadley Tiles"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     780,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "tiles",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/oxford.png",
+   "localPath": "swatches/flooring/menu/items__floor__oxford.png",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "oxford"
+   ],
+   "displayNames": [
+    "Oxford Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oxford/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__oxford__texture.jpg",
+   "pixelSize": [
+    512,
+    409
+   ],
+   "usedByFinishValues": [
+    "oxford"
+   ],
+   "displayNames": [
+    "Oxford Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1400,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (409 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 46 px (0.85)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oxford/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__oxford__normal.png",
+   "pixelSize": [
+    512,
+    409
+   ],
+   "usedByFinishValues": [
+    "oxford"
+   ],
+   "displayNames": [
+    "Oxford Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1400,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (409 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 46 px (0.85)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/oxford/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__oxford__ao.png",
+   "pixelSize": [
+    512,
+    409
+   ],
+   "usedByFinishValues": [
+    "oxford"
+   ],
+   "displayNames": [
+    "Oxford Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1400,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (409 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 46 px (0.85)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/phantom.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__phantom.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "phantom"
+   ],
+   "displayNames": [
+    "Phantom Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/phantom/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__phantom__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "phantom"
+   ],
+   "displayNames": [
+    "Phantom Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2400,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 20,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": 136.5,
+    "method": "visual count of seam lines on full texture map (~25.5 px seam spacing); autocorrelation of seam-gradient profile 25 px (0.34)",
+    "confidence": "medium",
+    "note": "21 rows (130 mm) cannot be fully excluded"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/phantom/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__phantom__normal.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "phantom"
+   ],
+   "displayNames": [
+    "Phantom Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2400,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 20,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": 136.5,
+    "method": "visual count of seam lines on full texture map (~25.5 px seam spacing); autocorrelation of seam-gradient profile 25 px (0.34)",
+    "confidence": "medium",
+    "note": "21 rows (130 mm) cannot be fully excluded"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/phantom/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__phantom__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "phantom"
+   ],
+   "displayNames": [
+    "Phantom Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2400,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 20,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": 136.5,
+    "method": "visual count of seam lines on full texture map (~25.5 px seam spacing); autocorrelation of seam-gradient profile 25 px (0.34)",
+    "confidence": "medium",
+    "note": "21 rows (130 mm) cannot be fully excluded"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/victorian.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__victorian.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "victorian"
+   ],
+   "displayNames": [
+    "Victorian Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/victorian/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__victorian__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "victorian"
+   ],
+   "displayNames": [
+    "Victorian Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2210,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 17,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2210,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map (~17 rows); autocorrelation of seam-gradient profile 30 px (0.22)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/victorian/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__victorian__normal.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "victorian"
+   ],
+   "displayNames": [
+    "Victorian Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2210,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 17,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2210,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map (~17 rows); autocorrelation of seam-gradient profile 30 px (0.22)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/victorian/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__victorian__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "victorian"
+   ],
+   "displayNames": [
+    "Victorian Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2210,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 17,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2210,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map (~17 rows); autocorrelation of seam-gradient profile 30 px (0.22)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/westchester.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__westchester.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "westchester"
+   ],
+   "displayNames": [
+    "Westchester Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/westchester/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__westchester__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "westchester"
+   ],
+   "displayNames": [
+    "Westchester Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 39 px (0.70)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/westchester/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__westchester__normal.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "westchester"
+   ],
+   "displayNames": [
+    "Westchester Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 39 px (0.70)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/westchester/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__westchester__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "westchester"
+   ],
+   "displayNames": [
+    "Westchester Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 39 px (0.70)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/wiltshire-english.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__wiltshire-english.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "wiltshire-english"
+   ],
+   "displayNames": [
+    "Wiltshire English Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-english/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__wiltshire-english__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "wiltshire-english"
+   ],
+   "displayNames": [
+    "Wiltshire English Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     950,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 10,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 51 px (0.89)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-english/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__wiltshire-english__normal.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "wiltshire-english"
+   ],
+   "displayNames": [
+    "Wiltshire English Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     950,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 10,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 51 px (0.89)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-english/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__wiltshire-english__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "wiltshire-english"
+   ],
+   "displayNames": [
+    "Wiltshire English Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     950,
+     1300,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 10,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1300,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 51 px (0.89)",
+    "confidence": "high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/wiltshire-weathered-grey-parquet.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__wiltshire-weathered-grey-parquet.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "wiltshire-weathered-grey-parquet"
+   ],
+   "displayNames": [
+    "Wiltshire Weathered Grey Parquet"
+   ],
+   "hiddenFromPublic": true,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-weathered-grey-parquet/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__wiltshire-weathered-grey-parquet__texture.jpg",
+   "pixelSize": [
+    449,
+    512
+   ],
+   "usedByFinishValues": [
+    "wiltshire-weathered-grey-parquet"
+   ],
+   "displayNames": [
+    "Wiltshire Weathered Grey Parquet"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1880,
+     2080,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "parquet",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-weathered-grey-parquet/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__wiltshire-weathered-grey-parquet__normal.png",
+   "pixelSize": [
+    449,
+    512
+   ],
+   "usedByFinishValues": [
+    "wiltshire-weathered-grey-parquet"
+   ],
+   "displayNames": [
+    "Wiltshire Weathered Grey Parquet"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1880,
+     2080,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "parquet",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/wiltshire-weathered-grey-parquet/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__wiltshire-weathered-grey-parquet__ao.png",
+   "pixelSize": [
+    512,
+    449
+   ],
+   "usedByFinishValues": [
+    "wiltshire-weathered-grey-parquet"
+   ],
+   "displayNames": [
+    "Wiltshire Weathered Grey Parquet"
+   ],
+   "hiddenFromPublic": true,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1880,
+     2080,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "parquet",
+    "boardPitchMm": "not derived",
+    "note": "HIDDEN from public users"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/loft-midnight-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__loft-midnight-oak.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "loft-midnight-oak"
+   ],
+   "displayNames": [
+    "Loft Midnight Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-midnight-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__loft-midnight-oak__texture.jpg",
+   "pixelSize": [
+    438,
+    433
+   ],
+   "usedByFinishValues": [
+    "loft-midnight-oak"
+   ],
+   "displayNames": [
+    "Loft Midnight Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "y (433 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 142.9,
+    "method": "autocorrelation of seam-gradient profile 62 px (0.74)",
+    "confidence": "medium-high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-midnight-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__loft-midnight-oak__normal.jpg",
+   "pixelSize": [
+    438,
+    433
+   ],
+   "usedByFinishValues": [
+    "loft-midnight-oak"
+   ],
+   "displayNames": [
+    "Loft Midnight Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "y (433 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 142.9,
+    "method": "autocorrelation of seam-gradient profile 62 px (0.74)",
+    "confidence": "medium-high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-midnight-oak/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__loft-midnight-oak__ao.png",
+   "pixelSize": [
+    438,
+    433
+   ],
+   "usedByFinishValues": [
+    "loft-midnight-oak"
+   ],
+   "displayNames": [
+    "Loft Midnight Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1000,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "y (433 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 142.9,
+    "method": "autocorrelation of seam-gradient profile 62 px (0.74)",
+    "confidence": "medium-high"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/loft-dark-grey.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__loft-dark-grey.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "loft-dark-grey"
+   ],
+   "displayNames": [
+    "Loft Dark Grey Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-dark-grey/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__loft-dark-grey__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "loft-dark-grey"
+   ],
+   "displayNames": [
+    "Loft Dark Grey Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.56)",
+    "confidence": "high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-dark-grey/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__loft-dark-grey__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "loft-dark-grey"
+   ],
+   "displayNames": [
+    "Loft Dark Grey Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.56)",
+    "confidence": "high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/loft-dark-grey/ao.jpg",
+   "localPath": "swatches/flooring/aoMap/textures__floor__loft-dark-grey__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "loft-dark-grey"
+   ],
+   "displayNames": [
+    "Loft Dark Grey Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.56)",
+    "confidence": "high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/sicilia-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__sicilia-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "sicilia-oak"
+   ],
+   "displayNames": [
+    "Sicilia Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/sicilia-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__sicilia-oak__texture.jpg",
+   "pixelSize": [
+    2048,
+    512
+   ],
+   "usedByFinishValues": [
+    "sicilia-oak"
+   ],
+   "displayNames": [
+    "Sicilia Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     3700,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 39/78 px (0.24/0.35); not visually confirmed at full resolution",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/sicilia-oak/normal.png",
+   "localPath": "swatches/flooring/normalMap/textures__floor__sicilia-oak__normal.png",
+   "pixelSize": [
+    2048,
+    512
+   ],
+   "usedByFinishValues": [
+    "sicilia-oak"
+   ],
+   "displayNames": [
+    "Sicilia Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     3700,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 39/78 px (0.24/0.35); not visually confirmed at full resolution",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/sicilia-oak/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__sicilia-oak__ao.png",
+   "pixelSize": [
+    2048,
+    512
+   ],
+   "usedByFinishValues": [
+    "sicilia-oak"
+   ],
+   "displayNames": [
+    "Sicilia Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     3700,
+     1690,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 13,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1690,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 39/78 px (0.24/0.35); not visually confirmed at full resolution",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/farm-house-dark-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__farm-house-dark-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "farm-house-dark-oak"
+   ],
+   "displayNames": [
+    "Farm House Dark Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-dark-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__farm-house-dark-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-dark-oak"
+   ],
+   "displayNames": [
+    "Farm House Dark Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.69)",
+    "confidence": "medium-high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-dark-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__farm-house-dark-oak__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-dark-oak"
+   ],
+   "displayNames": [
+    "Farm House Dark Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.69)",
+    "confidence": "medium-high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-dark-oak/ao.jpg",
+   "localPath": "swatches/flooring/aoMap/textures__floor__farm-house-dark-oak__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-dark-oak"
+   ],
+   "displayNames": [
+    "Farm House Dark Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2080,
+     2080,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 16,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": 2080,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 32 px (0.69)",
+    "confidence": "medium-high",
+    "note": "square tile"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/liguiria-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__liguiria-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "liguiria-oak"
+   ],
+   "displayNames": [
+    "Liguiria Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/liguiria-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__liguiria-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "liguiria-oak"
+   ],
+   "displayNames": [
+    "Liguiria Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     3380,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 26,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": "3380 (post-rotation world axis) - 1500 if pre-rotation",
+    "boardPitchMm": "130.0 (or 57.7 under the other axis convention)",
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 20 px (0.60)",
+    "confidence": "medium",
+    "note": "physical 1500 x 3380 mm on a square image; 130 mm assumes post-rotation axes as evidenced by deckRotated"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/liguiria-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__liguiria-oak__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "liguiria-oak"
+   ],
+   "displayNames": [
+    "Liguiria Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     3380,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 26,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": "3380 (post-rotation world axis) - 1500 if pre-rotation",
+    "boardPitchMm": "130.0 (or 57.7 under the other axis convention)",
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 20 px (0.60)",
+    "confidence": "medium",
+    "note": "physical 1500 x 3380 mm on a square image; 130 mm assumes post-rotation axes as evidenced by deckRotated"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/liguiria-oak/ao.jpg",
+   "localPath": "swatches/flooring/aoMap/textures__floor__liguiria-oak__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "liguiria-oak"
+   ],
+   "displayNames": [
+    "Liguiria Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     3380,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 26,
+    "countedAlongImageAxis": "x (512 px; boards vertical in image, rotation 90)",
+    "tileExtentUsedMm": "3380 (post-rotation world axis) - 1500 if pre-rotation",
+    "boardPitchMm": "130.0 (or 57.7 under the other axis convention)",
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 20 px (0.60)",
+    "confidence": "medium",
+    "note": "physical 1500 x 3380 mm on a square image; 130 mm assumes post-rotation axes as evidenced by deckRotated"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/rhino-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__rhino-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "rhino-oak"
+   ],
+   "displayNames": [
+    "Rhino Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/rhino-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__rhino-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "rhino-oak"
+   ],
+   "displayNames": [
+    "Rhino Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2200,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": "~20 (not resolved)",
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": "not reliably derived (~136.5 if 20 rows, 130 if 21)",
+    "method": "visual inspection; autocorrelation inconclusive",
+    "confidence": "low"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/rhino-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__rhino-oak__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "rhino-oak"
+   ],
+   "displayNames": [
+    "Rhino Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2200,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": "~20 (not resolved)",
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": "not reliably derived (~136.5 if 20 rows, 130 if 21)",
+    "method": "visual inspection; autocorrelation inconclusive",
+    "confidence": "low"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/rhino-oak/ao.png",
+   "localPath": "swatches/flooring/aoMap/textures__floor__rhino-oak__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "rhino-oak"
+   ],
+   "displayNames": [
+    "Rhino Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     2200,
+     2730,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": "~20 (not resolved)",
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2730,
+    "boardPitchMm": "not reliably derived (~136.5 if 20 rows, 130 if 21)",
+    "method": "visual inspection; autocorrelation inconclusive",
+    "confidence": "low"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/natural-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__natural-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "natural-oak"
+   ],
+   "displayNames": [
+    "Natural Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/natural-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__natural-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "natural-oak"
+   ],
+   "displayNames": [
+    "Natural Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2860,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 22,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2860,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 23 px (0.29)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/natural-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__natural-oak__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "natural-oak"
+   ],
+   "displayNames": [
+    "Natural Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2860,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 22,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2860,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 23 px (0.29)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/natural-oak/ao.jpg",
+   "localPath": "swatches/flooring/aoMap/textures__floor__natural-oak__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "natural-oak"
+   ],
+   "displayNames": [
+    "Natural Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     2860,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 22,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 2860,
+    "boardPitchMm": 130.0,
+    "method": "visual count of seam lines on full texture map; autocorrelation of seam-gradient profile 23 px (0.29)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/floor/farm-house-light-oak.jpg",
+   "localPath": "swatches/flooring/menu/items__floor__farm-house-light-oak.jpg",
+   "pixelSize": [
+    128,
+    128
+   ],
+   "usedByFinishValues": [
+    "farm-house-light-oak"
+   ],
+   "displayNames": [
+    "Farm House Light Oak"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "flooring",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-light-oak/texture.jpg",
+   "localPath": "swatches/flooring/map/textures__floor__farm-house-light-oak__texture.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-light-oak"
+   ],
+   "displayNames": [
+    "Farm House Light Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 57 px (0.62)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-light-oak/normal.jpg",
+   "localPath": "swatches/flooring/normalMap/textures__floor__farm-house-light-oak__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-light-oak"
+   ],
+   "displayNames": [
+    "Farm House Light Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 57 px (0.62)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "flooring",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/floor/farm-house-light-oak/ao.jpg",
+   "localPath": "swatches/flooring/aoMap/textures__floor__farm-house-light-oak__ao.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "farm-house-light-oak"
+   ],
+   "displayNames": [
+    "Farm House Light Oak"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1900,
+     1170,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "floor boards",
+    "countPerTile": 9,
+    "countedAlongImageAxis": "y (512 px)",
+    "tileExtentUsedMm": 1170,
+    "boardPitchMm": 130.0,
+    "method": "autocorrelation of seam-gradient profile 57 px (0.62)",
+    "confidence": "medium"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/decking.jpg",
+   "localPath": "swatches/decking/menu/items__decking__decking.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck"
+   ],
+   "displayNames": [
+    "Hardwood"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/decking.jpg",
+   "localPath": "swatches/decking/map/textures__decking.jpg",
+   "pixelSize": [
+    512,
+    256
+   ],
+   "usedByFinishValues": [
+    "deck"
+   ],
+   "displayNames": [
+    "Hardwood"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1960,
+     1000,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "horizontal boards (Hardwood)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "y (256 px)",
+    "tileExtentUsedMm": 1000,
+    "boardPitchMm": 142.9,
+    "method": "visual count of seam lines on full texture map; ACF 37 px (0.70)",
+    "confidence": "high",
+    "note": "tile 1960 x 1000 mm; no end joints visible in tile"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/treated-planks.jpg",
+   "localPath": "swatches/decking/menu/items__decking__treated-planks.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/treatedPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Treated"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/treated-planks/map.jpg",
+   "localPath": "swatches/decking/map/textures__treated-planks__map.jpg",
+   "pixelSize": [
+    768,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/treatedPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Treated"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "boards vertical in image (treated-planks map), value applies rotation 90",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "x (768 px)",
+    "tileExtentUsedMm": "1500 (if physical dims are pre-rotation image axes) or 1000 (if post-rotation world axes)",
+    "boardPitchMm": "125.0 or 83.3",
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.62)",
+    "confidence": "medium",
+    "note": "Base texture treated-planks is 1500 x 1000 mm. Unlike deck/deckRotated, the rotated variant does not swap physical dims, so on-screen pitch depends on the renderer's axis convention: not resolved."
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/treated-planks/normal.jpg",
+   "localPath": "swatches/decking/normalMap/textures__treated-planks__normal.jpg",
+   "pixelSize": [
+    768,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/treatedPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Treated"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "boards vertical in image (treated-planks map), value applies rotation 90",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "x (768 px)",
+    "tileExtentUsedMm": "1500 (if physical dims are pre-rotation image axes) or 1000 (if post-rotation world axes)",
+    "boardPitchMm": "125.0 or 83.3",
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.62)",
+    "confidence": "medium",
+    "note": "Base texture treated-planks is 1500 x 1000 mm. Unlike deck/deckRotated, the rotated variant does not swap physical dims, so on-screen pitch depends on the renderer's axis convention: not resolved."
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/treated-planks/ao.jpg",
+   "localPath": "swatches/decking/aoMap/textures__treated-planks__ao.jpg",
+   "pixelSize": [
+    768,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/treatedPlanksHorizontal"
+   ],
+   "displayNames": [
+    "Treated"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1000,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "boards vertical in image (treated-planks map), value applies rotation 90",
+    "countPerTile": 12,
+    "countedAlongImageAxis": "x (768 px)",
+    "tileExtentUsedMm": "1500 (if physical dims are pre-rotation image axes) or 1000 (if post-rotation world axes)",
+    "boardPitchMm": "125.0 or 83.3",
+    "method": "visual count of seam lines on full texture map; ACF 64 px (0.62)",
+    "confidence": "medium",
+    "note": "Base texture treated-planks is 1500 x 1000 mm. Unlike deck/deckRotated, the rotated variant does not swap physical dims, so on-screen pitch depends on the renderer's axis convention: not resolved."
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_ivory.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_ivory.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Ivory"
+   ],
+   "displayNames": [
+    "Ivory Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_ivory.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_ivory.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Fawn",
+    "deck/wood-grain/Ivory"
+   ],
+   "displayNames": [
+    "Fawn Wood Grain",
+    "Ivory Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/normal.png",
+   "localPath": "swatches/decking/normalMap/textures__wood-grain__normal.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Agate",
+    "deck/wood-grain/Anthracite",
+    "deck/wood-grain/Aura",
+    "deck/wood-grain/Clay",
+    "deck/wood-grain/CoolSand",
+    "deck/wood-grain/Fawn",
+    "deck/wood-grain/IceGrey",
+    "deck/wood-grain/Ivory",
+    "deck/wood-grain/Mocca",
+    "deck/wood-grain/Natural",
+    "deck/wood-grain/Pewter",
+    "deck/wood-grain/Slate"
+   ],
+   "displayNames": [
+    "Agate Wood Grain",
+    "Anthracite Wood Grain",
+    "Aura",
+    "Clay Wood Grain",
+    "Cool Sand",
+    "Fawn Wood Grain",
+    "Ice Grey",
+    "Ivory Wood Grain",
+    "Mocca",
+    "Natural Wood Grain",
+    "Pewter Wood Grain",
+    "Slate"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "aoMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/ao.png",
+   "localPath": "swatches/decking/aoMap/textures__wood-grain__ao.png",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Agate",
+    "deck/wood-grain/Anthracite",
+    "deck/wood-grain/Aura",
+    "deck/wood-grain/Clay",
+    "deck/wood-grain/CoolSand",
+    "deck/wood-grain/Fawn",
+    "deck/wood-grain/IceGrey",
+    "deck/wood-grain/Ivory",
+    "deck/wood-grain/Mocca",
+    "deck/wood-grain/Natural",
+    "deck/wood-grain/Pewter",
+    "deck/wood-grain/Slate"
+   ],
+   "displayNames": [
+    "Agate Wood Grain",
+    "Anthracite Wood Grain",
+    "Aura",
+    "Clay Wood Grain",
+    "Cool Sand",
+    "Fawn Wood Grain",
+    "Ice Grey",
+    "Ivory Wood Grain",
+    "Mocca",
+    "Natural Wood Grain",
+    "Pewter Wood Grain",
+    "Slate"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_clay.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_clay.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Clay"
+   ],
+   "displayNames": [
+    "Clay Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_clay.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_clay.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Clay"
+   ],
+   "displayNames": [
+    "Clay Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_fawn.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_fawn.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Fawn"
+   ],
+   "displayNames": [
+    "Fawn Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_natural.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_natural.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Natural"
+   ],
+   "displayNames": [
+    "Natural Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_natural.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_natural.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Natural"
+   ],
+   "displayNames": [
+    "Natural Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_agate.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_agate.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Agate"
+   ],
+   "displayNames": [
+    "Agate Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_agate.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_agate.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Agate"
+   ],
+   "displayNames": [
+    "Agate Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_pewter.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_pewter.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Pewter"
+   ],
+   "displayNames": [
+    "Pewter Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_pewter.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_pewter.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Pewter"
+   ],
+   "displayNames": [
+    "Pewter Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_anthracite.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_anthracite.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Anthracite"
+   ],
+   "displayNames": [
+    "Anthracite Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_anthracite.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_anthracite.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Anthracite"
+   ],
+   "displayNames": [
+    "Anthracite Wood Grain"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_aura.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_aura.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Aura"
+   ],
+   "displayNames": [
+    "Aura"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_aura.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_aura.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Aura"
+   ],
+   "displayNames": [
+    "Aura"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_slate.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_slate.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Slate"
+   ],
+   "displayNames": [
+    "Slate"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_slate.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_slate.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Slate"
+   ],
+   "displayNames": [
+    "Slate"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_mocca.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_mocca.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Mocca"
+   ],
+   "displayNames": [
+    "Mocca"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_mocca.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_mocca.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/Mocca"
+   ],
+   "displayNames": [
+    "Mocca"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_icegrey.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_icegrey.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/IceGrey"
+   ],
+   "displayNames": [
+    "Ice Grey"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_icegrey.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_icegrey.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/IceGrey"
+   ],
+   "displayNames": [
+    "Ice Grey"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "decking",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/decking/wood_grain_coolsand.jpg",
+   "localPath": "swatches/decking/menu/items__decking__wood_grain_coolsand.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/CoolSand"
+   ],
+   "displayNames": [
+    "Cool Sand"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "decking",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/wood-grain/map_coolsand.jpg",
+   "localPath": "swatches/decking/map/textures__wood-grain__map_coolsand.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "deck/wood-grain/CoolSand"
+   ],
+   "displayNames": [
+    "Cool Sand"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1050,
+     1050,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "composite boards, vertical in image (Base rotation 90)",
+    "countPerTile": 7,
+    "countedAlongImageAxis": "x (512 px)",
+    "tileExtentUsedMm": 1050,
+    "boardPitchMm": 150.0,
+    "method": "visual count of seam lines on full texture map (all 11 distinct maps checked; Fawn reuses map_ivory with color #867d6c)",
+    "confidence": "high",
+    "note": "square tile, axis mapping does not change pitch"
+   }
+  },
+  {
+   "category": "internal",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/plaster/normal.jpg",
+   "localPath": "swatches/internal/normalMap/textures__plaster__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "plaster-cbd4d9",
+    "plaster-ddf2fc",
+    "plaster-e5f3dc",
+    "plaster-f0dcc0",
+    "plaster-ffffff"
+   ],
+   "displayNames": [
+    "Light Blue",
+    "Light Green",
+    "Light Yellow",
+    "White"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     100,
+     100,
+     0
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "plaster normal map only",
+    "tileExtentMm": 100,
+    "boardPitchMm": "not applicable"
+   }
+  },
+  {
+   "category": "internal",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/wood/plywood.jpg",
+   "localPath": "swatches/internal/menu/items__wood__plywood.jpg",
+   "pixelSize": [
+    256,
+    256
+   ],
+   "usedByFinishValues": [
+    "plywood"
+   ],
+   "displayNames": [
+    "Plywood"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  },
+  {
+   "category": "internal",
+   "kind": "map",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/plywood/map.jpg",
+   "localPath": "swatches/internal/map/textures__plywood__map.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "plywood"
+   ],
+   "displayNames": [
+    "Plywood"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "plywood sheet grain (no boards)",
+    "tileExtentMm": 1500,
+    "boardPitchMm": "not applicable",
+    "note": "rotation 90"
+   }
+  },
+  {
+   "category": "internal",
+   "kind": "normalMap",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/textures/plywood/normal.jpg",
+   "localPath": "swatches/internal/normalMap/textures__plywood__normal.jpg",
+   "pixelSize": [
+    512,
+    512
+   ],
+   "usedByFinishValues": [
+    "plywood"
+   ],
+   "displayNames": [
+    "Plywood"
+   ],
+   "hiddenFromPublic": false,
+   "tileMm_physicalWidth_physicalHeight_rotation": [
+    [
+     1500,
+     1500,
+     90
+    ]
+   ],
+   "realWorldPattern": {
+    "pattern": "plywood sheet grain (no boards)",
+    "tileExtentMm": 1500,
+    "boardPitchMm": "not applicable",
+    "note": "rotation 90"
+   }
+  },
+  {
+   "category": "sedum",
+   "kind": "menu swatch (UI tile image)",
+   "sourceUrl": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/misc/SedumRoof.jpg",
+   "localPath": "swatches/sedum/menu/items__misc__SedumRoof.jpg",
+   "pixelSize": [
+    100,
+    100
+   ],
+   "usedByFinishValues": [
+    "GreenRoof"
+   ],
+   "displayNames": [
+    "Green roof"
+   ],
+   "hiddenFromPublic": false,
+   "note": "UI menu thumbnail only; not a scale-accurate texture"
+  }
+ ]
+}

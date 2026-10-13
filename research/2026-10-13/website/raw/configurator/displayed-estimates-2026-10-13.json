@@ -1,0 +1,21 @@
+{
+  "captured": "2026-10-13, browser pane, app.html (config v23), viewport 1440x900",
+  "method": "Clicked each .menu-thumb style tile in Style tab via DOM click; waited for 'Calculating price...' then read label; read Width/Depth/Height text inputs. Pass 1 order Levno..Angle, pass 2 reverse order; identical results. No forms submitted.",
+  "results": [
+    {"n":"Levno","w":"4.8","d":"3.4","h":"2.7","txt":"Estimated price £28,109 (inc. VAT)"},
+    {"n":"Apexo","w":"5","d":"3.05","h":"2.616","txt":"Estimated price £35,423 (inc. VAT)"},
+    {"n":"Pergola","w":"4","d":"3","h":"2.5","txt":"Estimated price £9,832 (inc. VAT)"},
+    {"n":"Portal","w":"4","d":"3.3","h":"2.5667","txt":"Estimated price £29,979 (inc. VAT)"},
+    {"n":"Cabano","w":"4.2","d":"4","h":"3.3","txt":"Estimated price £35,977 (inc. VAT)"},
+    {"n":"Inspiro","w":"4.6","d":"3.4","h":"3.27","txt":"Estimated price £28,906 (inc. VAT)"},
+    {"n":"Quba","w":"4","d":"2.7","h":"2.5","txt":"Estimated price £29,964 (inc. VAT)"},
+    {"n":"Roko","w":"6","d":"3.25","h":"3","txt":"Estimated price £31,019 (inc. VAT)"},
+    {"n":"Ofiko","w":"3.7","d":"2.4","h":"2.5","txt":"Estimated price £27,280 (inc. VAT)"},
+    {"n":"Ecke","w":"3.3","d":"2.4","h":"2.5","txt":"Estimated price £26,639 (inc. VAT)"},
+    {"n":"Edge","w":"4.1","d":"3.4","h":"2.5","txt":"Estimated price £27,043 (inc. VAT)"},
+    {"n":"L-Shape","w":"4","d":"3.3","h":"2.5","txt":"Estimated price £28,207 (inc. VAT)"},
+    {"n":"Veranda","w":"3","d":"3","h":"3.25","txt":"Estimated price £35,434 (inc. VAT)"},
+    {"n":"Angle","w":"4.5","d":"3","h":"2.5","txt":"Estimated price £32,407 (inc. VAT)"}
+  ],
+  "save_form_fields_not_submitted": ["firstName*","lastName*","email*","phone*","postcode*","message (Notes)"]
+}

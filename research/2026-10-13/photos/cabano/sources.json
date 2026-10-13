@@ -1,0 +1,22 @@
+[
+  {
+    "file": "render-PECASA-CABANO-CLASSIC-21m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CABANO-CLASSIC-21m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x409",
+    "style_match_confidence": "high",
+    "notes": "5.1x4.1 m, height 3.32 m, eaves label 2.42 m",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R922.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R922.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "white shiplap, green trims, shingle-look roof",
+    "retrieved": "2026-10-13"
+  }
+]

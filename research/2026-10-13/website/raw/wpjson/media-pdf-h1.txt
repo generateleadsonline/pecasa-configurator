@@ -1,0 +1,15 @@
+HTTP/2 200 
+x-robots-tag: noindex
+link: <https://www.pecasa.co.uk/wp-json/>; rel="https://api.w.org/"
+x-content-type-options: nosniff
+access-control-expose-headers: X-WP-Total, X-WP-TotalPages, Link
+access-control-allow-headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+x-wp-total: 1
+x-wp-totalpages: 1
+allow: GET
+vary: Origin
+content-security-policy: upgrade-insecure-requests;
+content-type: application/json; charset=UTF-8
+date: Tue, 13 Oct 2026 05:44:46 GMT
+server: Apache
+

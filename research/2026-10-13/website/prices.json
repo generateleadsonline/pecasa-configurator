@@ -1,0 +1,3604 @@
+{
+  "source": "https://www.pecasa.co.uk/ (full crawl of sitemap_index.xml: 208 URLs + 16 case-study URLs + 1 unlisted page found via WP REST API)",
+  "date_checked": "2026-10-13",
+  "currency": "GBP",
+  "notes": [
+    "All figures are quoted verbatim from the live site on the date checked. Nothing is inferred.",
+    "No published prices were found for any extra/upgrade (bathroom, shower room, kitchenette, decking, sedum/green roof, electrics, base/foundations, AC, triple glazing, acoustic insulation). The only published add-on charges are planning-consultancy and council fees on /faq/.",
+    "The brochure PDF (wp-content/uploads/2025/05/final-brochure.pdf) contains no prices."
+  ],
+  "from_price": {
+    "url": "https://www.pecasa.co.uk/",
+    "date_modified_jsonld": "2026-10-09T09:55:58+01:00",
+    "occurrences_exact": [
+      "Prices start from £23,000 including VAT for a 3 m × 2.8 m garden room. Every Pecasa building is bespoke, and your final quotation reflects the design, specification and site requirements. You will also receive a free 3D design and a written, VAT-inclusive quotation, normally within seven days of your survey. Quotations remain valid for three months.",
+      "Prices start from £23,000 including VAT for a 3 m × 2.8 m garden room. Every Pecasa building is bespoke, and your final quotation reflects the design, specification and site requirements. Upgrades such as air conditioning, a shower room or decking are priced in your quotation. See the full price list and what is included.",
+      "Prices start from £23,000 including VAT for a 3 m × 2.8 m garden room. Every Pecasa building is bespoke, and your final quotation reflects the design, specification and site requirements."
+    ],
+    "price_gbp": 23000,
+    "size": "3 m × 2.8 m",
+    "style": "not stated",
+    "vat_wording_exact": "including VAT",
+    "also_rendered_at": [
+      "https://www.pecasa.co.uk/team/",
+      "https://www.pecasa.co.uk/our-team/ (both canonicalise to the homepage and render the homepage content)"
+    ]
+  },
+  "price_grid": {
+    "context": {
+      "section_heading_exact": "Real Garden Room Price Examples - VAT Included",
+      "intro_exact": "A useful garden-room price should show what size and specification it relates to. PECASA publishes model examples with VAT included, giving homeowners a realistic starting point before the design is adapted to the site.",
+      "table_title_exact": "Published PECASA model examples (including VAT)",
+      "banner_exact": [
+        "Bespoke garden rooms",
+        "Pricing Guide for every size",
+        "Premium builds, precision made. Installed in as little as 16–18 days."
+      ],
+      "vat_wording_exact": "Prices include VAT. Final price may vary based on exact specification, site conditions and any additional options.",
+      "footnote_exact": "*Timescales vary by project.",
+      "pricing_note_exact": "Pricing note: These are current published model examples, not fixed quotes for every site. Bespoke dimensions, access, ground conditions, glazing, services, bathrooms/kitchenettes, AC installation, decking and other options can change the final price. The written PECASA quotation should govern the final scope and cost.",
+      "included_as_standard_list_exact": [
+        "SIP construction (walls, roof & floor)",
+        "Ground screw foundation system",
+        "EPDM rubber roof",
+        "High performance windows & doors",
+        "External cladding (choice of finishes)",
+        "Electrical & data (internal fittings)",
+        "Tape-and-joint internal finish",
+        "Decoration (painting & lighting)"
+      ],
+      "popular_upgrades_list_exact": [
+        "Kitchenette & bathroom",
+        "Decking & patio areas",
+        "Smart home features",
+        "Bespoke storage & furniture"
+      ],
+      "style_stated": "not stated (table is not tied to any named style)",
+      "note_on_area_labels": "Column/area labels give approx. m² for the 2.8 m depth only (e.g. \"Approx. 8m² (e.g. 2.8 × 3.0)\"); the mobile cards repeat the same m² label for every depth."
+    },
+    "reference_page": "https://www.pecasa.co.uk/garden-rooms-london/",
+    "pages": {
+      "garden-rooms-london": {
+        "url": "https://www.pecasa.co.uk/garden-rooms-london/",
+        "date_modified_jsonld": "2026-10-05T06:24:08+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      },
+      "garden-rooms-design-herts": {
+        "url": "https://www.pecasa.co.uk/garden-rooms-design-herts/",
+        "date_modified_jsonld": "2026-10-05T06:18:20+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      },
+      "garden-rooms-hertfordshire": {
+        "url": "https://www.pecasa.co.uk/garden-rooms-hertfordshire/",
+        "date_modified_jsonld": "2026-10-05T06:18:20+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      },
+      "herts-garden-rooms": {
+        "url": "https://www.pecasa.co.uk/herts-garden-rooms/",
+        "date_modified_jsonld": "2026-10-05T06:18:20+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      },
+      "outdoor-garden-buildings-hertfordshire": {
+        "url": "https://www.pecasa.co.uk/outdoor-garden-buildings-hertfordshire/",
+        "date_modified_jsonld": "2026-10-05T06:18:20+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      },
+      "garden-rooms-hertfordshire-create-your-garden-room-with-pecasa": {
+        "url": "https://www.pecasa.co.uk/garden-rooms-hertfordshire-create-your-garden-room-with-pecasa/",
+        "date_modified_jsonld": "2026-10-05T06:18:20+01:00",
+        "header_exact": [
+          "Size (m) Depth × Width",
+          "3m wideApprox. 8m² (e.g. 2.8 × 3.0)",
+          "4m wideApprox. 10–12m² (e.g. 2.8 × 4.0)",
+          "5m wideApprox. 14m² (e.g. 2.8 × 5.0)",
+          "6m wideApprox. 17m² (e.g. 2.8 × 6.0)",
+          "7m wideApprox. 20m² (e.g. 2.8 × 7.0)",
+          "8m wideApprox. 22m² (e.g. 2.8 × 8.0)"
+        ],
+        "rows": [
+          {
+            "row_label_exact": "2.8m deepCompact & efficient",
+            "depth_label": "2.8m deep",
+            "depth_tag": "Compact & efficient",
+            "cells_exact": [
+              "£22,300",
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300"
+            ]
+          },
+          {
+            "row_label_exact": "3m deep★ Most popular",
+            "depth_label": "3m deep",
+            "depth_tag": "★ Most popular",
+            "cells_exact": [
+              "£24,300",
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300"
+            ]
+          },
+          {
+            "row_label_exact": "3.5m deepExtra comfort",
+            "depth_label": "3.5m deep",
+            "depth_tag": "Extra comfort",
+            "cells_exact": [
+              "£26,300",
+              "£30,300",
+              "£34,300",
+              "£38,300",
+              "£42,300",
+              "£46,300"
+            ]
+          },
+          {
+            "row_label_exact": "4m deepMore space",
+            "depth_label": "4m deep",
+            "depth_tag": "More space",
+            "cells_exact": [
+              "£28,300",
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300"
+            ]
+          },
+          {
+            "row_label_exact": "5m deepMulti-purpose space",
+            "depth_label": "5m deep",
+            "depth_tag": "Multi-purpose space",
+            "cells_exact": [
+              "£32,300",
+              "£36,300",
+              "£40,300",
+              "£44,300",
+              "£48,300",
+              "£52,300"
+            ]
+          }
+        ],
+        "cells_desktop": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ],
+        "cells_mobile_cards": [
+          {
+            "width_m": 3.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£22,300",
+            "price_gbp": 22300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 2.8,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£24,300",
+            "price_gbp": 24300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£26,300",
+            "price_gbp": 26300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£30,300",
+            "price_gbp": 30300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£34,300",
+            "price_gbp": 34300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£38,300",
+            "price_gbp": 38300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£42,300",
+            "price_gbp": 42300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 3.5,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£46,300",
+            "price_gbp": 46300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£28,300",
+            "price_gbp": 28300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 4.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 3.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 8m²",
+            "price_exact": "£32,300",
+            "price_gbp": 32300
+          },
+          {
+            "width_m": 4.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 10–12m²",
+            "price_exact": "£36,300",
+            "price_gbp": 36300
+          },
+          {
+            "width_m": 5.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 14m²",
+            "price_exact": "£40,300",
+            "price_gbp": 40300
+          },
+          {
+            "width_m": 6.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 17m²",
+            "price_exact": "£44,300",
+            "price_gbp": 44300
+          },
+          {
+            "width_m": 7.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 20m²",
+            "price_exact": "£48,300",
+            "price_gbp": 48300
+          },
+          {
+            "width_m": 8.0,
+            "depth_m": 5.0,
+            "area_label_exact": "Approx. 22m²",
+            "price_exact": "£52,300",
+            "price_gbp": 52300
+          }
+        ]
+      }
+    },
+    "comparison_vs_london": [
+      {
+        "url": "https://www.pecasa.co.uk/garden-rooms-london/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      },
+      {
+        "url": "https://www.pecasa.co.uk/garden-rooms-design-herts/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      },
+      {
+        "url": "https://www.pecasa.co.uk/garden-rooms-hertfordshire/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      },
+      {
+        "url": "https://www.pecasa.co.uk/herts-garden-rooms/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      },
+      {
+        "url": "https://www.pecasa.co.uk/outdoor-garden-buildings-hertfordshire/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      },
+      {
+        "url": "https://www.pecasa.co.uk/garden-rooms-hertfordshire-create-your-garden-room-with-pecasa/",
+        "cells_compared": 60,
+        "differences_vs_london": [],
+        "identical_to_london": true,
+        "header_labels_identical": true
+      }
+    ]
+  },
+  "product_examples": {
+    "url": "https://www.pecasa.co.uk/our-products/",
+    "date_modified_jsonld": "2026-03-24T04:50:29+00:00",
+    "cards": [
+      {
+        "title_exact": "PECASA CLASSIC 30m2",
+        "style_as_written": "CLASSIC 30m2",
+        "dimensions_exact": "7m x 4.5m. Hight 2.5m.",
+        "price_exact": "From £48,500 (inc. Vat)",
+        "price_gbp": 48500,
+        "width_m": 7.0,
+        "depth_m": 4.5,
+        "height_m": 2.5,
+        "area_in_title": "30 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CLASSIC-30m2.png"
+      },
+      {
+        "title_exact": "PECASA LEVNO CLASSIC 16m2",
+        "style_as_written": "LEVNO",
+        "dimensions_exact": "4.8m x 3.4m. Height 2.5m.",
+        "price_exact": "From £25,457 (inc. Vat)",
+        "price_gbp": 25457,
+        "width_m": 4.8,
+        "depth_m": 3.4,
+        "height_m": 2.5,
+        "area_in_title": "16 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-LEVNO-CLASSIC-16m2.webp"
+      },
+      {
+        "title_exact": "PECASA APEXO CLASSIC 15m2",
+        "style_as_written": "APEXO",
+        "dimensions_exact": "5m x 3.05m. Hight 2.5m.",
+        "price_exact": "From £32,345 (inc. Vat)",
+        "price_gbp": 32345,
+        "width_m": 5.0,
+        "depth_m": 3.05,
+        "height_m": 2.5,
+        "area_in_title": "15 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-APEXO-CLASSIC-15m2.webp"
+      },
+      {
+        "title_exact": "PECASA PORTAL CLASSIC 15m2",
+        "style_as_written": "PORTAL",
+        "dimensions_exact": "4.6M x 3.3m. Height 2.5m.",
+        "price_exact": "From £33.200 (inc. Vat)",
+        "price_gbp": 33200,
+        "width_m": 4.6,
+        "depth_m": 3.3,
+        "height_m": 2.5,
+        "area_in_title": "15 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-PORTAL-CLASSIC-15m2.webp"
+      },
+      {
+        "title_exact": "PECASA ROKO CLASSIC 19m2",
+        "style_as_written": "ROKO",
+        "dimensions_exact": "6m x 3.25m. Height 2.5m.",
+        "price_exact": "From £35,670 (inc. Vat)",
+        "price_gbp": 35670,
+        "width_m": 6.0,
+        "depth_m": 3.25,
+        "height_m": 2.5,
+        "area_in_title": "19 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ROKO-CLASSIC-19m2.webp"
+      },
+      {
+        "title_exact": "PECASA CABANO CLASSIC 21m2",
+        "style_as_written": "CABANO",
+        "dimensions_exact": "5.1m x 4.1m. Height 3.32m.",
+        "price_exact": "From £34.559 (inc. Vat)",
+        "price_gbp": 34559,
+        "width_m": 5.1,
+        "depth_m": 4.1,
+        "height_m": 3.32,
+        "area_in_title": "21 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-CABANO-CLASSIC-21m2.webp"
+      },
+      {
+        "title_exact": "PECASA NSPIRO CLASSIC 27m2",
+        "style_as_written": "NSPIRO",
+        "dimensions_exact": "6.1m x 4.5m. Height 3.27m.",
+        "price_exact": "From £38.456 (inc. Vat)",
+        "price_gbp": 38456,
+        "width_m": 6.1,
+        "depth_m": 4.5,
+        "height_m": 3.27,
+        "area_in_title": "27 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-NSPIRO-CLASSIC-27m2.webp"
+      },
+      {
+        "title_exact": "PECASA OFIKO CLASSIC 24.5m2",
+        "style_as_written": "OFIKO",
+        "dimensions_exact": "6.8m x 3.6m. Height 2.5m.",
+        "price_exact": "From £31,157 (inc. Vat)",
+        "price_gbp": 31157,
+        "width_m": 6.8,
+        "depth_m": 3.6,
+        "height_m": 2.5,
+        "area_in_title": "24.5 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-OFIKO-CLASSIC-24.5m2.webp"
+      },
+      {
+        "title_exact": "PECASA ECKE CLASSIC 8m2",
+        "style_as_written": "ECKE",
+        "dimensions_exact": "3.3m x 2.4m. Height 2.5m.",
+        "price_exact": "From £25,500 (inc. Vat)",
+        "price_gbp": 25500,
+        "width_m": 3.3,
+        "depth_m": 2.4,
+        "height_m": 2.5,
+        "area_in_title": "8 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ECKE-CLASSIC-8m2.webp"
+      },
+      {
+        "title_exact": "PECASA EDGE CLASSIC 20m2",
+        "style_as_written": "EDGE",
+        "dimensions_exact": "5.2m x 3.7m. Height 2.5m.",
+        "price_exact": "From £30,250 (inc Vat)",
+        "price_gbp": 30250,
+        "width_m": 5.2,
+        "depth_m": 3.7,
+        "height_m": 2.5,
+        "area_in_title": "20 m2",
+        "vat_wording_exact": "inc Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-EDGE-CLASSIC-20m2.png"
+      },
+      {
+        "title_exact": "PECASA L-SHAPE CLASSIC 16m2",
+        "style_as_written": "L-SHAPE",
+        "dimensions_exact": "4.8m x 3.6m. Height 2.5m.",
+        "price_exact": "From £34.099 (inc. Vat)",
+        "price_gbp": 34099,
+        "width_m": 4.8,
+        "depth_m": 3.6,
+        "height_m": 2.5,
+        "area_in_title": "16 m2",
+        "vat_wording_exact": "inc. Vat",
+        "image_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-L-SHAPE-CLASSIC-16m2.webp"
+      }
+    ],
+    "notes": [
+      "Price text is \"From £… (inc. Vat)\"; four cards use a full stop as thousands separator (£33.200, £34.559, £38.456, £34.099).",
+      "\"PECASA CLASSIC 30m2\" names no style; its image is a project photo.",
+      "\"NSPIRO\" is how the site spells the card that the configurator calls \"Inspiro\".",
+      "No cards exist for Pergola, Quba, Veranda or Angle."
+    ]
+  },
+  "configurator_displayed_estimates": {
+    "url": "https://www.pecasa.co.uk/design-your-building/",
+    "iframe_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/app.html",
+    "config_version": 23,
+    "method": "Each style tile clicked in the Style tab (no other option changed, no form submitted); label read after \"Calculating price...\" resolved. Two passes in different orders gave identical values.",
+    "label_template_exact": "Estimated price £X (inc. VAT)",
+    "estimates": [
+      {
+        "style": "Levno",
+        "default_width_m": 4.8,
+        "default_depth_m": 3.4,
+        "default_height_m": 2.7,
+        "price_exact": "Estimated price £28,109 (inc. VAT)",
+        "price_gbp": 28109,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Apexo",
+        "default_width_m": 5,
+        "default_depth_m": 3.05,
+        "default_height_m": 2.616,
+        "price_exact": "Estimated price £35,423 (inc. VAT)",
+        "price_gbp": 35423,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Pergola",
+        "default_width_m": 4,
+        "default_depth_m": 3,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £9,832 (inc. VAT)",
+        "price_gbp": 9832,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Portal",
+        "default_width_m": 4,
+        "default_depth_m": 3.3,
+        "default_height_m": 2.5667,
+        "price_exact": "Estimated price £29,979 (inc. VAT)",
+        "price_gbp": 29979,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Cabano",
+        "default_width_m": 4.2,
+        "default_depth_m": 4,
+        "default_height_m": 3.3,
+        "price_exact": "Estimated price £35,977 (inc. VAT)",
+        "price_gbp": 35977,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Inspiro",
+        "default_width_m": 4.6,
+        "default_depth_m": 3.4,
+        "default_height_m": 3.27,
+        "price_exact": "Estimated price £28,906 (inc. VAT)",
+        "price_gbp": 28906,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Quba",
+        "default_width_m": 4,
+        "default_depth_m": 2.7,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £29,964 (inc. VAT)",
+        "price_gbp": 29964,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Roko",
+        "default_width_m": 6,
+        "default_depth_m": 3.25,
+        "default_height_m": 3,
+        "price_exact": "Estimated price £31,019 (inc. VAT)",
+        "price_gbp": 31019,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Ofiko",
+        "default_width_m": 3.7,
+        "default_depth_m": 2.4,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £27,280 (inc. VAT)",
+        "price_gbp": 27280,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Ecke",
+        "default_width_m": 3.3,
+        "default_depth_m": 2.4,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £26,639 (inc. VAT)",
+        "price_gbp": 26639,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Edge",
+        "default_width_m": 4.1,
+        "default_depth_m": 3.4,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £27,043 (inc. VAT)",
+        "price_gbp": 27043,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "L-Shape",
+        "default_width_m": 4,
+        "default_depth_m": 3.3,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £28,207 (inc. VAT)",
+        "price_gbp": 28207,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Veranda",
+        "default_width_m": 3,
+        "default_depth_m": 3,
+        "default_height_m": 3.25,
+        "price_exact": "Estimated price £35,434 (inc. VAT)",
+        "price_gbp": 35434,
+        "vat_wording_exact": "inc. VAT"
+      },
+      {
+        "style": "Angle",
+        "default_width_m": 4.5,
+        "default_depth_m": 3,
+        "default_height_m": 2.5,
+        "price_exact": "Estimated price £32,407 (inc. VAT)",
+        "price_gbp": 32407,
+        "vat_wording_exact": "inc. VAT"
+      }
+    ],
+    "notes": [
+      "No item-level prices are shown anywhere in the configurator UI; only the running total.",
+      "Dimensions are the values in the Width/Depth/Height inputs of the configurator at default."
+    ]
+  },
+  "configurator_machine_data_not_displayed": {
+    "url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/configuration.json?v=23",
+    "path": "app.serviceData.ProceduralTemplateSets.sets[0]",
+    "range": "Levno",
+    "template": "201",
+    "sizeMatrix_first_row_and_col_are_mm": [
+      [
+        null,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        5000,
+        5500,
+        6000,
+        6500,
+        7000,
+        7500,
+        8000
+      ],
+      [
+        2500,
+        20684,
+        21131,
+        22727,
+        24163,
+        25440,
+        26637,
+        27834,
+        28951,
+        29909,
+        30867,
+        31824,
+        32782
+      ],
+      [
+        3000,
+        21131,
+        22727,
+        24163,
+        25440,
+        26637,
+        27834,
+        28951,
+        29909,
+        30867,
+        31824,
+        32782,
+        33739
+      ],
+      [
+        3500,
+        22727,
+        24163,
+        25440,
+        26637,
+        27834,
+        28951,
+        29909,
+        30867,
+        31824,
+        32782,
+        33739,
+        34697
+      ],
+      [
+        4000,
+        24163,
+        25440,
+        26637,
+        27834,
+        28951,
+        29909,
+        30867,
+        31824,
+        32782,
+        33739,
+        34697,
+        35655
+      ],
+      [
+        4500,
+        25440,
+        26637,
+        27834,
+        28951,
+        29909,
+        30867,
+        31824,
+        32782,
+        33739,
+        34697,
+        35655,
+        36612
+      ],
+      [
+        5000,
+        28465,
+        29662,
+        30779,
+        31736,
+        32893,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397
+      ],
+      [
+        5500,
+        29662,
+        30779,
+        31736,
+        32694,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355
+      ],
+      [
+        6000,
+        30779,
+        31736,
+        32694,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355,
+        41312
+      ],
+      [
+        6500,
+        31736,
+        32694,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355,
+        41312,
+        42270
+      ],
+      [
+        7000,
+        32694,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355,
+        41312,
+        42270,
+        43228
+      ],
+      [
+        7500,
+        33652,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355,
+        41312,
+        42270,
+        43228,
+        44185
+      ],
+      [
+        8000,
+        34609,
+        35567,
+        36524,
+        37482,
+        38440,
+        39397,
+        40355,
+        41312,
+        42270,
+        43228,
+        44185,
+        45143
+      ]
+    ],
+    "warning": "Public JSON used by the configurator; not a price statement shown to customers. Units and axes are not labelled. Do not quote as a published price."
+  },
+  "planning_fees": {
+    "url": "https://www.pecasa.co.uk/faq/",
+    "date_modified_jsonld": "2026-09-01T10:17:57+01:00",
+    "exact": [
+      "We use third party experts who charge, £600 for a full planning consultancy service to acquire planning permission or a Lawful Development Certificate, providing all elevation plans, site and location plans, design and access statement, completing the application and liaising with the Planning Team on your behalf until the planning decision is made. There are additional charges for the following requirements: Tree Plan (£75), Flood Risk Assessment (£75), Heritage, Ecosystems Services and Biodiversity/Wildlife Statements (£50).",
+      "A separate fee is payable directly to the council upon submission of the application:-",
+      "Householder planning consent: £347",
+      "Full planning for an annexe: £613",
+      "Lawful Development Certificate: £216"
+    ],
+    "items": [
+      {
+        "item": "Planning consultancy (third party) for planning permission or LDC",
+        "price_gbp": 600,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Tree Plan",
+        "price_gbp": 75,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Flood Risk Assessment",
+        "price_gbp": 75,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Heritage, Ecosystems Services and Biodiversity/Wildlife Statements",
+        "price_gbp": 50,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Council fee: Householder planning consent",
+        "price_gbp": 347,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Council fee: Full planning for an annexe",
+        "price_gbp": 613,
+        "vat_wording": "not stated"
+      },
+      {
+        "item": "Council fee: Lawful Development Certificate",
+        "price_gbp": 216,
+        "vat_wording": "not stated"
+      }
+    ],
+    "caveat_on_site_exact": "Do not publish or rely on old application-fee figures without checking them. Statutory and local authority fees change, so the current Planning Portal, GOV.UK and local council information should be used at the time of application. (https://www.pecasa.co.uk/garden-room-cost-prices/)"
+  },
+  "location_page_cost_ranges": [
+    {
+      "url": "https://www.pecasa.co.uk/garden-rooms-rickmansworth/",
+      "date_modified_jsonld": "2025-12-02T10:50:25+00:00",
+      "exact": "Costs vary depending on size, materials, and custom features, but smaller units might start around £10,000–£15,000. Larger, more luxurious builds—complete with heating, plumbing, and premium finishes—can cost £30,000–£50,000 or more. We provide transparent quotes and tailor our builds to your budget.",
+      "size": "not stated",
+      "style": "not stated",
+      "vat_wording": "not stated"
+    },
+    {
+      "url": "https://www.pecasa.co.uk/garden-rooms-kings-langley/",
+      "date_modified_jsonld": "2025-12-02T10:45:15+00:00",
+      "exact": "Costs can range from £10,000 for a basic setup to £40,000+ for high-end, multi-purpose spaces with premium finishes. Factors influencing the price include size, materials, interior fittings (like insulation, heating, or electricity), and any custom features you require.",
+      "size": "not stated",
+      "style": "not stated",
+      "vat_wording": "not stated"
+    },
+    {
+      "url": "https://www.pecasa.co.uk/garden-rooms-berkhamsted/",
+      "date_modified_jsonld": "2026-10-05T06:08:13+01:00",
+      "exact": "Prices vary based on size, materials, and add-ons. You might spend £15,000 on the more basic end or £50,000+ for a high-end, feature-rich studio. We’ll give you a tailored quote once we know your specific needs.",
+      "size": "not stated",
+      "style": "not stated",
+      "vat_wording": "not stated"
+    },
+    {
+      "url": "https://www.pecasa.co.uk/garden-homes-bushey/",
+      "date_modified_jsonld": "2025-12-03T10:11:53+00:00",
+      "exact": "Costs range widely depending on factors like size, materials, and extra features (insulation, plumbing, heating, etc.). Smaller, simpler builds might start around £15,000, while more luxurious Garden Offices with all the bells and whistles can exceed £50,000. We provide free estimates based on your unique requirements. 💵",
+      "size": "not stated",
+      "style": "not stated",
+      "vat_wording": "not stated"
+    }
+  ],
+  "blog_figures": [
+    {
+      "url": "https://www.pecasa.co.uk/garden-annex-vs-garden-room-vs-extension-vs-conservatory/",
+      "date_modified_jsonld": "2026-03-12T08:36:04+00:00",
+      "cost_per_m2_table_exact": {
+        "Garden Room": "£1,800 – £3,000",
+        "Garden Annex": "£2,500 – £4,000",
+        "Rear Extension": "£3,000 – £5,000",
+        "Conservatory": "£1,500 – £2,500"
+      },
+      "example_exact": [
+        "Total Installed Cost Calculator (Concept)",
+        "Example Cost Calculation",
+        "Garden room size: 4 m × 3 m",
+        "Estimated base cost: £20,000",
+        "Foundations and groundworks: £2,000",
+        "Electrical installation: £1,200",
+        "Estimated total installed cost: £23,000"
+      ],
+      "vat_wording": "not stated",
+      "note": "Generic market guidance, not a Pecasa price. The listed components sum to £23,200, not the stated £23,000."
+    },
+    {
+      "url": "https://www.pecasa.co.uk/garden-room-roi-calculator/",
+      "date_modified_jsonld": "2026-03-13T10:21:48+00:00",
+      "table_exact": {
+        "header": [
+          "Garden Room Cost",
+          "Property Value",
+          "Estimated Increase"
+        ],
+        "rows": [
+          [
+            "£20,000",
+            "£400,000",
+            "£12,000–£24,000"
+          ],
+          [
+            "£30,000",
+            "£600,000",
+            "£24,000–£48,000"
+          ],
+          [
+            "£40,000",
+            "£800,000",
+            "£32,000–£64,000"
+          ]
+        ]
+      },
+      "context_exact": "Example Garden Room ROI Calculation / Sample Scenario",
+      "vat_wording": "not stated",
+      "note": "Hypothetical ROI scenario, not a Pecasa price."
+    }
+  ],
+  "structured_data_price_fields": [
+    {
+      "field": "LocalBusiness.priceRange",
+      "value_exact": "£30000",
+      "pages": 225,
+      "example_url": "https://www.pecasa.co.uk/",
+      "note": "Hidden JSON-LD (search-engine data), not visible text."
+    },
+    {
+      "field": "LocalBusiness.priceRange and Service.offers.price",
+      "value_exact": "$",
+      "pages": 20,
+      "example_url": "https://www.pecasa.co.uk/garden-rooms-watford/",
+      "note": "Hidden JSON-LD on 20 older location pages."
+    }
+  ],
+  "non_pecasa_figures_excluded": "Local house-price and rent figures on location pages (e.g. Harrow, Finchley, Hampstead, Hendon, Barnet, Bushey, Potters Bar, Amersham, Beaconsfield, Chesham, Shenley, Elstree, Hemel Hempstead, Berkhamsted, Kings Langley, Rickmansworth) are property-market commentary, not Pecasa prices, and are not listed.",
+  "extras_with_published_prices": "not found (other than the planning fees above)"
+}

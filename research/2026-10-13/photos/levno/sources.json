@@ -1,0 +1,62 @@
+[
+  {
+    "file": "render-PECASA-LEVNO-CLASSIC-16m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-LEVNO-CLASSIC-16m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x383",
+    "style_match_confidence": "high",
+    "notes": "4.8x3.4 m, height label 2.574 m, 1 m front canopy",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R201.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R201.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "planner default: grey shiplap sides, cedar front, black frame",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1635-cedar-front-grey-shiplap-side.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/20.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1200x1600",
+    "style_match_confidence": "high",
+    "notes": "closest real match: mono-pitch rising to front, cedar front, grey horizontal side, black fascia, canopy soffit downlights",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1633-cedar-front-elevation.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/18.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "high",
+    "notes": "same building as 1635, frontal; used for scale (door 2.1 m)",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13587-deep-canopy-cedar.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_5582.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "deep cedar canopy with side fins, high-level window, two full-height glazed units",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14918-ruislip-burnt-oak-canopy.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/09/Ruislip1.jpeg",
+    "found_on": "https://www.pecasa.co.uk/case-studies/ruislip/",
+    "kind": "real completed project photo",
+    "pixels": "2048x1536",
+    "style_match_confidence": "medium",
+    "notes": "Ruislip case study (25 m2, Millboard Burnt Oak): mono-pitch, ~0.5 m front canopy, 3-panel bifold",
+    "retrieved": "2026-10-13"
+  }
+]

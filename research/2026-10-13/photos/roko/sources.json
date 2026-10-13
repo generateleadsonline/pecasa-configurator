@@ -1,0 +1,62 @@
+[
+  {
+    "file": "render-PECASA-ROKO-CLASSIC-19m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ROKO-CLASSIC-19m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x305",
+    "style_match_confidence": "high",
+    "notes": "6x3.25 m; deck + canopy along front, open end porch with single post",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R204.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R204.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "white shiplap, cedar end fins, black fascia frame",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14025-open-end-porch-3q.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/2.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1024x1024",
+    "style_match_confidence": "high",
+    "notes": "cedar, front canopy w/ downlights, open covered end porch on deck, corner glazing into porch",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14026-open-end-porch-front.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/3.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1024x1536",
+    "style_match_confidence": "high",
+    "notes": "same building, frontal",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14133-case-study-covered-deck.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/1.png",
+    "found_on": "https://www.pecasa.co.uk/case-studies/premium-outdoor-workspace-and-relaxation-area/",
+    "kind": "real completed project photo (small 320x213)",
+    "pixels": "320x213",
+    "style_match_confidence": "high",
+    "notes": "same building; case study text: ~7x4 m, vertical cedar, LED soffit, large covered veranda/canopy, black sliding doors, raised composite deck",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "cgi-1094-open-end-porch.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2023/02/garden-room-2.jpg",
+    "found_on": "https://www.pecasa.co.uk/garden-rooms/ (page 919)",
+    "kind": "marketing CGI (not a photo)",
+    "pixels": "1160x570",
+    "style_match_confidence": "medium",
+    "notes": "room + open covered dining porch under one flat roof",
+    "retrieved": "2026-10-13"
+  }
+]

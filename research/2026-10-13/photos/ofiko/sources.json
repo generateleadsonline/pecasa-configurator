@@ -1,0 +1,52 @@
+[
+  {
+    "file": "render-PECASA-OFIKO-CLASSIC-24.5m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-OFIKO-CLASSIC-24.5m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x362",
+    "style_match_confidence": "high",
+    "notes": "6.8x3.6 m, height 2.5 m",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R003.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R003.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "planner default: white render, RAL5025 blue frames, corner glazing",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14036-office-kiosk-corner-windows.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/13.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1206x1578",
+    "style_match_confidence": "medium",
+    "notes": "office building: flat roof thin fascia, multiple windows incl. corner window, door",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13546-cedar-office-door-two-windows.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_0450.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "office elevation: glazed door between two casements, concealed clad store door, soffit LEDs",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1901-long-office-flat-roof.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/03/IMG_1572.jpeg",
+    "found_on": "https://www.pecasa.co.uk/garden-rooms-hemel-hempstead/ (WP media parent 1926; alt text \"Wood Garden House Hampstead\")",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "long flat-roof room, slim timber-look fascia, French door + fixed panels",
+    "retrieved": "2026-10-13"
+  }
+]

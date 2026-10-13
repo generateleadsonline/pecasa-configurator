@@ -1,0 +1,62 @@
+[
+  {
+    "file": "render-PECASA-L-SHAPE-CLASSIC-16m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-L-SHAPE-CLASSIC-16m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x382",
+    "style_match_confidence": "high",
+    "notes": "4.8x3.6 m; L-shaped roof following L-shaped walls",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R208.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R208.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "cedar, black fascia, inner-corner glazing",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1875-L-plan-inner-corner-glazing.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/03/6G3A9868-scaled.jpg",
+    "found_on": "https://www.pecasa.co.uk/wp-json/wp/v2/media (unattached media-library item; same building appears in gallery as 2024/02/9.jpg and home banner home-page-2)",
+    "kind": "real completed project photo",
+    "pixels": "2560x1715",
+    "style_match_confidence": "high",
+    "notes": "L plan: two clad wings with glazed inner corner (brick slip infill), flat roof w/ anthracite fascia",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13574-L-plan-cedar.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3886.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "high",
+    "notes": "cedar L plan; door in inner corner",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13573-L-plan-cedar-front.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3879.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1120x840",
+    "style_match_confidence": "high",
+    "notes": "same building, frontal",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14035-L-plan-dark-composite.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/12.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "2048x1536",
+    "style_match_confidence": "medium",
+    "notes": "long L plan, dark grey vertical composite, soffit downlights",
+    "retrieved": "2026-10-13"
+  }
+]

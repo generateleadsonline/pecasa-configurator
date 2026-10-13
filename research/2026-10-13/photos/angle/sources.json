@@ -1,0 +1,52 @@
+[
+  {
+    "file": "planner-thumb-R215.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R215.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "black shiplap, anthracite front frame with tapered (angled) side fins",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1675-framed-recessed-front.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/IMG_5149-min-scaled.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "2560x1920",
+    "style_match_confidence": "medium",
+    "notes": "anthracite picture frame round full-width recessed front, soffit downlights; fins NOT tapered",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1674-framed-recessed-front-oblique.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/IMG_5140-min-scaled.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "2560x1920",
+    "style_match_confidence": "medium",
+    "notes": "same building, more oblique (shows fin depth)",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1915-framed-front-shiplap.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/03/PHOTO-2023-08-24-19-18-38-5.jpeg",
+    "found_on": "https://www.pecasa.co.uk/garden-rooms-rickmansworth/ (media post 13460)",
+    "kind": "real completed project photo",
+    "pixels": "2048x1536",
+    "style_match_confidence": "medium",
+    "notes": "frontal: anthracite frame, cream horizontal shiplap, 3-panel slider + narrow fixed light; used for proportions",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1673-framed-front-bifold-open.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/IMG_2287-min-scaled.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "2560x1920",
+    "style_match_confidence": "medium",
+    "notes": "black frame, dark vertical cladding, bifold open",
+    "retrieved": "2026-10-13"
+  }
+]

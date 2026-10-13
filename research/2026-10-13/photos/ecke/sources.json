@@ -1,0 +1,62 @@
+[
+  {
+    "file": "render-PECASA-ECKE-CLASSIC-8m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-ECKE-CLASSIC-8m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x427",
+    "style_match_confidence": "high",
+    "notes": "3.3x2.4 m; 0.2 m overhang front and right; corner glazing",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R002.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R002.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "horizontal cedar, black frame",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13570-corner-bifold-open.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3736.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "844x649",
+    "style_match_confidence": "high",
+    "notes": "post-free corner bifold fully open, LED soffit both sides",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13569-corner-glazing-closed.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3714.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1200x1600",
+    "style_match_confidence": "high",
+    "notes": "same building, closed corner glazing",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13568-corner-glazing-front.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3712.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1200x1600",
+    "style_match_confidence": "high",
+    "notes": "same building, frontal",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13542-charred-corner-windows.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_0320.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "black clad box, windows on two faces + bifold, soffit LEDs on front overhang",
+    "retrieved": "2026-10-13"
+  }
+]

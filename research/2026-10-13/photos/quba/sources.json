@@ -1,0 +1,42 @@
+[
+  {
+    "file": "planner-thumb-R009.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R009.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "white render cube, black 30 mm edge trims, no overhang",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14896-wimbledon-flush-box-front.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/09/image-4.jpg",
+    "found_on": "https://www.pecasa.co.uk/case-studies/wimbledon/",
+    "kind": "real completed project photo",
+    "pixels": "768x1024",
+    "style_match_confidence": "medium",
+    "notes": "4x3 m flush-edged box (no overhang), black Shou Sugi Ban; used for proportions",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14895-wimbledon-bifold-oblique.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/09/image-3.jpg",
+    "found_on": "https://www.pecasa.co.uk/case-studies/wimbledon/",
+    "kind": "real completed project photo",
+    "pixels": "1024x768",
+    "style_match_confidence": "medium",
+    "notes": "oblique: frameless roof edge, 3-panel bifold, window",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1627-charred-cladding-closeup.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2024/02/12.jpg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1000x700",
+    "style_match_confidence": "medium",
+    "notes": "same building, cladding texture and roof edge close-up",
+    "retrieved": "2026-10-13"
+  }
+]

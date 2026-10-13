@@ -1,0 +1,62 @@
+[
+  {
+    "file": "render-PECASA-PORTAL-CLASSIC-15m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-PORTAL-CLASSIC-15m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x359",
+    "style_match_confidence": "high",
+    "notes": "4.6x3.3 m; recessed corner porch 2.35 m wide x 1 m deep under full rectangular roof",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R203.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R203.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "black shiplap box, cedar-lined portal around recessed doors",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14909-hendon-recessed-corner-opening.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/09/image-2-3.jpg",
+    "found_on": "https://www.pecasa.co.uk/case-studies/hendon-home-office/",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "solid clad block + glazing recessed under one continuous mono-pitch roof (corner opening)",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14617-two-volume-recessed-doors.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0001.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "low-medium",
+    "notes": "projecting solid block + recessed glazed block with canopy; stepped plan",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14625-recessed-doors-canopy-soffit.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0010.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "low-medium",
+    "notes": "same building as 14617 from the side: canopy over recessed bifold, slatted soffit with downlights",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13544-projecting-portal-frame.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_0337.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "low",
+    "notes": "\"portal frame\" reading of the name: black projecting picture frame round recessed slatted front (geometry is closer to Angle)",
+    "retrieved": "2026-10-13"
+  }
+]

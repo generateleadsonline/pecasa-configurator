@@ -1,0 +1,42 @@
+[
+  {
+    "file": "render-PECASA-EDGE-CLASSIC-20m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-EDGE-CLASSIC-20m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x341",
+    "style_match_confidence": "high",
+    "notes": "5.2x3.7 m, flat roof slab with front + side overhang",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R004.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R004.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "cedar, pebble-grey roof slab fascia",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14901-grey-fascia-overhang-bifold.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/09/image-2-2.jpg",
+    "found_on": "https://www.pecasa.co.uk/case-studies/mill-hill/",
+    "kind": "real completed project photo",
+    "pixels": "2048x1536",
+    "style_match_confidence": "medium",
+    "notes": "flat roof oversailing front and sides with grey fascia; site attaches it to Mill Hill case study (claims tapered plan, not visible here)",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14031-grey-fascia-overhang-deck.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/8.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1536x1024",
+    "style_match_confidence": "medium",
+    "notes": "same building, wider view incl. stepped deck",
+    "retrieved": "2026-10-13"
+  }
+]

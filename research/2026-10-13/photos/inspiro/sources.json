@@ -1,0 +1,22 @@
+[
+  {
+    "file": "render-PECASA-NSPIRO-CLASSIC-27m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-NSPIRO-CLASSIC-27m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x369",
+    "style_match_confidence": "high",
+    "notes": "6.1x4.5 m, height 3.27 m, eaves label 2.37 m (site spells it NSPIRO)",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R001-Pitch.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R001-Pitch.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "horizontal cedar, anthracite front frame",
+    "retrieved": "2026-10-13"
+  }
+]

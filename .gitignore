@@ -6,3 +6,5 @@ qa/private/
 *.log
 research/*.html
 research/pdf-review/
+.qa-tmp/
+qa/private/

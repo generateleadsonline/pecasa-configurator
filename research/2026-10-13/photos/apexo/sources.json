@@ -1,0 +1,42 @@
+[
+  {
+    "file": "render-PECASA-APEXO-CLASSIC-15m2.png",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/03/PECASA-APEXO-CLASSIC-15m2.png",
+    "found_on": "https://www.pecasa.co.uk/our-products/",
+    "kind": "official product render (planner screenshot)",
+    "pixels": "640x343",
+    "style_match_confidence": "high",
+    "notes": "5x3.05 m; dims 1.6 m solid block + 3.4 m recessed glazed front + 1.69 m side wall",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "planner-thumb-R202.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R202.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "white shiplap, cedar bulkhead band + cedar recess",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-1907-corner-glazing-big-overhang.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/03/IMG_2856.jpeg",
+    "found_on": "https://www.pecasa.co.uk/wp-json/wp/v2/media (unattached); same photo is in /gallery/ as 2025/12/IMG_2856.jpg",
+    "kind": "real completed project photo",
+    "pixels": "2048x1536",
+    "style_match_confidence": "low-medium",
+    "notes": "corner-glazed glazed block under a roof that oversails front and side porch deck; nearest real analogue found",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13565-corner-porch-soffit.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_3245.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "low-medium",
+    "notes": "cantilevered corner porch (open on two sides, no post), timber soffit with downlights, doors on inner wall",
+    "retrieved": "2026-10-13"
+  }
+]

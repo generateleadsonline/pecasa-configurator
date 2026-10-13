@@ -1,0 +1,5 @@
+User-agent: *
+Allow: 
+
+Sitemap: https://www.pecasa.co.uk/sitemap_index.xml
+

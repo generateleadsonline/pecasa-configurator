@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Pecasa Garden Room Configurator</title>
+    <meta name="viewport" content="user-scalable=0, initial-scale=1, maximum-scale=1, width=device-width" />
+    <link rel="icon" type="image/ico" href="content/images/controls/favicon.ico" />
+    <meta name="author" content="https://gardenroomplanner.com">
+    <style>
+        .loading-indicator {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            background: #0000003b url(content/images/controls/spinner.svg) no-repeat center;
+            cursor: not-allowed;
+        }
+    </style>
+    <script src="scripts/Styles.js?v=23"></script>
+    <style>
+        :root {
+            --normal: #6D7973;
+
+            --overlayDialogSideBarBackground: #d3f8f2;
+            --overlayDialogSideBarColor: #4f4f50;
+            --overlayDialogSideBarIconColor: #4f4f50;
+
+            --dialogFormInputBorder: #A9A9A9;
+            --dialogFormButtonColor:  #ffffff;
+            --dialogFormButtonBackground:  #1DAFA4;;
+
+            --buttonBackground: #ffffff;
+            --buttonBorder: #d3d3d3;
+            --buttonBackgroundHover: #d3f8f2;
+            --buttonColorHover: #1DAFA4;
+            --buttonBorderColorHover: #d3f8f2;
+            --buttonBorderSelected: #1DAFA4;
+            --buttonColorSelected:#ffffff;
+            --buttonBackgroundSelected:#1DAFA4;
+
+            --snackbarElementsColorHover: #ffffff;
+            --snackbarElementsActiveColor: #ffffff;
+            --snackbarElementsActiveBackround: #18746C;
+
+            --snackbarElementsColor: #000;
+            --snackbarElementsBackground: #18746c;
+            --snackbarColor: #000000;
+            --snackbarWithSliderColor: #ffffff;
+            --snackbarWithSliderBackground: #f0f0f0;
+            --snackbarBackground: #ffc107;
+
+            --editBarBackground: #18746C;
+            --editBarColor: #000;
+            --editBarBackgroundHover: #ffffff;
+
+            --inputBackground: #1DAFA4;
+
+            --slider-background: #d3f8f2;
+            --slider-nob: #18746C;
+            --tabgroup-background: rgba(255, 255, 255, 0);
+
+            --headerBackground: #ffffff00;
+            --toolbarSectionPadding: 15px;
+            --toolbarSectionMargin: 15px;
+            --sidebarTabBorder: #e1cea1;
+            --sidebarTabBackground: #ffffff;
+            --sidebarCollapseButtonWidth: 100%;
+            --formBackground: #ffffff;
+            --formInputBackground: #ffffff;
+            --formInputBorderColor: #e1cea1;
+            --formInputPlaceholderColor: #ffffff;
+            --formButtonBackground: #6d7973;
+
+            --modalHeaderBackground: #d3f8f2;
+            --modalBackground: #ffffff;
+
+            --tabHeaderAlignment: space-between;
+            --tabContentAlignment: space-between;
+            --sidebarWidth: 400px;
+            --sideBarFormBackground: #ffffff;
+            --sideBarFormInputBorderColor: #c8c8c8;
+            --sideBarFormInputBackground: #ffffff;
+            --sideBarFormButtonBackground: #1DAFA4;
+            --sideBarFormInputPlaceholderColor: #919191;
+            --sideBarFormPadding: 0;
+            --menuItemThumbnailBackground: transparent;
+            --menuItemThumbnailColor: #4f4f50;
+
+            --caretDownColor: #6d7973;
+            --finishButtonSelectedBorder: #4f4f50;
+            --moreContentIndicatorBackround: #f0f0f0;
+
+            --slider-height: 3px;
+            --slider-nob-radius: 20px;
+            --sizerPanelPadding: 30px 10px;
+            --sizerFontSize: 16px;
+
+            --menuThumbButtonFontSize_default: 16px;
+            --menuIconFontSize_default: 16px;
+            --menuIconFontSize_large_rc_180_120: 16px;
+            --finishButtonDefaultBackground: transparent;
+
+            --dividerGradient: to left, #749aab21, #749aab, #749aab21;
+            --navigationBtnColor:#ffffff;
+            --navigationBtnBackground: #18746C;
+            --navigationBtnHoverColor: #1DAFA4;
+            --navigationBtnHoverBackground: #d3f8f2;
+
+            --footerMenuBackground: #18746C;
+            --footerMenuColor: #ffffff;
+            --footerMenuButtonBackgroundHover: #d3f8f2;
+            --footerMenuButtonBackgroundActive: #d3f8f2;
+            --footerMenuBorderActive: #1DAFA4;
+            --footerMenuColorActive : #18746C;
+            --footerRangeInfoColor: #ffffff;
+            --logoPanelHeight: 62px;
+
+            --runningPriceLinkColor: #008276;
+        }
+    </style>
+</head>
+
+<body class="disabled non-select" data-version="23">
+    <div id="loading-indicator" class="loading-indicator"></div>
+
+    <div class="panels" id="drag-zone">
+        <div class="main-panel">
+            <div id="canvas-container"></div>
+        </div>
+
+        <div class="side-bar"></div>
+    </div>
+
+    <script src="scripts/App.js?v=23"></script>
+</body>
+</html>

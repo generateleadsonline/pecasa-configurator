@@ -1,0 +1,52 @@
+[
+  {
+    "file": "planner-thumb-R207.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/R207.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "gable roof, cedar, side veranda with posts + balustrade",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13582-covered-veranda-slatted-soffit.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_5371.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "large covered outdoor room (veranda) beside a rendered room; slatted cedar-look fascia/soffit, downlights",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-13583-covered-veranda-3q.jpeg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2025/12/IMG_5372.jpeg",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo",
+    "pixels": "1600x1200",
+    "style_match_confidence": "medium",
+    "notes": "same, wider angle",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14663-canopy-outdoor-kitchen.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0063.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "medium",
+    "notes": "open-fronted mono-pitch canopy with exposed cedar soffit boards and rafters, gutter",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14664-canopy-rafters-gutter.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0066.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "medium",
+    "notes": "underside: cedar boards over glulam/timber rafters, black gutter",
+    "retrieved": "2026-10-13"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "planner-thumb-Pergola.png",
+    "source_url": "https://webadminservices.com/editor-app/a7221949-fee9-45dc-8b90-7ddc7561961d/content/images/items/ranges/Pergola.png",
+    "found_on": "https://www.pecasa.co.uk/design-your-building/ (planner Style tab thumbnail, 100x100)",
+    "kind": "planner style thumbnail (default config, 100x100 px)",
+    "pixels": "100x100",
+    "style_match_confidence": "high",
+    "notes": "4 posts, slate-grey frame, louvre roof",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14667-louvred-pergola-3q.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0069.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "high",
+    "notes": "aluminium louvred pergola, anthracite, on composite deck",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14670-louvred-pergola-closed.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0072.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "high",
+    "notes": "louvres closed; shows deep perimeter beam",
+    "retrieved": "2026-10-13"
+  },
+  {
+    "file": "photo-14668-louvred-pergola.jpg",
+    "source_url": "https://www.pecasa.co.uk/wp-content/uploads/2026/07/Pecasa-P1_0070.webp",
+    "found_on": "https://www.pecasa.co.uk/gallery/ (WP media attached to page 1614)",
+    "kind": "real completed project photo (pro shoot, webp converted to jpg)",
+    "pixels": "1000x667",
+    "style_match_confidence": "high",
+    "notes": "alternate angle",
+    "retrieved": "2026-10-13"
+  }
+]

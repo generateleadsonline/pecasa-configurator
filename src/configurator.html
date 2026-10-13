@@ -80,13 +80,13 @@
 <button class="head-icon menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-sheet" aria-label="Menu: talk to Pecasa"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
 </div>
 </header>
-<div class="menu-sheet" id="menu-sheet" hidden>
+<nav class="menu-sheet" id="menu-sheet" aria-label="Talk to Pecasa" hidden>
 <button type="button" data-dialog="callback"><svg aria-hidden="true"><use href="#i-callback"/></svg>Request a callback</button>
 <button type="button" data-dialog="showroom"><svg aria-hidden="true"><use href="#i-pin"/></svg>Visit showroom</button>
 <button type="button" data-dialog="brochure"><svg aria-hidden="true"><use href="#i-book"/></svg>Download brochure</button>
 <a href="tel:+442081462200" data-cta="phone-menu"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call 020 8146 2200</a>
 <button type="button" class="menu-tour" id="menu-tour"><svg aria-hidden="true"><use href="#i-help"/></svg>How the designer works</button>
-</div>
+</nav>
 
 <nav class="steps" id="steps" aria-label="Design steps">
 <ol>
@@ -102,7 +102,7 @@
 <main class="app" id="main">
 <section class="stage" id="stage" aria-label="Your garden room in 3D">
 <img class="stage-poster" id="stage-poster" src="/assets/posters/ecke-960.webp" width="960" height="640" alt="" fetchpriority="high">
-<div class="scene" id="scene"></div>
+<div class="scene" id="scene" role="group" aria-label="3D view of your Pecasa garden room"></div>
 <div class="stage-top">
 <div class="stage-title"><h1 id="stage-title">Your Pecasa Ecke</h1><p id="stage-sub">3.3m &times; 2.4m</p></div>
 <div class="view-switch" role="group" aria-label="View" hidden>

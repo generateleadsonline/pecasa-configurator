@@ -52,13 +52,18 @@ export function furnish(parent, state, room, kit) {
   // Wall taken by an enclosed shower room, sauna or store: fittings go on the open room's walls.
   const blocked = (side, pos, half) => (blockBack && ((side === 'back' && pos + half > blockBack.x0) || (side === 'right' && pos - half < blockBack.z1))) ||
     (blockRight && (side === 'right' || ((side === 'back' || side === 'front') && pos + half > iw / 2 - blockRight)));
-  const freeAt = (side, pos, half, below = 2.1) => !sideOpen(side) && !blocked(side, pos, half) && spans(side).every(s => pos + half < s.a - .05 || pos - half > s.b + .05 || s.sill > below);
-  const findFree = (side, half, prefer = 0, below = 2.1) => {
+  // Fittings already on a wall (sockets, switch, heater...), each with its height band above the floor.
+  const fixtures = [];
+  const fixed = (side, pos, half, y0, y1) => fixtures.push({side, a: pos - half, b: pos + half, y0, y1});
+  const clearOfFixtures = (side, pos, half, [y0, y1]) => fixtures.every(f => f.side !== side || pos + half < f.a - .04 || pos - half > f.b + .04 || y1 < f.y0 || y0 > f.y1);
+  const freeAt = (side, pos, half, below = 2.1, band = [0, below]) => !sideOpen(side) && !blocked(side, pos, half) && clearOfFixtures(side, pos, half, band) &&
+    spans(side).every(s => pos + half < s.a - .05 || pos - half > s.b + .05 || s.sill > below);
+  const findFree = (side, half, prefer = 0, below = 2.1, band = [0, below]) => {
     const lim = (side === 'front' || side === 'back' ? iw : id) / 2 - half - .05;
     for (let k = 0; k < 40; k++) {
       for (const sgn of [1, -1]) {
         const pos = prefer + sgn * k * .1;
-        if (Math.abs(pos) <= lim && freeAt(side, pos, half, below)) return pos;
+        if (Math.abs(pos) <= lim && freeAt(side, pos, half, below, band)) return pos;
       }
     }
     return null;
@@ -181,8 +186,9 @@ export function furnish(parent, state, room, kit) {
   // ---- Heating and cooling (planner Electrics: Wall Heater, Climate control) ------------------
   const heat = group(host, 'heating');
   if (state.electrics.airCon) {
-    const pos = findFree('back', .45, iw * .1, 1.6) ?? 0;
+    const pos = findFree('back', .45, iw * .1, 1.6, [1.7, 2.2]) ?? 0;
     const unit = onWall(group(heat), 'back', pos, Math.min(ceilingH - .3, F + 2.0), .12);
+    fixed('back', pos, .45, 1.7, 2.2);
     rbox(unit, .85, .29, .2, 0, 0, 0, std('#f7f7f5', {roughness: .35}), .05);
     box(unit, .7, .015, .02, 0, -.11, .1, std('#c9cbcb', {roughness: .5}));
     // The condenser outside, behind the room.
@@ -198,6 +204,7 @@ export function furnish(parent, state, room, kit) {
     const side = ['right', 'left', 'back'].find(sd => findFree(sd, .4, 0, .8) !== null) || 'back';
     const pos = findFree(side, .4, side === 'back' ? iw * .2 : 0, .8) ?? 0;
     const rad = onWall(group(heat), side, pos, F + .35, .04);
+    fixed(side, pos, .4, .1, .6);
     rbox(rad, .78, .45, .07, 0, 0, 0, std('#f4f4f1', {roughness: .35}), .02);
     box(rad, .7, .02, .02, 0, .2, .035, std('#d4d4d0', {roughness: .5}));
   }
@@ -255,6 +262,7 @@ export function furnish(parent, state, room, kit) {
   const dark = std('#2b2f33', {roughness: .5});
   const socket = (side, pos, kind = 'double') => {
     const g = onWall(group(elec, kind === 'double' ? 'sockets' : kind), side, pos, F + .4, .004);
+    fixed(side, pos, kind === 'double' ? .073 : .043, .35, .45);
     box(g, kind === 'double' ? .146 : .086, .086, .012, 0, 0, 0, plate);
     if (kind === 'double') for (const x of [-.035, .035]) box(g, .02, .012, .004, x, .01, .007, dark);
     else if (kind === 'tv') { const c = cyl(g, .012, .012, .006, 0, 0, .007, dark); c.rotation.x = Math.PI / 2; }
@@ -273,11 +281,12 @@ export function furnish(parent, state, room, kit) {
   const swPos = entrance ? (entrance.b + .2 < (swSide === 'front' ? iw : id) / 2 - .05 ? entrance.b + .15 : entrance.a - .15) : 0;
   if (freeAt(swSide, swPos, .05, 1.1) || !entrance) {
     const sw = onWall(group(elec, 'switches'), swSide, swPos, F + 1.2, .004);
+    fixed(swSide, swPos, .043, 1.15, 1.25);
     box(sw, .086, .086, .012, 0, 0, 0, plate);
     if (state.electrics.dimmer) cyl(sw, .016, .016, .014, 0, 0, .01, plate).rotation.x = Math.PI / 2;
     else box(sw, .03, .05, .006, 0, 0, .008, plate);
   }
-  const fb = findFree('back', .12, iw * .4, 1.95);
+  const fb = findFree('back', .12, iw * .4, 1.95, [1.6, 2.0]);
   if (fb !== null) { const cu = onWall(group(elec, 'fuseboard'), 'back', fb, Math.min(ceilingH - .35, F + 1.85), .004); box(cu, .2, .24, .1, 0, 0, .05, plate); }
   if (state.electrics.smokeAlarm) {
     const sa = group(elec, 'smokeAlarm');

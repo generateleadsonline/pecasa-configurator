@@ -5,12 +5,12 @@
 // Built on the SMART configurator's PDF module.
 import {jsPDF} from 'jspdf';
 import qrcode from 'qrcode-generator';
-import {normalise, priceFor, nearestPriced, pounds, metres, mm, upgradesOf, summary, plan, footprintArea, internalArea, STYLES, OPENINGS, USES, ROOF_FINISHES} from './configurator-model.js';
+import {normalise, priceFor, nearestPriced, pricedLabel, pounds, metres, mm, upgradesOf, summary, plan, footprintArea, internalArea, STYLES, OPENINGS, USES, ROOF_FINISHES} from './configurator-model.js';
 import {USPS, CONTACT} from './configurator-data.js';
 import {PDF_FONTS, PDF_LOGO, PDF_LOGO_NEGATIVE, PDF_LOGO_RATIO, PDF_STYLE_PHOTOS} from './configurator-pdf-assets.js';
 
 const C = {forest: '#022828', pine: '#18746c', signal: '#1dafa4', mint: '#d3f8f2', mist: '#eef4f2', ink: '#10211f', muted: '#4e5c56', line: '#d5dcd3', paper: '#ffffff', frost: '#b7cfca'};
-const W = 210, H = 297, M = 16, CW = W - 2 * M, PAGES = 6;
+const W = 210, H = 297, M = 16, CW = W - 2 * M;
 
 function reference(state) {
   let n = 2166136261;
@@ -81,7 +81,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
     pdf.setFillColor(C.forest); pdf.rect(0, 283, W, 14, 'F');
     set(8.8, true, C.signal); pdf.textWithLink('Book a call about your design', M, 289.5, {url: booking});
     set(7.4, false, '#d3e6e2'); pdf.text(`Call ${CONTACT.phone}  |  ${CONTACT.email}`, M, 293.6);
-    pdf.text(`Your Pecasa garden room  |  ${page} of ${PAGES}`, W - M, 291.5, {align: 'right'});
+    pdf.text(`Your Pecasa garden room  |  ${page} of ${total}`, W - M, 291.5, {align: 'right'});
   }
   function framed(data, x, y, w, h, caption, fallback) {
     pdf.setFillColor(C.mist); pdf.rect(x, y, w, h, 'F');
@@ -116,9 +116,12 @@ export async function downloadPDF(input, views = {}, options = {}) {
         pdf.setDrawColor(door ? C.signal : '#7fb7c4'); pdf.setLineWidth(Math.max(.5, .06 * k));
         const p0 = [wall.a[0] + wall.t[0] * a - wall.n[0] * .075, wall.a[1] + wall.t[1] * a - wall.n[1] * .075], p1 = [wall.a[0] + wall.t[0] * c - wall.n[0] * .075, wall.a[1] + wall.t[1] * c - wall.n[1] * .075];
         pdf.line(X(p0[0]), Z(p0[1]), X(p1[0]), Z(p1[1]));
+        // Widths sit just outside the wall: along the side walls (rotated), so they never cross
+        // a wall line or the overall dimensions.
         set(6.4, false, C.muted);
-        const mx = (p0[0] + p1[0]) / 2 + wall.n[0] * .35, mz = (p0[1] + p1[1]) / 2 + wall.n[1] * .35;
-        pdf.text(mm(o.w), X(mx), Z(mz) + 1, {align: 'center'});
+        const cx = (p0[0] + p1[0]) / 2, cz = (p0[1] + p1[1]) / 2, text = mm(o.w);
+        if (Math.abs(wall.n[0]) > .5) pdf.text(text, X(cx) + wall.n[0] * 2.4 + (wall.n[0] > 0 ? 2.3 : 0), Z(cz) + pdf.getTextWidth(text) / 2, {angle: 90});
+        else pdf.text(text, X(cx), Z(cz) + wall.n[1] * 2.4 + (wall.n[1] > 0 ? 2.3 : 0), {align: 'center'});
         pdf.setDrawColor(C.forest); pdf.setLineWidth(Math.max(.8, .15 * k));
       }
     } else {
@@ -136,6 +139,29 @@ export async function downloadPDF(input, views = {}, options = {}) {
     set(11, true, C.forest); pdf.text(`${footprintArea(state).toFixed(1)}m²`, X(0), Z(-state.depth / 2 + state.depth * .35), {align: 'center'});
     return true;
   }
+
+  // ---- Specification layout, measured first: it runs onto more pages when a design needs it,
+  // and every page's footer counts the total.
+  const SPEC_TOP = 57, SPEC_BOTTOM = 274, LABEL_W = 40, VALUE_W = 104;
+  const specPages = [[]];
+  {
+    const measured = s.rows.map(row => {
+      set(8.4, true); const labelLines = pdf.splitTextToSize(row.label, LABEL_W);
+      set(8.8, false); const valueLines = pdf.splitTextToSize(row.value, VALUE_W);
+      return {row, labelLines, valueLines, h: Math.max(valueLines.length * 4.1, labelLines.length * 3.5) + 2.9};
+    });
+    let y = SPEC_TOP, section = '';
+    measured.forEach(({row, labelLines, valueLines, h}, i) => {
+      const head = row.section !== section ? (y === SPEC_TOP ? 6 : 8.5) : 0;
+      // A section heading never sits alone at the foot of a page: it keeps its next row with it.
+      const next = head && measured[i + 1]?.row.section === row.section ? measured[i + 1].h : 0;
+      if (y + head + h + next > SPEC_BOTTOM) { specPages.push([]); y = SPEC_TOP; section = ''; }
+      const page = specPages[specPages.length - 1];
+      if (row.section !== section) { const hh = y === SPEC_TOP ? 6 : 8.5; page.push({heading: row.section, y: y + hh - 3}); y += hh; section = row.section; }
+      page.push({row, labelLines, valueLines, y}); y += h;
+    });
+  }
+  const total = 5 + specPages.length;
 
   // ---- 1. Cover ------------------------------------------------------------------------------
   pdf.setFillColor(C.forest); pdf.rect(0, 0, W, H, 'F');
@@ -181,37 +207,40 @@ export async function downloadPDF(input, views = {}, options = {}) {
     drawPlan(M + gw + 6, 56 + gh + 12, gw, gh * 1.15);
     label('Dimensioned plan (external sizes; door and window widths in mm)', M + gw + 6, 56 + gh + 12 + gh * 1.15 + 4.4);
     const iy0 = 56 + gh + 12 + gh * 1.15 + 12;
-    pdf.setFillColor(C.mist); pdf.rect(M, iy0, CW, 270 - iy0, 'F');
+    // The box fits its two columns of choices.
+    set(8.2, false, C.ink);
+    const cells = s.rows.filter(x => x.section === 'Interior').map(row => pdf.splitTextToSize(`${row.label}: ${row.value}`, CW / 2 - 12));
+    const pairH = []; for (let i = 0; i < cells.length; i += 2) pairH.push(Math.max(cells[i].length, cells[i + 1]?.length || 0) * 3.8 + 2.8);
+    pdf.setFillColor(C.mist); pdf.rect(M, iy0, CW, Math.min(270 - iy0, 15 + pairH.reduce((a, b) => a + b, 0)), 'F');
     let iy = iy0 + 8;
     set(11, true, C.forest, true); pdf.text('INSIDE', M + 6, iy); iy += 6;
-    const inside = s.rows.filter(x => x.section === 'Interior');
-    inside.forEach((row, i) => { const col = i % 2, x = M + 6 + col * (CW / 2); if (col === 0 && i) iy += 8.5; if (iy < 268) para(`${row.label}: ${row.value}`, x, iy, CW / 2 - 10, 8.2, C.ink, 3.8); });
+    for (let i = 0; i < cells.length && iy < 266; i += 2) {
+      set(8.2, false, C.ink);
+      for (const c of [0, 1]) if (cells[i + c]) pdf.text(cells[i + c], M + 6 + c * (CW / 2), iy, {lineHeightFactor: 3.8 / (8.2 * .352778)});
+      iy += pairH[i / 2];
+    }
   }
 
-  // ---- 4. Specification ----------------------------------------------------------------------
-  pdf.addPage(); frame(4, 'Your specification', 'Everything you chose, and how each item is priced.');
-  let sy = 57;
+  // ---- 4. Specification (one page, or more for a large design) -------------------------------
   const chip = (status, x, y) => {
     const text = status === 'upgrade' ? 'UPGRADE' : status === 'quoted' ? 'QUOTED' : 'INCLUDED';
     pdf.setFillColor(status === 'upgrade' ? C.forest : status === 'quoted' ? '#eef1ef' : '#dcf3f0');
     set(6.6, true, status === 'upgrade' ? '#ffffff' : status === 'quoted' ? C.muted : '#0e5a53');
     const tw = pdf.getTextWidth(text) + 4; pdf.roundedRect(x - tw, y - 3.6, tw, 5, 1, 1, 'F'); pdf.text(text, x - tw + 2, y);
   };
-  let lastSection = '';
-  for (const row of s.rows) {
-    if (row.section !== lastSection) { sy += 3; set(11, true, C.forest, true); pdf.text(row.section.toUpperCase(), M, sy); sy += 3; lastSection = row.section; }
-    set(8.8, false, C.ink);
-    const lines = pdf.splitTextToSize(row.value, 108);
-    pdf.setDrawColor(C.line); pdf.setLineWidth(.2); pdf.line(M, sy, W - M, sy);
-    set(8.4, true, C.muted); pdf.text(pdf.splitTextToSize(row.label, 40), M, sy + 4.6);
-    set(8.8, false, C.ink); pdf.text(lines, M + 44, sy + 4.6, {lineHeightFactor: 1.32});
-    chip(row.status, W - M, sy + 4.6);
-    sy += Math.max(4.4 * lines.length, 4.4 * pdf.splitTextToSize(row.label, 40).length) + 3.2;
-    if (sy > 274) break;
-  }
+  specPages.forEach((items, n) => {
+    pdf.addPage(); frame(4 + n, n ? 'Your specification, continued' : 'Your specification', n ? null : 'Everything you chose, and how each item is priced.');
+    for (const it of items) {
+      if (it.heading) { set(11, true, C.forest, true); pdf.text(it.heading.toUpperCase(), M, it.y); continue; }
+      pdf.setDrawColor(C.line); pdf.setLineWidth(.2); pdf.line(M, it.y, W - M, it.y);
+      set(8.4, true, C.muted); pdf.text(it.labelLines, M, it.y + 4.3, {lineHeightFactor: 3.5 / (8.4 * .352778)});
+      set(8.8, false, C.ink); pdf.text(it.valueLines, M + 44, it.y + 4.3, {lineHeightFactor: 4.1 / (8.8 * .352778)});
+      chip(it.row.status, W - M, it.y + 4.3);
+    }
+  });
 
   // ---- 5. Price ------------------------------------------------------------------------------
-  pdf.addPage(); frame(5, 'Your price', 'What Pecasa publishes for this design, and what your written quote adds.');
+  pdf.addPage(); frame(total - 1, 'Your price', 'What Pecasa publishes for this design, and what your written quote adds.');
   pdf.setFillColor(C.forest); pdf.roundedRect(M, 57, CW, 36, 2, 2, 'F');
   label(price.value === null ? 'Your price' : 'Your price, including VAT', M + 7, 66, C.frost);
   heading(price.value === null ? 'Quoted' : pounds(price.value), M + 7, 82, 32, C.signal, 100);
@@ -223,7 +252,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
   if (quoted.length > 13) para(`And ${quoted.length - 13} more, listed on page 4.`, 115, qy, 80, 8.4, C.muted, 4);
   if (price.value === null) {
     const near = nearestPriced(state, 3);
-    para(`Published prices for the ${st.name}: ${near.map(x => `${metres(x.w)} × ${metres(x.d)} ${pounds(x.price)}`).join('; ')}.`, M, 212, CW, 8.8, C.ink, 4.2, true);
+    para(`Published prices for the ${st.name}: ${near.map(x => `${pricedLabel(x)}: ${pounds(x.price)}`).join('; ')}.`, M, 212, CW, 8.8, C.ink, 4.2, true);
   }
   para('This is not a written quotation. Pecasa confirms your specification, current prices and any site costs in a written, VAT-inclusive quotation, normally within 7 days of your free survey; quotations remain valid for three months.', M, 222, CW, 8.4, C.muted, 3.9);
   pdf.setFillColor(C.mist); pdf.roundedRect(M, 238, CW, 32, 2, 2, 'F');
@@ -231,7 +260,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
   para(P.maxHeight > 2.5 ? `Your design is ${metres(P.maxHeight)} high. In England a garden room within 2m of a boundary must be no more than 2.5m high to fall within permitted development; Pecasa advises at your survey.` : `Your design is ${metres(P.maxHeight)} high. Many garden rooms used for purposes incidental to the house fall within permitted development; Pecasa gives guidance at your free survey.`, M + 7, 255, CW - 14, 8.6, C.ink, 4.1);
 
   // ---- 6. Next steps -------------------------------------------------------------------------
-  pdf.addPage(); frame(6, 'Your next steps', 'From your design to your garden room.');
+  pdf.addPage(); frame(total, 'Your next steps', 'From your design to your garden room.');
   const keys = ['factory', 'warranty', 'install', 'survey', 'projects', 'britain'];
   keys.forEach((k, i) => { const x = M + (i % 2) * (CW / 2 + 2), y = 59 + Math.floor(i / 2) * 19; pdf.setFillColor(C.signal); pdf.circle(x + 2, y - 1.4, 1.6, 'F'); set(10.4, true, C.forest); pdf.text(USPS[k].title, x + 6, y); para(USPS[k].copy, x + 6, y + 5, CW / 2 - 10, 8.4, C.muted, 3.9); });
   pdf.setDrawColor(C.line); pdf.line(M, 120, W - M, 120);
@@ -243,11 +272,11 @@ export async function downloadPDF(input, views = {}, options = {}) {
   qr(booking, 152, 126, 42); set(7.6, false, C.muted); pdf.text('Scan to book your call', 173, 173, {align: 'center'});
   button('Book a call', M, 210, CW, 15, booking);
   const tiles = [['Call Pecasa', CONTACT.phone, 'tel:' + CONTACT.tel], ['Visit the showroom', 'Unit 3, 8 Colonial Way, Watford, by appointment', CONTACT.showroom.map], ['Reopen your design', 'Change anything and see it again', link]];
-  tiles.forEach(([t, c, url], i) => { const x = M + i * (CW / 3 + .5), w = CW / 3 - 3; pdf.setDrawColor(C.line); pdf.setLineWidth(.3); pdf.roundedRect(x, 231, w, 24, 2, 2, 'S'); set(9.5, true, C.pine); pdf.text(t, x + 4, 239); para(c, x + 4, 245, w - 8, 8, C.muted, 3.6); pdf.link(x, 231, w, 24, {url}); });
+  tiles.forEach(([t, c, url], i) => { const w = (CW - 6) / 3, x = M + i * (w + 3); pdf.setDrawColor(C.line); pdf.setLineWidth(.3); pdf.roundedRect(x, 231, w, 24, 2, 2, 'S'); set(9.5, true, C.pine); pdf.text(t, x + 4, 239); para(c, x + 4, 245, w - 8, 8, C.muted, 3.6); pdf.link(x, 231, w, 24, {url}); });
   para('Views are rendered from your design and are illustrative: furniture, planting and the garden setting are examples, and colours vary by screen and printer. Pecasa Ltd, company 10714739, Unit 3, 8 Colonial Way, Watford WD24 4PT.', M, 263, CW, 7.4, C.muted, 3.4);
 
   const slug = v => String(v).toLowerCase().replace(/[^a-z0-9.]+/g, '-').replace(/^-|-$/g, '');
   const filename = `Pecasa-${slug(st.name)}-${state.width}x${state.depth}-design.pdf`;
   if (options.save !== false) pdf.save(filename);
-  return {filename, pages: PAGES, reference: ref, bytes: options.save === false ? pdf.output('arraybuffer') : null};
+  return {filename, pages: total, reference: ref, bytes: options.save === false ? pdf.output('arraybuffer') : null};
 }

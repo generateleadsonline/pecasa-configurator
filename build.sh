@@ -12,7 +12,7 @@ for f in public/configurator/index.html public/configurator/thank-you/index.html
   test -s "$f" || { echo "missing: $f"; exit 1; }
 done
 for s in levno apexo pergola portal cabano inspiro quba roko ofiko ecke edge lshape veranda angle; do
-  for v in 480.webp 960.webp 960.jpg; do test -s "public/assets/posters/$s-$v" || { echo "missing poster: $s-$v (run python3 tools/posters.py)"; exit 1; }; done
+  for v in 320.webp 480.webp 960.webp 960.jpg; do test -s "public/assets/posters/$s-$v" || { echo "missing poster: $s-$v (run python3 tools/posters.py)"; exit 1; }; done
 done
 PAGE=public/configurator/index.html
 CONFIG_JS=$(grep -o '/assets/js/configurator\.[0-9a-f]*\.js' "$PAGE" | head -1)

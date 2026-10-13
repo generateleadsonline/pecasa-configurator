@@ -387,7 +387,7 @@ export const INTERIORS = {
 // Floors: the planner's public FlooringFinishes (five more exist but are hidden from customers).
 // Swatch colours sampled from its images; `kind` sets the plank or tile pattern.
 export const FLOORS = {
-  osb: {name: 'Osb', hex: '#ba906b', kind: 'osb'},
+  osb: {name: 'OSB', hex: '#ba906b', kind: 'osb'},
   'floor-walnut': {name: 'Walnut', hex: '#856346', kind: 'plank'},
   'floor-oak-farm': {name: 'Farm Oak', hex: '#9e928c', kind: 'plank'},
   tiles03: {name: 'Tiles', hex: '#76706a', kind: 'tile'},

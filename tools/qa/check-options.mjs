@@ -94,7 +94,8 @@ async function worker(items, id) {
   const page = await ctx.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
-  await page.goto(base + '/configurator/?qa=1', {waitUntil: 'load'});
+  page.setDefaultTimeout(120000);
+  await page.goto(base + '/configurator/?qa=1', {waitUntil: 'load', timeout: 120000});
   for (let i = 0; i < 400 && !(await page.evaluate(() => Boolean(window.__cfg?.boot?.verified))); i++) await new Promise(r => setTimeout(r, 300));
   const results = [];
   for (const v of items) {
@@ -106,6 +107,8 @@ async function worker(items, id) {
       await frames(2);
       if (v.key) cfg.change(v.patch, v.key, v.focus);
       await frames(3);
+      // The part is highlighted as the camera turns to it (null: a whole-building change).
+      const pulse = cfg.scene._debug().pulse, highlight = pulse ? pulse.meshes.length : null;
       const after = cfg.scene.capture(['view'], {width: 720, height: 480}).view;
       const changedState = JSON.stringify(cfg.state);
       cfg.set(cfg.normalise({...v.baseline, step: 0}));
@@ -115,16 +118,19 @@ async function worker(items, id) {
       const a = await pixels(after), b = await pixels(before);
       let diff = 0;
       for (let i = 0; i < a.length; i += 4) if (Math.max(Math.abs(a[i] - b[i]), Math.abs(a[i + 1] - b[i + 1]), Math.abs(a[i + 2] - b[i + 2])) > DELTA) diff++;
-      return {diff, stateChanged: changedState !== JSON.stringify(cfg.state), after, before};
+      return {diff, highlight, stateChanged: changedState !== JSON.stringify(cfg.state), after, before};
     }, {v, DELTA});
-    const ok = v.group === 'control' ? r.diff === 0 : r.diff >= MIN_PIXELS;
-    console.log(`${ok ? 'PASS' : 'FAIL'}  ${v.group}: ${v.label}  ${r.diff} px`);
+    // Style and size changes frame the whole building instead of outlining one part.
+    const wantsHighlight = !['control', 'style', 'size'].includes(v.group) && v.key !== 'size';
+    const highlighted = !wantsHighlight || r.highlight !== null;
+    const ok = (v.group === 'control' ? r.diff === 0 : r.diff >= MIN_PIXELS) && highlighted;
+    console.log(`${ok ? 'PASS' : 'FAIL'}  ${v.group}: ${v.label}  ${r.diff} px${wantsHighlight ? `, highlight ${r.highlight === null ? 'none' : r.highlight + ' parts'}` : ''}`);
     if (shotsDir && (!ok || process.env.ALL_SHOTS)) {
       await mkdir(shotsDir, {recursive: true});
       const slug = `${v.group}-${v.label}`.replace(/[^a-z0-9]+/gi, '-');
       for (const k of ['after', 'before']) if (r[k]) await writeFile(path.join(shotsDir, `${slug}-${k}.jpg`), Buffer.from(r[k].split(',')[1], 'base64'));
     }
-    results.push({...v, diff: r.diff, ok});
+    results.push({...v, diff: r.diff, highlight: r.highlight, ok});
   }
   if (errors.length) console.log(`worker ${id} page errors:`, errors.slice(0, 5).join(' | '));
   await browser.close();

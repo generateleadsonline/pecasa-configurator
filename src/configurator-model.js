@@ -21,10 +21,14 @@ export const nearest = (list, value) => list.reduce((a, b) => (Math.abs(b - valu
 const ELECTRIC_KEYS = Object.keys(ELECTRICS);
 
 // ---- Sizes: the planner's sliders step from each style's default ---------------------------
+// Steps run from the style's default size (so the default is always on the ladder) and the
+// planner's limits are always offered too (Apexo's 2.616m default still reaches 2.5m).
 function ladder(start, lo, hi, step) {
   const out = [];
   const k0 = Math.ceil((lo - start) / step - 1e-6), k1 = Math.floor((hi - start) / step + 1e-6);
   for (let k = k0; k <= k1; k++) out.push(round(start + k * step, 4));
+  if (out[0] - lo > 1e-6) out.unshift(lo);
+  if (hi - out[out.length - 1] > 1e-6) out.push(hi);
   return out;
 }
 export function sizesFor(style) {
@@ -71,7 +75,7 @@ export function pricedSizes(style) {
   const st = STYLES[style], d = st.defaults, out = [{w: d.width, d: d.depth, h: d.height, price: PLANNER_ESTIMATES[style], source: 'planner'}];
   for (const c of PRODUCT_CARDS.filter(x => x.style === style)) {
     const {heights} = sizesFor(style);
-    out.push({w: c.w, d: c.d, h: nearest(heights, c.h), price: c.price, source: 'card'});
+    out.push({w: c.w, d: c.d, h: nearest(heights, c.h), shownH: c.h, price: c.price, source: 'card'});
   }
   if (TABLE_STYLES.includes(style)) {
     const {widths, depths} = sizesFor(style);
@@ -81,6 +85,8 @@ export function pricedSizes(style) {
   }
   return out.filter((x, i) => out.findIndex(y => same(y.w, x.w) && same(y.d, x.d) && same(y.h, x.h)) === i);
 }
+/** "5.0m × 3.05m, 2.62m high": a published size is only unambiguous with its height. */
+export const pricedLabel = x => `${metres(x.w)} × ${metres(x.d)}, ${metres(x.shownH ?? x.h)} high`;
 export function nearestPriced(state, n = 3) {
   const s = normalise(state);
   return pricedSizes(s.style).map(x => ({...x, dist: Math.abs(x.w - s.width) + Math.abs(x.d - s.depth) + Math.abs(x.h - s.height) * .5}))
@@ -404,7 +410,7 @@ export function specRows(state) {
       if (list.length) add('Doors and windows', wallLabel(wall.id), list.map(openingLabel).join('; '), list.every(o => o.std) ? 'included' : 'upgrade');
     }
     if (s.blinds !== 'none') add('Doors and windows', 'Blinds', `${BLINDS[s.blinds].name} blinds`, 'upgrade');
-    add('Interior', 'Walls', `Plasterboard, tape-and-joint finish: ${INTERIORS[s.interior].name}`, INTERIORS[s.interior].ply ? 'quoted' : 'included');
+    add('Interior', 'Walls', INTERIORS[s.interior].ply ? 'Plywood lining' : `Plasterboard, tape-and-joint finish: ${INTERIORS[s.interior].name}`, INTERIORS[s.interior].ply ? 'quoted' : 'included');
     add('Interior', 'Floor', FLOORS[s.floor].name, s.floor === 'tiles03' ? 'upgrade' : s.floor === 'osb' ? 'quoted' : 'included');
     add('Interior', 'Layout', LAYOUTS[s.layout].name, LAYOUTS[s.layout].status);
     if (s.kitchen === 'kitchenette') add('Interior', 'Kitchen', `Kitchenette: ${CABINETS[s.kitchenFinish].name} units, ${WORKTOPS[s.worktop].name} worktop, ${HANDLES[s.handles].name.toLowerCase()} handles`, 'upgrade');

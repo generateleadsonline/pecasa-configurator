@@ -241,8 +241,10 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
     const leafMat = new THREE.MeshStandardMaterial({color: '#4d6e3f', roughness: .9}); mats.push(leafMat);
     const leafMat2 = new THREE.MeshStandardMaterial({color: '#6c8a4f', roughness: .9}); mats.push(leafMat2);
     const rand = (() => { let v = 7; return () => (v = (v * 16807) % 2147483647) / 2147483647; })();
+    // Planting sits in its own group: the PDF's square-on elevations leave it out.
+    const planting = new THREE.Group(); planting.name = 'planting'; g.add(planting);
     const shrub = (x, z, s0) => {
-      const sg = new THREE.Group(); sg.position.set(x, 0, z); g.add(sg);
+      const sg = new THREE.Group(); sg.position.set(x, 0, z); planting.add(sg);
       for (let i = 0; i < 7; i++) {
         const m = new THREE.Mesh(new THREE.IcosahedronGeometry(.28 * s0 * (.7 + rand() * .5), 1), i % 2 ? leafMat : leafMat2);
         m.position.set((rand() - .5) * .5 * s0, .25 * s0 + rand() * .35 * s0, (rand() - .5) * .5 * s0);
@@ -256,7 +258,7 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
     for (let x = x0 - 4; x < x1 + 4; x += .9) {
       const m = new THREE.Mesh(new THREE.IcosahedronGeometry(.75 + rand() * .2, 1), x % 2 ? hedge : leafMat);
       m.scale.set(1, 1.35 + rand() * .2, .8); m.position.set(x, .85, hz + (rand() - .5) * .3);
-      m.castShadow = m.receiveShadow = true; g.add(m);
+      m.castShadow = m.receiveShadow = true; planting.add(m);
     }
     g.userData.mats = mats;
   }
@@ -820,11 +822,17 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
           else if (name === 'interior') pose = poseFor('inside');
           else if (name === 'interior2') {
             const iw = state.width - 2 * WALL, id = state.depth - 2 * WALL, zf = room.plan.walls.find(w => w.id === 'front').a[1] - WALL;
-            const pos = new THREE.Vector3(iw / 2 - .4, FLOOR + 1.5, -id / 2 + .4);
-            pose = {view: 'inside', fov: 72, position: pos, target: new THREE.Vector3(-iw / 4, FLOOR + 1.05, zf)};
+            // From a back corner to the glazing: the back-left one when a shower room, sauna,
+            // cloakroom or store takes the back-right.
+            const side = state.layout && state.layout !== 'open' ? -1 : 1;
+            const pos = new THREE.Vector3(side * (iw / 2 - .4), FLOOR + 1.5, -id / 2 + .4);
+            pose = {view: 'inside', fov: 72, position: pos, target: new THREE.Vector3(-side * iw / 4, FLOOR + 1.05, zf)};
           } else pose = poseFor('plan');
           view = pose.view;
           applyViewVisibility();
+          // The four elevations show the walls, not the shrubs and hedge in front of them.
+          const planting = groundExtras?.getObjectByName('planting');
+          if (planting) planting.visible = !['front', 'back', 'left', 'right'].includes(name);
           cam.fov = pose.fov; cam.aspect = width / height; cam.updateProjectionMatrix();
           cam.position.copy(pose.position); cam.lookAt(pose.target);
           renderer.render(scene, cam);
@@ -835,6 +843,7 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
       finally {
         if (night !== saved.night) { night = saved.night; applyLighting(); }
         view = saved.view; applyViewVisibility();
+        const planting = groundExtras?.getObjectByName('planting'); if (planting) planting.visible = true;
         renderer.setPixelRatio(saved.ratio);
         renderer.setSize(saved.size.x, saved.size.y, false);
         pulse = wasPulse; selected = wasSelected;

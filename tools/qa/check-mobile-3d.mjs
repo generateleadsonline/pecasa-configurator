@@ -8,7 +8,7 @@
 // Scenarios: iPhone load and memory, every range and colour, a lost GPU context (once, then
 // repeatedly), no WebGL at all, WebGL1 only, shaders that will not link (all, or only the full
 // PBR ones), a GPU that draws nothing, a setup fault after the context exists, early reloads,
-// the crash guard, ?debug3d, 2D canvases refused, PDF capture size, Android. Live WebGL contexts
+// the crash guard, ?debug3d, 2D canvases refused, PDF capture size, Android, low memory. Live WebGL contexts
 // are counted throughout: a step down must never leave one behind.
 import {createRequire} from 'module';
 import {STYLE_ORDER, CLADDINGS} from '../../src/configurator-data.js';
@@ -288,6 +288,16 @@ const scenarios = {
     check(s.ready && !s.fallbackShown && s.quality.tier === 'medium', 'Android Chrome: 3D starts at the phone tier', JSON.stringify(s.quality));
     check(!errors.length, 'Android Chrome: no page errors', errors.slice(0, 3).join(' | '));
     await page.screenshot({path: process.env.SHOTS ? process.env.SHOTS + '/android-3d.png' : 'android-3d.png'});
+    await browser.close();
+  },
+
+  async lowmem() {
+    // A budget Android phone reporting 1GB: real 3D on the light tier, not a photo.
+    const {browser, page, errors} = await open(chromium, 'Pixel 7', {init: [() => Object.defineProperty(Navigator.prototype, 'deviceMemory', {get: () => 1})]});
+    await settle(page);
+    const s = await status(page);
+    check(s.ready && !s.fallbackShown && s.rung === 'low' && s.quality.tier === 'low', 'Low memory (1GB): 3D starts on the light tier', JSON.stringify(s.quality));
+    check(s.contexts === 1 && !errors.length, 'Low memory: one live context, no page errors', errors.slice(0, 3).join(' | '));
     await browser.close();
   }
 };

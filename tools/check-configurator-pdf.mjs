@@ -30,11 +30,15 @@ try {
     {style: 'cabano', width: 5.5, depth: 4.4, layout: 'bathroom', kitchen: 'kitchenette', blinds: 'white', deck: 'front1000', electrics: {airCon: true}},
     {style: 'pergola', pergolaSides: {front: 'glass', back: 'solid', left: 'none', right: 'loggia'}},
     {style: 'levno', width: 4, depth: 3, height: 2.7},
-    {style: 'lshape', width: 2.7, depth: 2.4, sedum: true, rooflight: 'r1000', addition: 'trellis'}
+    {style: 'lshape', width: 2.7, depth: 2.4, sedum: true, rooflight: 'r1000', addition: 'trellis'},
+    // As much as a design can hold: its specification runs onto a second page.
+    {style: 'apexo', width: 8, depth: 6, sedum: true, rooflight: 'r1400', rooflightCount: 2, addition: 'veranda', cornerTrims: true, deck: 'front1000', blinds: 'white', layout: 'bathroom',
+      kitchen: 'kitchenette', frames: 'RAL7016', interior: 'plywood', floor: 'osb', exteriorLight: 'security', lighting: 'track', extraOpenings: true}
   ];
   if (keep) await mkdir(keep, {recursive: true});
   for (const input of designs) {
-    const state = M.normalise(input);
+    let state = M.normalise({...input, electrics: input.extraOpenings ? Object.fromEntries(Object.keys(M.ELECTRICS).map(k => [k, true])) : input.electrics});
+    if (input.extraOpenings) for (const wall of ['back', 'left', 'right', 'back']) state = M.addOpening(state, wall, 'fixed800').state;
     const out = await downloadPDF(state, {}, {save: false, contactName: 'Alex Example', preparedAt: '2026-10-13T10:00:00Z', siteURL: SITE});
     const bytes = Buffer.from(out.bytes);
     ok(bytes.subarray(0, 5).toString() === '%PDF-', `${state.style}: a PDF`);
@@ -46,7 +50,9 @@ try {
     const text = execFileSync(python, ['-c', 'import sys,pypdf;r=pypdf.PdfReader(sys.argv[1]);print(len(r.pages));print("\\n".join(p.extract_text() for p in r.pages));print("LINKS"," ".join(a.get_object()["/A"].get("/URI","") for p in r.pages for a in (p.get("/Annots") or [])))', file], {encoding: 'utf8'});
     const flat = text.replace(/\s+/g, ' ');
     const [pages] = text.split('\n');
-    ok(Number(pages) === 6, `${state.style}: six pages`);
+    ok(Number(pages) === out.pages && out.pages >= 6, `${state.style}: ${out.pages} pages`);
+    if (input.extraOpenings) ok(out.pages === 7, `${state.style}: a long specification continues on a second page`);
+    for (const row of M.specRows(state)) ok(flat.includes(row.label.slice(0, 14)) && flat.includes(row.value.slice(0, 14)), `${state.style}: specification line "${row.label}" printed in full`);
     const price = M.priceFor(state);
     ok(flat.toUpperCase().includes(M.pounds(price.value).toUpperCase()), `${state.style}: price ${M.pounds(price.value)} printed`);
     const amounts = [...flat.matchAll(/£\s?(\d[\d,]*)/g)].map(m => Number(m[1].replace(/,/g, '')));

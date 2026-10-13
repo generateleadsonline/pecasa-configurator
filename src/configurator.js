@@ -6,7 +6,7 @@ import {
   STYLES, STYLE_ORDER, CLADDINGS, RAL, OPENINGS, ROOF_FINISHES, ROOFLIGHTS, ADDITIONS, BLINDS, INTERIORS, FLOORS,
   DECK_FINISHES, DECKS, LAYOUTS, KITCHENS, CABINETS, WORKTOPS, HANDLES, ELECTRICS, INTERIOR_LIGHTS, EXTERIOR_LIGHTS, USES,
   PERGOLA_COLOURS, PERGOLA_SIDES, PERGOLA_ROOFS, WINDSCREEN_COLOURS, PANEL_COLOURS, STEPS, plan, roofKind, wallLabel,
-  footprintArea, internalArea, normalise, apply, switchStyle, addOpening, priceFor, nearestPriced, pounds, metres, mm, feet,
+  footprintArea, internalArea, normalise, apply, switchStyle, addOpening, priceFor, nearestPriced, pricedLabel, pounds, metres, mm, feet,
   sizesFor, shareURL, fromURL, summary, specRows, upgradesOf, openingLabel, claddingName, claddingRoles, ROLE_NAMES,
   parseUKPhone, phoneProblem, validPostcode, formatPostcode, validEmail, ralName
 } from './configurator-model.js';
@@ -170,7 +170,7 @@ function renderStyle() {
   const uses = {office: 'office', gym: 'gym', studio: 'studio', lounge: 'sofa', guest: 'bed'};
   return section('Choose your style', 'Tap one to see it in 3D', `<div class="choices style-grid">${STYLE_ORDER.map(k => {
     const x = STYLES[k], p = priceFor({style: k});
-    return radio('style', k, state.style === k, `<img src="${posterSrc(k)}" width="160" height="107" alt="" loading="lazy"><span class="opt-text"><strong>${esc(x.name)}</strong><small>${esc(metres(x.defaults.width))} &times; ${esc(metres(x.defaults.depth))}, ${pounds(p.value)}</small></span>${tick}`, {cls: 'style-card', label: `${x.name}: ${x.summary}`});
+    return radio('style', k, state.style === k, `<img src="${posterSrc(k)}" srcset="${posterSrc(k, 320)} 320w, ${posterSrc(k)} 480w" sizes="(max-width: 520px) 46vw, 190px" width="160" height="107" alt="" loading="lazy"><span class="opt-text"><strong>${esc(x.name)}</strong><small>${esc(metres(x.defaults.width))} &times; ${esc(metres(x.defaults.depth))}, ${pounds(p.value)}</small></span>${tick}`, {cls: 'style-card', label: `${x.name}: ${x.summary}`});
   }).join('')}</div><p class="section-note"><strong>${esc(st.name)}:</strong> ${esc(st.summary)} Prices shown are Pecasa's own online estimates for each standard design, including VAT.</p>`) +
     (isPergola() ? '' : section('What is it for?', 'Sets the furniture shown', `<div class="choices two">${Object.entries(USES).map(([k, u]) => radio('use', k, state.use === k, `<span class="icon">${icon(uses[k])}</span><span class="opt-text"><strong>${esc(u.name)}</strong></span>${tick}`)).join('')}</div>`)) +
     `<div class="usp-row">${usp('factory')}${usp('projects')}</div>`;
@@ -186,7 +186,7 @@ function renderSize() {
   const priced = `<div class="choices priced">${shortcuts.map(x => {
     const on = Math.abs(x.w - state.width) < 1e-6 && Math.abs(x.d - state.depth) < 1e-6 && Math.abs(x.h - state.height) < .03;
     const src = x.source === 'planner' ? 'Standard design' : x.source === 'card' ? 'Published model' : 'Price table';
-    return `<button type="button" class="opt priced-size ${on ? 'is-on' : ''}" data-priced="${x.w}x${x.d}x${x.h}" aria-pressed="${on}"><span><span class="opt-text"><strong>${metres(x.w)} &times; ${metres(x.d)}</strong><small>${src}${x.source === 'planner' ? '' : `, ${metres(x.h)} high`}</small></span></span></button>`;
+    return `<button type="button" class="opt priced-size ${on ? 'is-on' : ''}" data-priced="${x.w}x${x.d}x${x.h}" aria-pressed="${on}"><span><span class="opt-text"><strong>${metres(x.w)} &times; ${metres(x.d)}</strong><small>${src}${x.source === 'planner' ? '' : `, ${metres(x.shownH ?? x.h)} high`}</small></span></span></button>`;
   }).join('')}</div>`;
   const status = price.value === null
     ? `<p class="price-hint quoted">${icon('info')}<span>Pecasa prices this exact size in your written quote. Choose a size above to see a published price.</span></p>`
@@ -298,7 +298,7 @@ function renderQuote() {
     $('#price-value').textContent = price.value === null ? 'Quoted' : pounds(price.value);
     $('#price-label').textContent = price.value === null ? 'Your price' : 'Your price, including VAT';
     $('#price-for').textContent = `${st.name}, ${metres(state.width)} × ${metres(state.depth)}`;
-    const nearestHtml = price.value === null ? `<span class="price-near">Published prices for this style: ${nearestPriced(state, 3).map(x => `<button type="button" class="text-button" data-priced="${x.w}x${x.d}x${x.h}">${metres(x.w)} × ${metres(x.d)}: ${pounds(x.price)}</button>`).join(' ')}</span>` : '';
+    const nearestHtml = price.value === null ? `<span class="price-near">Published prices for this style: ${nearestPriced(state, 3).map(x => `<button type="button" class="text-button" data-priced="${x.w}x${x.d}x${x.h}">${pricedLabel(x)}: ${pounds(x.price)}</button>`).join(' ')}</span>` : '';
     $('#price-note').innerHTML = `${esc(price.label)}.${price.value === null ? '' : ' Upgrades and site work marked below are priced in your written quotation.'} ${nearestHtml}${upToDate() ? '' : `<span class="resend"><button type="button" class="button ghost small" id="resend">${icon('arrow')}<span>Send this updated design to Pecasa</span></button></span>`}`;
     const first = contact?.first || '';
     $('#thanks-title').textContent = first ? `Thanks, ${first}. Your design is with Pecasa.` : 'Thanks. Your design is with Pecasa.';

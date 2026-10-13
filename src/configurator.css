@@ -36,12 +36,14 @@ input,textarea{caret-color:var(--pine)}
 
 /* Header: the brochure's forest bar with a leaf rule */
 .header{position:sticky;top:0;z-index:40;height:var(--header);display:flex;align-items:center;gap:20px;padding:0 20px;background:var(--forest);color:#fff;border-bottom:3px solid var(--leaf)}
+.brand{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
 .brand img{display:block;width:136px;height:auto}
 .header-title{color:var(--frost);font-size:14px;white-space:nowrap}
 .header-ctas{margin-left:auto;display:flex;align-items:center;gap:6px}
-.head-cta,.head-phone,.head-icon{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border-radius:var(--r-s);color:#fff;text-decoration:none;font-family:var(--heading);text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.03em;white-space:nowrap;transition:background .15s,color .15s}
+.head-cta,.head-phone,.head-icon{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:44px;padding:0 12px;border-radius:var(--r-s);color:#fff;text-decoration:none;font-family:var(--heading);text-transform:uppercase;font-weight:600;font-size:14px;letter-spacing:.03em;white-space:nowrap;transition:background .15s,color .15s}
 .head-cta svg,.head-phone svg,.head-icon svg{color:var(--signal)}
-.head-cta:hover,.head-icon:hover{background:var(--forest-2);color:var(--signal)}
+/* Lighter teal on hover: the brand teal is 4.48:1 on the hover green, just under AA. */
+.head-cta:hover,.head-icon:hover{background:var(--forest-2);color:#5cc4b9}
 .head-cta[data-dialog=callback]{background:var(--signal);color:var(--forest)}
 .head-cta[data-dialog=callback] svg{color:var(--forest)}
 .head-cta[data-dialog=callback]:hover{background:var(--signal-2);color:var(--forest)}
@@ -89,7 +91,7 @@ input,textarea{caret-color:var(--pine)}
 .stage-title h1{font-size:22px}
 .stage-title p{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:2px}
 .view-switch{display:flex;background:rgba(2,40,40,.9);border-radius:999px;padding:4px;box-shadow:var(--shadow)}
-.view-switch button{display:flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;color:#d7e4dc;font-weight:600;font-size:14px;transition:background .15s,color .15s}
+.view-switch button{display:flex;align-items:center;justify-content:center;gap:6px;min-height:44px;min-width:44px;padding:0 14px;border-radius:999px;color:#d7e4dc;font-weight:600;font-size:14px;transition:background .15s,color .15s}
 .view-switch button svg{width:18px;height:18px}
 .view-switch button:hover{color:#fff}
 .view-switch [aria-pressed=true]{background:var(--signal);color:var(--forest)}
@@ -305,7 +307,7 @@ input,textarea{caret-color:var(--pine)}
 .spec-row dt{color:var(--muted)}
 .spec-row dd{margin:0}
 .spec-status{justify-self:end}
-.spec-edit{color:var(--pine);font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.spec-edit{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin:-14px -6px;color:var(--pine);font-weight:600;font-size:13px;text-decoration:underline;text-underline-offset:3px}
 .proof-list{display:grid;gap:8px;margin-top:20px}
 .proof-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px}
 .proof-list svg{color:var(--pine)}
@@ -328,10 +330,10 @@ input,textarea{caret-color:var(--pine)}
 .field-error{font-size:13px;color:var(--error);font-weight:600}
 .more-fields summary{cursor:pointer;font-weight:600;color:var(--pine);min-height:44px;display:flex;align-items:center}
 .more-fields[open]{display:grid;gap:12px}
-.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;cursor:pointer}
-.check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--pine);flex-shrink:0}
+.check{display:flex;gap:10px;align-items:center;min-height:44px;font-size:14px;cursor:pointer}
+.check input{width:20px;height:20px;margin:0;accent-color:var(--pine);flex-shrink:0}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
-.chips label{position:relative}
+.chips label{position:relative;display:block}
 .chips input{position:absolute;opacity:0}
 .chips span{display:grid;place-items:center;min-height:44px;padding:0 14px;border-radius:999px;border:1.5px solid var(--line);font-size:14px;font-weight:600;cursor:pointer}
 .chips input:checked+span{border-color:var(--pine);background:#e3f4f1;color:var(--forest)}
@@ -354,7 +356,7 @@ dialog.is-shim[open]{display:block}
 @keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}}
 .dialog-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .dialog-head h2{font-size:26px}
-.dialog-close{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;margin:-8px -8px 0 0}
+.dialog-close{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;border-radius:10px;margin:-8px -8px 0 0}
 .dialog-close:hover{background:var(--mist)}
 .dialog-intro{color:var(--muted);font-size:15px}
 .dialog-sub{font-size:17px;margin-top:4px}
@@ -455,7 +457,9 @@ dialog.is-shim[open]{display:block}
   .mobile-callback span{display:inline!important;position:static!important;width:auto!important;height:auto!important;clip:auto!important;font-size:13px}
   .header-tools{margin-left:auto;border-left:0}
   .app{display:block;height:auto;min-height:0}
-  .stage{position:sticky;top:calc(var(--header) + var(--steps));z-index:20;height:clamp(250px,44svh,520px)}
+  .stage{position:sticky;top:calc(var(--header) + var(--steps));z-index:20;height:var(--stage-h)}
+  /* Keep anything scrolled or tabbed into view clear of the pinned header, stage and footer. */
+  html{--stage-h:clamp(250px,44svh,520px);scroll-padding:calc(var(--header) + var(--steps) + var(--stage-h) + 8px) 0 calc(var(--foot) + 8px)}
   .panel{border-left:0;min-height:calc(100svh - var(--header) - var(--steps))}
   .panel-head{padding:18px 16px 8px}
   .panel-head h2{font-size:26px}
@@ -484,9 +488,9 @@ dialog.is-shim[open]{display:block}
   .quote-ctas{grid-template-columns:1fr}
   .usp-row{grid-template-columns:1fr}
   .range-card img{width:92px;height:70px}
-  .steps button{padding:0 8px;font-size:13px}
-  .steps button span:last-child{display:none}
-  .steps [aria-current=step] span:last-child{display:inline}
+  .steps button{justify-content:center;min-width:44px;padding:0 10px;font-size:13px}
+  .steps button span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .steps [aria-current=step] span:last-child{position:static;width:auto;height:auto;overflow:visible;clip:auto}
   .spec-row{grid-template-columns:90px 1fr}
   .spec-status{grid-column:2;justify-self:start}
   .dialog{padding:18px}
@@ -502,13 +506,18 @@ dialog.is-shim[open]{display:block}
   .menu-sheet .menu-tour{display:flex}
   .mobile-callback{padding:0 10px}
 }
+/* The smallest phones: the current step's name is in the panel heading, so the bar shows numbers. */
+@media (max-width:380px){
+  .steps ol{gap:2px;padding:0 8px;justify-content:space-between}
+  .steps [aria-current=step] span:last-child{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+}
 @media (max-width:340px){
   .header{gap:6px;padding:0 8px}
   .brand img{width:84px}
   .mobile-callback{gap:6px;padding:0 8px}
   .head-icon{padding:0 10px}
 }
-@media (max-height:620px) and (max-width:860px){.stage{height:clamp(200px,40svh,320px)}}
+@media (max-height:620px) and (max-width:860px){html{--stage-h:clamp(200px,40svh,320px)}}
 @media (max-width:600px){
   .stepper.three{grid-template-columns:1fr}
   .quote-ctas{grid-template-columns:1fr}

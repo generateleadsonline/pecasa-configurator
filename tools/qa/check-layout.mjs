@@ -15,7 +15,7 @@ const {chromium} = require(process.env.PLAYWRIGHT_CORE || 'playwright-core');
 const base = (process.argv[2] || 'http://localhost:4812').replace(/\/$/, '');
 const AXE = process.env.AXE_CORE ? await readFile(process.env.AXE_CORE, 'utf8') : null;
 const WIDTHS = [320, 360, 375, 390, 768, 1024, 1440];
-const AXE_WIDTHS = new Set([320, 390, 1024, 1440]);
+const AXE_WIDTHS = new Set(WIDTHS);
 let failed = 0;
 const check = (ok, label, detail = '') => { console.log(`${ok ? 'PASS' : 'FAIL'}  ${label}${detail ? '  ' + detail : ''}`); if (!ok) failed++; };
 

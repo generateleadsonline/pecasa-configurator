@@ -172,38 +172,74 @@ export function buildRoom(state, tex) {
     const ops = state.openings.filter(o => o.wall === wall.id);
     const topAt = u => { const [x, z] = along(wall, u); return roofTop(x, z) - dropOf(wall) + .004; };
     const pitchedGable = P.roof.kind === 'gable' && !zFacing(wall);
-    const outline = (u0, u1, bottom, capTop) => {
-      const sh = new THREE.Shape();
-      sh.moveTo(u0, bottom); sh.lineTo(u1, bottom);
-      const n = pitchedGable ? 48 : 1;
-      for (let i = n; i >= 0; i--) { const u = u0 + (u1 - u0) * i / n; sh.lineTo(u, capTop(u)); }
-      sh.lineTo(u0, bottom);
-      return sh;
+    // The wall's outline with its openings. Pecasa's glazing often runs in bands (Roko's lights and
+    // slider, Ofiko's two panes): touching openings become one cut-out. A cut-out that reaches the
+    // end of the wall (a glazed corner's post, an inside corner) becomes a notch in the outline,
+    // so no sliver of wall is left beside the frame and the triangulation stays sound.
+    const wallShape = (u0, u1, bottom, capTop) => {
+      const rects = ops.map(o => {
+        const c = o.p * L;
+        return {x0: Math.max(c - o.w / 2, u0), x1: Math.min(c + o.w / 2, u1), y0: FLOOR + o.sill, y1: FLOOR + o.sill + o.h};
+      }).filter(r => r.x1 - r.x0 > .01).sort((a, b) => a.x0 - b.x0);
+      for (const r of rects) r.y1 = Math.min(r.y1, capTop(r.x0) - .004, capTop(r.x1) - .004);
+      const clusters = [];
+      for (const r of rects) {
+        const last = clusters[clusters.length - 1], prev = last && last[last.length - 1];
+        if (prev && r.x0 - prev.x1 < .002 && Math.min(r.y1, prev.y1) - Math.max(r.y0, prev.y0) > .01) { r.x0 = prev.x1; last.push(r); }
+        else clusters.push([r]);
+      }
+      const near = .006;
+      let startCl = clusters.find(cl => cl[0].x0 <= u0 + near) || null;
+      let endCl = clusters.find(cl => cl[cl.length - 1].x1 >= u1 - near) || null;
+      // A band of glass from end to end would split the wall in two: keep it a hole instead.
+      if (startCl && startCl === endCl) { startCl[0].x0 = u0 + .003; startCl[startCl.length - 1].x1 = u1 - .003; startCl = endCl = null; }
+      if (startCl) startCl[0].x0 = u0;
+      if (endCl) endCl[endCl.length - 1].x1 = u1;
+      const pts = [];
+      const push = (x, y) => { const q = pts[pts.length - 1]; if (!q || Math.abs(q[0] - x) > 1e-6 || Math.abs(q[1] - y) > 1e-6) pts.push([x, y]); };
+      push(u0, bottom); push(u1, bottom);
+      if (endCl) {
+        const n = endCl.length - 1;
+        push(u1, endCl[n].y0);
+        for (let i = n; i >= 0; i--) { push(endCl[i].x1, endCl[i].y0); push(endCl[i].x0, endCl[i].y0); }
+        for (let i = 0; i <= n; i++) { push(endCl[i].x0, endCl[i].y1); push(endCl[i].x1, endCl[i].y1); }
+      }
+      const steps = pitchedGable ? 48 : 1;
+      for (let i = steps; i >= 0; i--) { const u = u0 + (u1 - u0) * i / steps; push(u, capTop(u)); }
+      if (startCl) {
+        const m = startCl.length - 1;
+        push(u0, startCl[0].y1);
+        for (let i = 0; i <= m; i++) { push(startCl[i].x0, startCl[i].y1); push(startCl[i].x1, startCl[i].y1); }
+        for (let i = m; i >= 0; i--) { push(startCl[i].x1, startCl[i].y0); push(startCl[i].x0, startCl[i].y0); }
+      }
+      const shape = new THREE.Shape(pts.map(([x, y]) => new THREE.Vector2(x, y)));
+      for (const cl of clusters) {
+        if (cl === startCl || cl === endCl) continue;
+        const hp = [];
+        const hpush = (x, y) => { const q = hp[hp.length - 1]; if (!q || Math.abs(q[0] - x) > 1e-6 || Math.abs(q[1] - y) > 1e-6) hp.push([x, y]); };
+        cl.forEach(r => { hpush(r.x0, r.y0); hpush(r.x1, r.y0); });
+        for (let i = cl.length - 1; i >= 0; i--) { hpush(cl[i].x1, cl[i].y1); hpush(cl[i].x0, cl[i].y1); }
+        shape.holes.push(new THREE.Path(hp.map(([x, y]) => new THREE.Vector2(x, y))));
+      }
+      return shape;
     };
-    const holes = () => ops.map(o => {
-      const spec = OPENINGS[o.type], c = o.p * L, w = o.w, h = o.h, sill = o.sill;
-      const path = new THREE.Path();
-      const x0 = c - w / 2, x1 = c + w / 2, y0 = FLOOR + sill, y1 = FLOOR + sill + h;
-      path.moveTo(x0, y0); path.lineTo(x0, y1); path.lineTo(x1, y1); path.lineTo(x1, y0); path.lineTo(x0, y0);
-      return spec ? path : null;
-    }).filter(Boolean);
-    // Wall ends: see the corner rules in the header of configurator-geometry.js. Front- and
-    // back-facing walls own outside corners; side walls stop a skin short. At inside corners
+    // Wall ends. At inside corners
     // the cores reach into the corner so the room has no gap. Glazed corners stop at the post.
     const endRule = (kind, glazed) => {
       if (glazed) return {skin: -POST, core: -POST};
-      if (kind === 'convex') return zFacing(wall) ? {skin: 0, core: -SKIN} : {skin: -SKIN, core: -SKIN};
+      // Outside corners: both walls' boards stop a board's thickness short, leaving a crisp
+      // shadow gap rather than one wall's boards showing round the corner of another finish.
+      if (kind === 'convex') return {skin: -SKIN, core: -SKIN};
       return zFacing(wall) ? {skin: SKIN, core: WALL} : {skin: 0, core: SKIN};
     };
     const e0 = endRule(wall.start, wall.glazedStart), e1 = endRule(wall.end, wall.glazedEnd);
     // Core: interior lining on its inner face, reveals on its edges. It runs up behind the
     // fascia so no daylight shows between the wall and the roof.
-    const coreShape = outline(-e0.core, L + e1.core, 0, u => topAt(u) + Math.min(.06, dropOf(wall) * .5));
-    coreShape.holes = holes();
+    const coreTop = u => topAt(u) + Math.min(.06, dropOf(wall) * .5);
+    const coreShape = wallShape(-e0.core, L + e1.core, 0, coreTop);
     add(g, splitLids(new THREE.ExtrudeGeometry(coreShape, {depth: WALL - SKIN, bevelEnabled: false})), [lining, hidden, reveal], 0, 0, -WALL, 'interiorWalls', 'wall:' + wall.id);
     // Skin: the cladding boards, stopping just above the ground as on Pecasa's builds.
-    const skinShape = outline(-e0.skin, L + e1.skin, skinBottom, topAt);
-    skinShape.holes = holes();
+    const skinShape = wallShape(-e0.skin, L + e1.skin, skinBottom, topAt);
     add(g, splitLids(new THREE.ExtrudeGeometry(skinShape, {depth: SKIN, bevelEnabled: false})), [hidden, clad, clad], 0, 0, -SKIN, 'cladding', 'cladding:' + role, 'wall:' + wall.id);
     for (const o of ops) buildOpening(g, o, L, wall);
   }
@@ -722,7 +758,7 @@ export function buildRoom(state, tex) {
       // shown part-open so the roof still reads as a roof).
       for (let z = -d / 2 + ps + .1; z < d / 2 - ps - .05; z += .2) {
         const b = box(bg, w - 2 * ps - .006, .02, .18, 0, h - beam / 2, z, blade);
-        b.rotation.x = .35;
+        b.rotation.x = 1.05;
       }
     }
     return pg;

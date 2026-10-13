@@ -6,7 +6,7 @@ export const ATTRIBUTION_STORAGE_KEY = 'pecasa-configurator-attribution-v1';
 
 const CAMPAIGN_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id'];
 const KEYS = [...CAMPAIGN_KEYS, 'referrer_host', 'entry_path'];
-const PUBLIC_PATHS = new Set(['/', '/configurator/', '/configurator/thank-you/', '/thank-you/']);
+const PUBLIC_PATHS = new Set(['/', '/configurator/', '/configurator/thank-you/', '/privacy.html']);
 
 function plainObject(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value)

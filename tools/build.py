@@ -17,6 +17,7 @@ import base64
 import glob
 import hashlib
 import os
+import re
 import subprocess
 from html.parser import HTMLParser
 
@@ -116,8 +117,28 @@ configurator_js_path = write_script('configurator', configurator_js)
 
 configurator_css = esbuild(read(os.path.join(SRC, 'configurator.css')), 'css').replace('url(assets/', 'url(/assets/')
 
+# Every form carries the design and the campaign it came from, so Netlify records the same
+# fields for each (they must exist in the HTML at deploy for Netlify Forms to keep them).
+FORM_HIDDEN = ''.join(f'<input type="hidden" name="{n}">' for n in [
+    'design-link', 'design-summary', 'style', 'size', 'height', 'published-price', 'price-source', 'selected-upgrades',
+    'phone-e164', 'utm-source', 'utm-medium', 'utm-campaign', 'utm-term', 'utm-content', 'utm-id', 'referrer-host', 'entry-path'])
+
+
+def contact_fields(prefix):
+    """First and last name, email, UK phone and postcode: the same required set on every form."""
+    f = lambda name, label, typ, auto, extra='': (
+        f'<div class="field"><label for="{prefix}-{name}">{label}</label><input id="{prefix}-{name}" name="{name}" type="{typ}" '
+        f'autocomplete="{auto}" required {extra} aria-describedby="{prefix}-{name}-error"><p class="field-error" id="{prefix}-{name}-error" hidden></p></div>')
+    return ('<div class="form-row">' + f('first-name', 'First name', 'text', 'given-name', 'maxlength="60"') + f('last-name', 'Last name', 'text', 'family-name', 'maxlength="60"') + '</div>'
+            + f('email', 'Email address', 'email', 'email', 'maxlength="254"')
+            + '<div class="form-row">' + f('phone', 'Phone number', 'tel', 'tel-national', 'inputmode="tel" maxlength="20" placeholder="07700 123456"')
+            + f('postcode', 'Postcode', 'text', 'postal-code', 'autocapitalize="characters" maxlength="10"') + '</div>')
+
+
 for src_name, out_name in PAGES.items():
     html = read(os.path.join(SRC, src_name))
+    html = html.replace('{{FORM_HIDDEN}}', FORM_HIDDEN)
+    html = re.sub(r'\{\{CONTACT_FIELDS:([a-z]+)\}\}', lambda m: contact_fields(m.group(1)), html)
     checker = Balance()
     checker.feed(html)
     if checker.errors or checker.stack:

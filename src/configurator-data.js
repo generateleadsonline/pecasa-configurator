@@ -252,7 +252,7 @@ export const CLADDINGS = {
   'board-and-batten/golden-oak': {name: 'Board & Batten Golden Oak', kind: 'boardbatten', dir: 'v', hex: '#b99469'},
   shiplap01: {name: 'Shiplap Black', kind: 'shiplap', dir: 'h', hex: '#3e3e3e'},
   shiplap02: {name: 'Shiplap White', kind: 'shiplap', dir: 'h', hex: '#ecebe7'},
-  shiplap03: {name: 'Shiplap Gray', kind: 'shiplap', dir: 'h', hex: '#a5a5a5'},
+  shiplap03: {name: 'Shiplap Gray', kind: 'shiplap', dir: 'h', hex: '#8b8c8c'},
   planks: {name: 'Pine', kind: 'pine', dir: 'v', hex: '#bb9d7f'}
 };
 

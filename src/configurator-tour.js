@@ -4,13 +4,13 @@
 const KEY = 'pecasa-cfg-tour-v1';
 
 const STEPS = [
-  {target: null, title: 'Design your SMART room in 3D', text: 'Pick a range, size, finishes, doors, windows and interior. Every choice updates the 3D model, and you can see your building price at the end. It takes about five minutes.', next: 'Show me how'},
+  {target: null, title: 'Design your Pecasa garden room in 3D', text: 'Pick one of Pecasa\u2019s 14 styles, then its size, roof, cladding, doors, windows and interior. Every choice shows in the 3D model, and Pecasa\u2019s published price appears at the end. It takes about five minutes.', next: 'Show me how'},
   {target: '#stage', title: 'Look all around it', text: 'Drag to turn your room, scroll or pinch to zoom, or use the + and - buttons. Tap a door or window to edit it.'},
-  {target: '.view-switch', title: 'Outside, inside and plan', text: 'Walk inside to see the finished room, or switch to the plan to check sizes and layout from above.'},
-  {target: '#steps', title: 'Six simple steps', text: 'Range, size and roof, exterior, doors and windows, interior, then your price. Jump between them whenever you like.'},
-  {target: '#panel-body', title: 'We show you every change', text: 'When you change an option the view turns to it and outlines it in green, so you always see what changed.'},
-  {target: '#next', title: 'Get your price and PDF', text: 'When you are happy, enter your details to see the published price for your room and download an illustrated PDF of your design.'},
-  {target: '.header-ctas, .menu-toggle', title: 'Prefer to talk?', text: 'Request a callback, arrange to see a SMART room, or download the brochure at any time.', next: 'Start designing'}
+  {target: '.view-switch', title: 'Outside, inside and plan', text: 'Walk inside to see the finished room, or switch to the plan to see it from above with its dimensions.'},
+  {target: '#steps', title: 'Six simple steps', text: 'Style, size and roof, exterior, doors and windows, interior, then your price. Jump between them whenever you like.'},
+  {target: '#panel-body', title: 'We show you every change', text: 'When you change an option the view turns to it and outlines it in turquoise, so you always see what changed.'},
+  {target: '#next', title: 'Get your price and PDF', text: 'When you are happy, enter your details to see Pecasa\u2019s published price for your room and download an illustrated PDF of your design.'},
+  {target: '.header-ctas, .menu-toggle', title: 'Prefer to talk?', text: 'Request a callback, visit the Watford showroom, download the brochure or call 020 8146 2200 at any time. Help replays this tour.', next: 'Start designing'}
 ];
 
 export function createTour({onEvent = () => {}} = {}) {

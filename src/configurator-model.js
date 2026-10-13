@@ -35,7 +35,7 @@ export function sizesFor(style) {
     heights: ladder(d.height, l.h[0], l.h[1], l.hStep || .05)
   };
 }
-export const metres = v => `${Number(v).toFixed(Number(v) * 100 % 10 ? 2 : 1)}m`;
+export const metres = v => `${Number(v).toFixed(Math.round(Number(v) * 100) % 10 ? 2 : 1)}m`;
 export const mm = v => `${Math.round(v * 1000)}mm`;
 export function feet(m) {
   const inches = Math.round(m / .0254);

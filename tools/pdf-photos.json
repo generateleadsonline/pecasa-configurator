@@ -1,0 +1,58 @@
+{
+ "levno": {
+  "file": "public/assets/posters/levno-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the levno (configuration.json v23) by this repository's 3D scene"
+ },
+ "apexo": {
+  "file": "public/assets/posters/apexo-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the apexo (configuration.json v23) by this repository's 3D scene"
+ },
+ "pergola": {
+  "file": "public/assets/posters/pergola-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the pergola (configuration.json v23) by this repository's 3D scene"
+ },
+ "portal": {
+  "file": "public/assets/posters/portal-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the portal (configuration.json v23) by this repository's 3D scene"
+ },
+ "cabano": {
+  "file": "public/assets/posters/cabano-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the cabano (configuration.json v23) by this repository's 3D scene"
+ },
+ "inspiro": {
+  "file": "public/assets/posters/inspiro-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the inspiro (configuration.json v23) by this repository's 3D scene"
+ },
+ "quba": {
+  "file": "public/assets/posters/quba-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the quba (configuration.json v23) by this repository's 3D scene"
+ },
+ "roko": {
+  "file": "public/assets/posters/roko-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the roko (configuration.json v23) by this repository's 3D scene"
+ },
+ "ofiko": {
+  "file": "public/assets/posters/ofiko-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the ofiko (configuration.json v23) by this repository's 3D scene"
+ },
+ "ecke": {
+  "file": "public/assets/posters/ecke-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the ecke (configuration.json v23) by this repository's 3D scene"
+ },
+ "edge": {
+  "file": "public/assets/posters/edge-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the edge (configuration.json v23) by this repository's 3D scene"
+ },
+ "lshape": {
+  "file": "public/assets/posters/lshape-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the lshape (configuration.json v23) by this repository's 3D scene"
+ },
+ "veranda": {
+  "file": "public/assets/posters/veranda-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the veranda (configuration.json v23) by this repository's 3D scene"
+ },
+ "angle": {
+  "file": "public/assets/posters/angle-960.jpg",
+  "url": "Rendered from Pecasa's planner template for the angle (configuration.json v23) by this repository's 3D scene"
+ }
+}

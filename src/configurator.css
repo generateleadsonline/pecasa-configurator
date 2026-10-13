@@ -388,6 +388,51 @@ dialog.is-shim[open]{display:block}
 .thanks-phone{margin-left:auto}
 
 /* Tablet: narrower panel */
+
+/* Pecasa additions: poster until the 3D starts, style grid, priced sizes, sliders, showroom */
+.brand img{width:150px}
+.stage-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.stage-start{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;display:flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border-radius:999px;background:rgba(2,40,40,.86);color:#fff;font-family:var(--heading);text-transform:uppercase;font-weight:700;letter-spacing:.03em;box-shadow:0 8px 24px rgba(2,40,40,.3)}
+.stage-start svg{color:var(--signal)}
+.stage-start:hover{background:var(--forest)}
+.style-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.style-card>span{display:grid!important;grid-template-columns:1fr;padding:6px!important;gap:6px!important;position:relative}
+.style-card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:6px;background:var(--mist)}
+.style-card strong{font-family:var(--heading);text-transform:uppercase;font-size:17px;font-weight:700}
+.style-card small{font-variant-numeric:tabular-nums}
+.style-card .tick{position:absolute;top:12px;right:12px;background:#fff}
+.priced{grid-template-columns:repeat(2,minmax(0,1fr))}
+.priced-size{text-align:left}
+.priced-size>span{display:flex;align-items:center;min-height:52px;padding:8px 12px;border:1.5px solid var(--line);border-radius:var(--r-s);background:#fff}
+.priced-size.is-on>span,.priced-size:hover>span{border-color:var(--pine);box-shadow:inset 0 0 0 1px var(--pine)}
+.price-hint{display:flex;gap:8px;align-items:flex-start;margin-top:10px;padding:10px 12px;border-radius:var(--r-s);background:#e1f4f1;color:var(--forest);font-size:14px}
+.price-hint.quoted{background:#fff7e6}
+.price-hint svg{width:18px;height:18px;flex:none;margin-top:1px;color:var(--pine)}
+.stepper.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.size-control input[type=range]{width:100%;margin:8px 0 2px;accent-color:var(--pine);min-height:24px}
+.area span{color:var(--muted)}
+.row-2{display:flex;gap:8px}
+.row-2 select:first-child{flex:1}
+.field.inline{margin-top:12px}
+.role-tabs{grid-template-columns:repeat(auto-fit,minmax(0,1fr));margin-bottom:12px}
+.role-tabs button{padding:4px}
+.role-tabs small{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.showroom-card{display:grid;gap:8px;padding:14px;border-radius:var(--r);background:var(--birch);margin-bottom:6px}
+.hours{display:grid;gap:2px;margin:0;font-size:14px}
+.hours div{display:flex;justify-content:space-between;gap:12px}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.price-near{display:block;margin-top:8px;color:#d3e0d8}
+.price-near .text-button{color:var(--signal);display:inline-flex;margin:2px 8px 2px 0;min-height:44px}
+.resend{display:block;margin-top:10px}
+.resend .button{background:#fff;color:var(--forest)}
+.quote-ctas{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wall-tabs{grid-template-columns:repeat(auto-fit,minmax(64px,1fr))}
+
+.simple-page{background:var(--birch)}
+.simple-main{max-width:640px;margin:64px auto;padding:0 16px;display:grid;gap:16px}
+.simple-main h1{font-size:40px}
+.simple-main .button{justify-self:start}
 @media (max-width:1320px){.stage-usps li:nth-child(n+3){display:none}}
 @media (max-width:1180px){
   :root{--panel:380px}
@@ -420,12 +465,12 @@ dialog.is-shim[open]{display:block}
   .stage-title{padding:6px 10px}
   .stage-title h1{font-size:17px}
   .stage-title p{font-size:12px}
-  .view-switch button{min-height:36px;padding:0 10px;font-size:13px}
+  .view-switch button{min-height:44px;padding:0 10px;font-size:13px}
   .stage-tools{top:auto;bottom:10px;right:10px;transform:none;display:flex}
-  .stage-tools .tool{width:40px;height:40px}
+  .stage-tools .tool{width:44px;height:44px}
   #fullscreen{display:none}
   .history{bottom:10px;left:10px}
-  .history .tool{width:40px;height:40px}
+  .history .tool{width:44px;height:44px}
   .stage-hint{bottom:58px;font-size:12px}
   .stage-price{display:none}
   .change-toast{top:62px;font-size:13px}
@@ -464,4 +509,12 @@ dialog.is-shim[open]{display:block}
   .head-icon{padding:0 10px}
 }
 @media (max-height:620px) and (max-width:860px){.stage{height:clamp(200px,40svh,320px)}}
+@media (max-width:600px){
+  .stepper.three{grid-template-columns:1fr}
+  .quote-ctas{grid-template-columns:1fr}
+}
+@media (max-width:400px){
+  .priced{grid-template-columns:1fr}
+  .style-card strong{font-size:15px}
+}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

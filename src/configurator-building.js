@@ -229,7 +229,9 @@ export function buildRoom(state, tex) {
       if (glazed) return {skin: -POST, core: -POST};
       // Outside corners: both walls' boards stop a board's thickness short, leaving a crisp
       // shadow gap rather than one wall's boards showing round the corner of another finish.
-      if (kind === 'convex') return {skin: -SKIN, core: -SKIN};
+      // The side wall's core fills the corner; the front or back wall's core stops at its lining,
+      // so an opening at the corner margin never shares a plane with the other wall's lining.
+      if (kind === 'convex') return {skin: -SKIN, core: zFacing(wall) ? -WALL : -SKIN};
       return zFacing(wall) ? {skin: SKIN, core: WALL} : {skin: 0, core: SKIN};
     };
     const e0 = endRule(wall.start, wall.glazedStart), e1 = endRule(wall.end, wall.glazedEnd);
@@ -277,7 +279,9 @@ export function buildRoom(state, tex) {
     bar(W0, fw, depth, 0, H0 - fw / 2, zf);
     bar(fw, H0, depth, -W0 / 2 + fw / 2, H0 / 2, zf);
     bar(fw, H0, depth, W0 / 2 - fw / 2, H0 / 2, zf);
-    if (spec.group === 'door' || o.sill === 0) box(og, W0 + .03, .025, WALL + .02, 0, .0125, -WALL / 2 + .01, fo, 'frames');
+    // Threshold or inner sill across the wall depth, inside the opening and just proud of the
+    // lining, so it never shares a face with the wall around it.
+    if (spec.group === 'door' || o.sill === 0) box(og, W0 - .002, .025, WALL + .016, 0, .0125, -WALL / 2 + .009, fo, 'frames');
     else {
       bar(W0, fw, depth, 0, fw / 2, zf);
       box(og, W0 + .06, .022, .06, 0, -.004, .014, fo, 'frames');
@@ -594,7 +598,18 @@ export function buildRoom(state, tex) {
     if (x1 > W / 2 + .01) box(dg, .025, FLOOR - .02, side, x1 - .0125, (FLOOR - .02) / 2, z0 + side / 2, deckMat);
     return dg;
   }
-  for (const d of P.decks) deckArea(root, d.x0, d.x1, d.z0, d.z1);
+  // Decks stop where a fin stands on them (Ecke's and Roko's rear fins), never running through it.
+  for (const d0 of P.decks) {
+    const d = {...d0};
+    for (const f of P.fins) {
+      const spansX = f.x0 <= d.x0 + .01 && f.x1 >= d.x1 - .01, spansZ = f.z0 <= d.z0 + .01 && f.z1 >= d.z1 - .01;
+      if (spansX && f.z0 <= d.z0 + .01 && f.z1 > d.z0) d.z0 = f.z1 + .002;
+      if (spansX && f.z1 >= d.z1 - .01 && f.z0 < d.z1) d.z1 = f.z0 - .002;
+      if (spansZ && f.x0 <= d.x0 + .01 && f.x1 > d.x0) d.x0 = f.x1 + .002;
+      if (spansZ && f.x1 >= d.x1 - .01 && f.x0 < d.x1) d.x1 = f.x0 - .002;
+    }
+    if (d.x1 - d.x0 > .05 && d.z1 - d.z0 > .05) deckArea(root, d.x0, d.x1, d.z0, d.z1);
+  }
 
   // Base: Radix ground screws along the perimeter, under the floor.
   const baseGroup = group(root, 'base');
@@ -612,8 +627,10 @@ export function buildRoom(state, tex) {
   // freestanding pergola beside the room.
   if (state.addition === 'trellis' || state.addition === 'veranda') {
     const ag = group(root, 'addition');
-    const zf = P.bounds.z1, depth = 2, x0 = -W / 2, x1 = W / 2;
-    const post = std('#a77b50', {roughness: .75}), h = Math.min(2.4, roofTop(0, D / 2) - P.roof.soffitDrop - .05);
+    // Clear of the roof's front fascia and any front deck or fin.
+    const frontEdge = P.roof.edges.filter(e => e.side === 'front').reduce((m, e) => Math.max(m, e.a[1] + e.d), -9);
+    const zf = Math.max(P.bounds.z1, frontEdge, ...P.fins.map(f => f.z1 + (f.cap ? f.cap[1] : 0))) + .03, depth = 2, x0 = -W / 2, x1 = W / 2;
+    const post = std('#a77b50', {roughness: .75}), h = Math.min(2.4, roofTop(0, D / 2) - P.roof.soffitDrop - .08);
     for (const x of [x0 + .06, x1 - .06]) box(ag, .1, h, .1, x, h / 2, zf + depth - .06, post);
     box(ag, x1 - x0, .15, .08, 0, h - .075, zf + depth - .06, post);
     box(ag, x1 - x0, .12, .06, 0, h - .06, zf + .04, post);
@@ -651,7 +668,7 @@ export function buildRoom(state, tex) {
         lights.push({kind: 'updown', position: V(x, y, z + .08)});
       } else if (state.exteriorLight === 'wall') {
         add(lg, new THREE.BoxGeometry(.1, .1, .08), dark, 0, 0, .04);
-        add(lg, new THREE.BoxGeometry(.08, .02, .07), lamp, 0, -.05, .045, 'lamp');
+        add(lg, new THREE.BoxGeometry(.08, .018, .066), lamp, 0, -.06, .042, 'lamp');
         lights.push({kind: 'down', position: V(x, y - .06, z + .1)});
       } else {
         add(lg, new THREE.BoxGeometry(.06, .06, .08), dark, 0, 0, .04);
@@ -709,8 +726,10 @@ export function buildRoom(state, tex) {
       const [a, , b] = [h[0], h[1], h[2]];
       const y0 = ceilingY((a[0] + b[0]) / 2, (a[1] + b[1]) / 2), y1 = roofTop((a[0] + b[0]) / 2, (a[1] + b[1]) / 2) - .02;
       const wellH = y1 - y0;
-      for (const [x, z, w0, d0] of [[(a[0] + b[0]) / 2, a[1], b[0] - a[0], .02], [(a[0] + b[0]) / 2, b[1], b[0] - a[0], .02], [a[0], (a[1] + b[1]) / 2, .02, b[1] - a[1]], [b[0], (a[1] + b[1]) / 2, .02, b[1] - a[1]]]) {
-        box(inner, w0, wellH, d0, x, y0 + wellH / 2, z, ceilingMat, 'ceiling', 'rooflights').castShadow = false;
+      // Four plastered faces inside the opening: the long pair full width, the short pair between them.
+      const t = .02, iw0 = b[0] - a[0], id0 = b[1] - a[1], yb = y0 + .002;
+      for (const [x, z, w0, d0] of [[(a[0] + b[0]) / 2, a[1] + t / 2, iw0, t], [(a[0] + b[0]) / 2, b[1] - t / 2, iw0, t], [a[0] + t / 2, (a[1] + b[1]) / 2, t, id0 - 2 * t - .002], [b[0] - t / 2, (a[1] + b[1]) / 2, t, id0 - 2 * t - .002]]) {
+        box(inner, w0, wellH - .004, d0, x, yb + (wellH - .004) / 2, z, ceilingMat, 'ceiling', 'rooflights').castShadow = false;
       }
     }
   }

@@ -1,5 +1,7 @@
 // Phone and old-browser checks for the 3D designer, in real WebKit (Safari's engine) and Chrome
-// through Playwright. Not part of `npm run check`: it needs playwright-core and its WebKit build.
+// through Playwright. Reused from the SMART configurator (generateleadsonline/smart-modular-
+// buildings-homepage, tools/qa) with Pecasa's styles and finishes as the designs browsed.
+// Not part of `npm run check`: it needs playwright-core and its WebKit build.
 //
 //   PLAYWRIGHT_CORE=/path/to/node_modules/playwright-core node tools/qa/check-mobile-3d.mjs http://localhost:4933
 //
@@ -9,7 +11,7 @@
 // the crash guard, ?debug3d, 2D canvases refused, PDF capture size, Android. Live WebGL contexts
 // are counted throughout: a step down must never leave one behind.
 import {createRequire} from 'module';
-import {RANGES, RANGE_ORDER} from '../../src/configurator-data.js';
+import {STYLE_ORDER, CLADDINGS} from '../../src/configurator-data.js';
 
 const require = createRequire(import.meta.url);
 const {webkit, chromium, devices} = require(process.env.PLAYWRIGHT_CORE || 'playwright-core');
@@ -121,18 +123,18 @@ const scenarios = {
     check(s.ready && !s.fallbackShown, 'iPhone: 3D starts', JSON.stringify(s.quality));
     check(s.quality?.tier === 'medium' && s.quality.scale === .5 && s.quality.ratio <= 1.5, 'iPhone: phone tier (half-size textures, ratio <= 1.5)');
     check(s.canvasMB < 4, 'iPhone: canvases released after upload', `${s.canvasMB}MB live`);
-    // Every range, then every Suffolk Barn colour, the way a shopper browses.
-    const designs = RANGE_ORDER.flatMap(range => RANGES[range].claddings.map(c => ({range, cladding: c.key})));
+    // Every style, then every cladding, the way a shopper browses.
+    const designs = [...STYLE_ORDER.map(style => ({style})), ...Object.keys(CLADDINGS).map(c => ({style: 'levno', cladding: {main: c, feature: c, rear: c}}))];
     const peak = await page.evaluate(async designs => {
       const {scene} = window.__cfg; let peak = 0, maxTextures = 0;
       const frame = () => new Promise(r => requestAnimationFrame(() => r()));
       for (const d of designs) {
-        scene.update({...window.__cfg.state, ...d}); await frame();
+        scene.update(window.__cfg.normalise({...window.__cfg.state, ...d})); await frame();
         peak = Math.max(peak, window.__liveCanvasMB()); maxTextures = Math.max(maxTextures, scene.quality().textures);
       }
       return {designs: designs.length, peak, maxTextures, after: window.__liveCanvasMB(), lost: scene.quality().lost};
     }, designs);
-    check(peak.peak < 16 && peak.after < 4 && !peak.lost, 'iPhone: canvas memory stays small across every range and colour', JSON.stringify(peak));
+    check(peak.peak < 16 && peak.after < 4 && !peak.lost, 'iPhone: canvas memory stays small across every style and cladding', JSON.stringify(peak));
     check(peak.maxTextures <= 30, 'iPhone: texture cache stays bounded', `${peak.maxTextures} textures at most`);
     // The PDF views render smaller on a phone.
     const shot = await page.evaluate(async () => {

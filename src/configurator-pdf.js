@@ -5,7 +5,7 @@
 // Built on the SMART configurator's PDF module.
 import {jsPDF} from 'jspdf';
 import qrcode from 'qrcode-generator';
-import {normalise, priceFor, nearestPriced, pounds, metres, mm, upgradesOf, summary, plan, footprintArea, internalArea, STYLES, OPENINGS, USES} from './configurator-model.js';
+import {normalise, priceFor, nearestPriced, pounds, metres, mm, upgradesOf, summary, plan, footprintArea, internalArea, STYLES, OPENINGS, USES, ROOF_FINISHES} from './configurator-model.js';
 import {USPS, CONTACT} from './configurator-data.js';
 import {PDF_FONTS, PDF_LOGO, PDF_LOGO_NEGATIVE, PDF_LOGO_RATIO, PDF_STYLE_PHOTOS} from './configurator-pdf-assets.js';
 
@@ -28,6 +28,9 @@ export async function downloadPDF(input, views = {}, options = {}) {
   const shots = views && typeof views === 'object' ? views : {};
   const base = options.siteURL || (typeof location !== 'undefined' ? location.origin + '/configurator/' : 'https://pecasa-garden-room-configurator.netlify.app/configurator/');
   const s = summary(state, base), link = s.designLink, ref = reference(state);
+  // Pecasa lists "an EPDM roof" as standard; the planner's standard Cabano has a copper roof.
+  const defRoof = STYLES[state.style].roofFinish || 'roof';
+  const standardRoof = defRoof === 'roof' ? 'EPDM roof' : `${ROOF_FINISHES[defRoof].name} roof, as on the standard ${st.name} in Pecasa's planner`;
   const booking = (() => { const u = new URL(link); u.searchParams.set('book', '1'); return u.toString(); })();
   const prepared = new Date(options.preparedAt || Date.now());
   const date = (Number.isFinite(prepared.getTime()) ? prepared : new Date()).toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/London'});
@@ -155,7 +158,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
   qr(booking, 154, 246, 36); set(7.4, false, '#d3e6e2'); pdf.text('Scan to book', 172, 286, {align: 'center'});
 
   // ---- 2. Four sides -------------------------------------------------------------------------
-  pdf.addPage(); frame(2, 'Your room from every side', st.open ? `${st.name}, ${s.size}.` : `${s.rows.filter(r => r.label.startsWith('Cladding')).map(r => r.value).join(' and ')} cladding, ${s.rows.find(r => r.label === 'Window and door frames')?.value.replace('Cortizo aluminium, ', '').toLowerCase() || ''} frames.`);
+  pdf.addPage(); frame(2, 'Your room from every side', st.open ? `${st.name}, ${s.size}.` : `${[...new Set(s.rows.filter(r => r.label.startsWith('Cladding')).map(r => r.value))].join(' and ')} cladding, ${s.rows.find(r => r.label === 'Window and door frames')?.value.replace('Cortizo aluminium, ', '') || ''} frames.`);
   const gw = (CW - 6) / 2, gh = gw * 10 / 16;
   const sides = [['front', 'Front'], ['right', 'Right side'], ['back', 'Back'], ['left', 'Left side']];
   sides.forEach(([k, cap], i) => { const x = M + (i % 2) * (gw + 6), y = 56 + Math.floor(i / 2) * (gh + 12); framed(shots[k], x, y, gw, gh, cap, i === 0 ? stylePhoto : null); });
@@ -214,7 +217,7 @@ export async function downloadPDF(input, views = {}, options = {}) {
   heading(price.value === null ? 'Quoted' : pounds(price.value), M + 7, 82, 32, C.signal, 100);
   para(price.value === null ? 'This exact size is priced by Pecasa after a free survey. Sizes with a published price are listed below.' : `${price.label}. Checked on pecasa.co.uk in October 2026.`, 116, 66, 72, 8.4, '#d3e6e2', 4);
   heading('Included as standard', M, 106, 15); heading('In your written quote', 110, 106, 15);
-  bullets(['SIP walls, floor and roof (EPS70 insulation)', 'Radix ground screw foundations, subject to ground conditions', 'EPDM roof', 'Cortizo aluminium doors and windows in the standard design', 'External cladding in your choice of finish', 'Plasterboard walls with a tape-and-joint finish', '12mm premium laminate flooring', 'Lighting and electrics designed to your requirements', 'VAT'], M, 115, 88);
+  bullets(['SIP walls, floor and roof (EPS70 insulation)', 'Radix ground screw foundations, subject to ground conditions', standardRoof, 'Cortizo aluminium doors and windows in the standard design', 'External cladding in your choice of finish', 'Plasterboard walls with a tape-and-joint finish', '12mm premium laminate flooring', 'Lighting and electrics designed to your requirements', 'VAT'], M, 115, 88);
   const quoted = [...upgradesOf(state).map(u => u + ' (upgrade)'), 'Electrical supply connection to the building', 'Site clearance, water and drainage, skips and parking permits, if needed'];
   const qy = bullets(quoted.slice(0, 13), 110, 115, 84, 8.6, 205);
   if (quoted.length > 13) para(`And ${quoted.length - 13} more, listed on page 4.`, 115, qy, 80, 8.4, C.muted, 4);

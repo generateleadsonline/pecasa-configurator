@@ -49,7 +49,10 @@ export function furnish(parent, state, room, kit) {
   };
   // A side with no wall on the room's line (the open front of a notched plan) counts as full.
   const sideOpen = side => !room.walls.some(w => onSide(w, side));
-  const freeAt = (side, pos, half, below = 2.1) => !sideOpen(side) && spans(side).every(s => pos + half < s.a - .05 || pos - half > s.b + .05 || s.sill > below);
+  // Wall taken by an enclosed shower room, sauna or store: fittings go on the open room's walls.
+  const blocked = (side, pos, half) => (blockBack && ((side === 'back' && pos + half > blockBack.x0) || (side === 'right' && pos - half < blockBack.z1))) ||
+    (blockRight && (side === 'right' || ((side === 'back' || side === 'front') && pos + half > iw / 2 - blockRight)));
+  const freeAt = (side, pos, half, below = 2.1) => !sideOpen(side) && !blocked(side, pos, half) && spans(side).every(s => pos + half < s.a - .05 || pos - half > s.b + .05 || s.sill > below);
   const findFree = (side, half, prefer = 0, below = 2.1) => {
     const lim = (side === 'front' || side === 'back' ? iw : id) / 2 - half - .05;
     for (let k = 0; k < 40; k++) {
@@ -83,10 +86,13 @@ export function furnish(parent, state, room, kit) {
     box(leaf, w - .01, 1.98, .04, w / 2, 1.0, 0, std('#fbfbf8', {roughness: .6}));
     add(leaf, new THREE.BoxGeometry(.12, .02, .02), kit.materials.steel, w - .1, 1.0, .04);
   };
-  // A 120mm stud wall (the planner's partition thickness), split around an internal door.
+  // A 120mm stud wall (the planner's partition thickness), split around an internal door. Ends
+  // that meet the room's walls run 10mm into them, so no end face lies in a wall's plane.
+  const intoWall = (x, z) => Math.abs(Math.abs(x) - iw / 2) < .001 || Math.abs(Math.abs(z) - id / 2) < .001 ? .01 : 0;
   const partitionWall = (x0, z0, x1, z1, doorAt = null) => {
     const len = Math.hypot(x1 - x0, z1 - z0), along = Math.abs(x1 - x0) > Math.abs(z1 - z0) ? 'x' : 'z';
-    const pieces = doorAt === null ? [[0, len]] : [[0, doorAt - .45], [doorAt + .45, len]];
+    const e0 = intoWall(x0, z0), e1 = intoWall(x1, z1);
+    const pieces = doorAt === null ? [[-e0, len + e1]] : [[-e0, doorAt - .45], [doorAt + .45, len + e1]];
     for (const [a, b] of pieces) {
       if (b - a < .02) continue;
       const mid = (a + b) / 2;
@@ -113,8 +119,8 @@ export function furnish(parent, state, room, kit) {
     if (kind === 'sauna') {
       // A glazed sauna door in a timber-lined cabin (the planner's SaunaStandard preset).
       const t = std('#c99a63', {roughness: .7});
-      box(layoutGroup, ew, ceilingH - F, .1, xL + ew / 2, (ceilingH + F) / 2, zF, t);
-      box(layoutGroup, .1, ceilingH - F, ed, xL, (ceilingH + F) / 2, -id / 2 + ed / 2, t);
+      box(layoutGroup, ew + .01, ceilingH - F, .1, xL + (ew + .01) / 2, (ceilingH + F) / 2, zF, t);
+      box(layoutGroup, .1, ceilingH - F, ed + .01, xL, (ceilingH + F) / 2, -id / 2 + (ed - .01) / 2, t);
       const dg = add(layoutGroup, new THREE.PlaneGeometry(.7, 1.9), kit.materials.glass, xL + ew / 2, F + .97, zF + .052); dg.renderOrder = 2;
       box(layoutGroup, ew - .1, .45, .5, xL + ew / 2, F + .45, -id / 2 + .3, t);
       box(layoutGroup, ew - .1, .05, .45, xL + ew / 2, F + .9, -id / 2 + .26, t);
@@ -145,11 +151,14 @@ export function furnish(parent, state, room, kit) {
   const xMax = iw / 2 - blockRight;
 
   // ---- Kitchen: a kitchenette run on the back wall (planner Kitchen tab) ---------------------
+  let kitchenEnd = null;
   if (state.kitchen === 'kitchenette' && iw > 2.2) {
     const kg = group(host, 'kitchen');
     const run = Math.min(2.4, (blockBack ? blockBack.x0 + iw / 2 : xMax + iw / 2) - .3);
     if (run > 1.2) {
       const x0 = -iw / 2 + .02, cab = kit.materials.cabinet, top = kit.materials.worktop;
+      kitchenEnd = x0 + run;
+      const wt = group(kg, 'worktop');
       const units = Math.max(2, Math.round(run / .6)), uw = run / units;
       for (let i = 0; i < units; i++) {
         const x = x0 + uw * (i + .5);
@@ -162,10 +171,10 @@ export function furnish(parent, state, room, kit) {
         }
       }
       box(kg, run, .1, .55, x0 + run / 2, F + .05, -id / 2 + .28, std('#2c2c2c', {roughness: .8}));
-      box(kg, run + .02, .035, .62, x0 + run / 2, F + .9 + .0175, -id / 2 + .31, top);
+      box(wt, run + .02, .035, .62, x0 + run / 2, F + .9 + .0175, -id / 2 + .31, top);
       // Sink and hob.
-      box(kg, .45, .02, .38, x0 + uw * .5 + .05, F + .93, -id / 2 + .32, std('#c7cbcd', {roughness: .2, metalness: .8}));
-      box(kg, .5, .01, .45, x0 + run - uw * .5, F + .94, -id / 2 + .32, std('#151515', {roughness: .2}));
+      box(wt, .45, .02, .38, x0 + uw * .5 + .05, F + .93, -id / 2 + .32, std('#c7cbcd', {roughness: .2, metalness: .8}));
+      box(wt, .5, .01, .45, x0 + run - uw * .5, F + .94, -id / 2 + .32, std('#151515', {roughness: .2}));
     }
   }
 
@@ -185,8 +194,9 @@ export function furnish(parent, state, room, kit) {
     box(cond, .9, .05, .4, 0, .03, 0, std('#6f6f6a', {roughness: .9}));
   }
   if (state.electrics.wallHeater) {
-    const side = findFree('left', .4, 0, .8) !== null ? 'left' : 'back';
-    const pos = findFree(side, .4, 0, .8) ?? 0;
+    // On a side wall, clear of the furniture along the back.
+    const side = ['right', 'left', 'back'].find(sd => findFree(sd, .4, 0, .8) !== null) || 'back';
+    const pos = findFree(side, .4, side === 'back' ? iw * .2 : 0, .8) ?? 0;
     const rad = onWall(group(heat), side, pos, F + .35, .04);
     rbox(rad, .78, .45, .07, 0, 0, 0, std('#f4f4f1', {roughness: .35}), .02);
     box(rad, .7, .02, .02, 0, .2, .035, std('#d4d4d0', {roughness: .5}));
@@ -280,6 +290,14 @@ export function furnish(parent, state, room, kit) {
   const span = x1 - x0;
   const zBack = -id / 2 + (state.kitchen === 'kitchenette' ? .65 : 0), zFront = id / 2;
   const backLimit = x => (blockBack && x > blockBack.x0 ? blockBack.z1 : zBack);
+  // A place against the back wall for something w wide: beside the kitchenette when there is
+  // room (never blocking it), otherwise at the left-hand end, in front of anything fitted there.
+  const backSpot = w => {
+    const right = (blockBack ? blockBack.x0 : xMax) - .1;
+    if (kitchenEnd !== null && kitchenEnd + .15 + w <= right) return {x: kitchenEnd + .15 + w / 2, z: -id / 2};
+    const x = x0 + w / 2 + .1;
+    return {x, z: Math.max(backLimit(x - w / 2), backLimit(x + w / 2))};
+  };
   const plant = (x, z, sc = 1) => {
     const p = group(fg); p.position.set(x, F, z); p.scale.setScalar(sc);
     cyl(p, .17, .13, .34, 0, .17, 0, std('#d8d3c7', {roughness: .9}));
@@ -289,7 +307,16 @@ export function furnish(parent, state, room, kit) {
     }
     cyl(p, .015, .02, .4, 0, .5, 0, m.walnut, 6);
   };
-  const rug = (x, z, w0, d0, mat) => { const r0 = box(fg, w0, .012, d0, x, F + .006, z, mat); r0.castShadow = false; };
+  // Rugs and mats stay on the open floor: inside the room and clear of an enclosed corner.
+  const rug = (x, z, w0, d0, mat) => {
+    let xa = Math.max(x - w0 / 2, -iw / 2 + .05), xb = Math.min(x + w0 / 2, xMax - .05);
+    let za = Math.max(z - d0 / 2, -id / 2 + .05);
+    const zb = Math.min(z + d0 / 2, id / 2 - .05);
+    if (blockBack && xb > blockBack.x0 && za < blockBack.z1) { if (blockBack.x0 - xa > .8) xb = blockBack.x0; else za = blockBack.z1; }
+    if (xb - xa < .4 || zb - za < .4) return null;
+    const r0 = box(fg, xb - xa, .012, zb - za, (xa + xb) / 2, F + .006, (za + zb) / 2, mat); r0.castShadow = false;
+    return r0;
+  };
   const shelf = (side, pos, h = 1.8, w0 = .8) => {
     const sg = onWall(group(fg), side, pos, F, .17);
     for (const y of [0, h * .33, h * .66, h]) box(sg, w0, .025, .32, 0, y + .0125, 0, m.oak);
@@ -342,16 +369,16 @@ export function furnish(parent, state, room, kit) {
     plant(x0 + .25, zBack + .3, .8);
   } else if (state.use === 'office') {
     const dw = Math.min(1.5, span * .55);
-    const dx = x0 + dw / 2 + .1;
-    deskSet(dx, backLimit(dx + dw / 2) + .38, dw);
-    rug(dx, backLimit(dx) + .9, Math.min(1.8, span * .6), 1.2, fabric('#c8c1b2'));
+    const {x: dx, z: dz} = backSpot(dw);
+    deskSet(dx, dz + .38, dw);
+    rug(dx, dz + .9, Math.min(1.8, span * .6), 1.2, fabric('#c8c1b2'));
     if (span > 2.4 && id > 2.2 && !blockRight && !blockBack) shelf('right', Math.min(-.2, id / 2 - 1.2), 1.8, .8);
     plant(x1 - .25, zFront - .35, .9);
     if (span > 3.2 && id > 2.6) armchair(x1 - .6, Math.max(zFront - 1.1, (blockBack ? blockBack.z1 : -9) + .75), -Math.PI * .8);
   } else if (state.use === 'gym') {
-    const mat = box(fg, Math.min(2.2, span * .7), .015, Math.min(1.8, id * .7), x0 + Math.min(2.2, span * .7) / 2 + .05, F + .008, 0, m.rubber);
-    mat.castShadow = false;
-    const bike = group(fg); bike.position.set(x0 + .5, F, backLimit(x0 + .5) + .7); bike.rotation.y = .3;
+    rug(x0 + Math.min(2.2, span * .7) / 2 + .05, 0, Math.min(2.2, span * .7), Math.min(1.8, id * .7), m.rubber);
+    const bs = backSpot(.9);
+    const bike = group(fg); bike.position.set(bs.x, F, bs.z + .7); bike.rotation.y = .3;
     box(bike, .08, .5, .9, 0, .25, 0, m.ink);
     cyl(bike, .22, .22, .06, 0, .3, .35, m.slate).rotation.z = Math.PI / 2;
     rbox(bike, .22, .06, .28, 0, .95, -.25, m.ink, .02);
@@ -379,14 +406,15 @@ export function furnish(parent, state, room, kit) {
     plant(x1 - .25, zFront - .35, .8);
   } else if (state.use === 'guest') {
     const bw = Math.min(1.4, span - .6);
-    if (id > 2.4 && bw > .8) bed(x0 + bw / 2 + .2, backLimit(x0 + bw) + 1.05, bw);
+    const bs = backSpot(bw + .2);
+    if (id > 2.4 && bw > .8) bed(bs.x, bs.z + 1.05, bw);
     plant(x1 - .25, zFront - .35, .8);
     if (span > 2.6) armchair(x1 - .5, zFront - 1.2, -Math.PI * .75);
   } else {
-    const sw = Math.min(2.1, span * .62), sx = x0 + sw / 2 + .15;
-    sofa(sx, backLimit(sx + sw / 2) + .5, sw);
+    const sw = Math.min(2.1, span * .62), {x: sx, z: sz} = backSpot(sw + .1);
+    sofa(sx, sz + .5, sw);
     rug(sx, .1, Math.min(2.2, span * .7), Math.min(1.6, id * .55), fabric('#cdbfa8'));
-    const ct = group(fg); ct.position.set(sx, F, backLimit(sx) + 1.35);
+    const ct = group(fg); ct.position.set(sx, F, sz + 1.35);
     rbox(ct, Math.min(1, sw * .5), .05, .55, 0, .4, 0, m.walnut, .02);
     for (const a of [-1, 1]) for (const b of [-1, 1]) cyl(ct, .018, .018, .38, a * .4 * Math.min(1, sw * .5), .19, b * .22, m.ink, 8);
     if (span > 3) armchair(x1 - .55, Math.max(.2, (blockBack ? blockBack.z1 : -9) + .75), -Math.PI / 2 - .3);

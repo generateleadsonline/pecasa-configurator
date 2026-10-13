@@ -6,7 +6,10 @@
   "scripts": {
     "build": "python3 tools/build.py",
     "check": "sh build.sh",
-    "test": "node tools/check-configurator.mjs && node tools/check-configurator-pdf.mjs && node tools/check-configurator-attribution.mjs"
+    "test": "node tools/check-configurator.mjs && node tools/check-configurator-pdf.mjs && node tools/check-configurator-attribution.mjs",
+    "qa:zfight": "node tools/qa/check-zfighting.mjs",
+    "qa:options": "node tools/qa/check-options.mjs",
+    "qa:mobile": "node tools/qa/check-mobile-3d.mjs"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

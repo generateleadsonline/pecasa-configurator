@@ -6,7 +6,7 @@ import {test} from 'node:test';
 
 const source = await readFile(new URL('../src/configurator-attribution.js', import.meta.url), 'utf8');
 const {captureAttribution, attributionFields, ATTRIBUTION_STORAGE_KEY} = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
-const BASE = 'https://smart-modular-buildings-homepage.netlify.app';
+const BASE = 'https://pecasa-garden-room-configurator.netlify.app';
 const memory = (initial = null) => {
   const values = new Map(initial === null ? [] : [[ATTRIBUTION_STORAGE_KEY, initial]]);
   return {getItem: key => values.get(key) ?? null, setItem: (key, value) => values.set(key, value), values};

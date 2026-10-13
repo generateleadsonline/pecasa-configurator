@@ -83,7 +83,8 @@ function focusFor(key, extra = {}) {
     case 'trim': return {tags: ['flashing'], dir: [-.62, .4, 1], whole: true};
     case 'cornerTrims': return {tags: ['cornerTrims'], dir: [-.62, .3, 1], whole: true};
     case 'frame': return {tags: ['frames'], dir: [-.2, .18, 1], whole: true};
-    case 'exteriorLight': return {tags: ['exteriorLights'], dir: [-.25, .2, 1], pad: .9};
+    // From low down, under the soffit; with no lights chosen, show where they would have been.
+    case 'exteriorLight': return s.exteriorLight === 'none' ? {tags: ['soffit'], dir: [-.3, .04, 1], pad: .2, ground: true, margin: 1} : {tags: ['exteriorLights'], dir: [-.25, .04, 1], pad: .9, ground: true};
     case 'deck': return {tags: ['deck'], dir: [-.35, .55, 1], pad: .6};
     case 'wall': return {tags: ['wall:' + extra.wall], dir: wallDir(extra.wall), pad: .4, highlight: extra.highlight};
     case 'opening': return {tags: ['opening:' + extra.id], dir: wallDir(extra.wall), pad: 1.3, minDistance: 4.2};
@@ -92,6 +93,7 @@ function focusFor(key, extra = {}) {
     case 'interior': return {tags: ['interiorWalls'], view: 'inside'};
     case 'layout': return {tags: ['layout'], view: 'plan'};
     case 'kitchen': return {tags: ['kitchen'], view: 'inside'};
+    case 'worktop': return {tags: ['worktop'], view: 'inside'};
     case 'lighting': return {tags: ['lighting'], view: 'inside'};
     case 'electrics': return extra.outside ? {tags: ['externalSocket'], dir: [-.2, .15, 1], pad: 1} : {tags: [extra.tag || 'electrics'], view: 'inside'};
     case 'heating': return extra.outside ? {tags: ['heating'], dir: [.4, .5, -1], whole: true} : {tags: ['heating'], view: 'inside'};
@@ -436,7 +438,7 @@ panel.addEventListener('change', e => {
   if (name === 'layout') return change({layout: v}, {key: 'layout', label: LAYOUTS[v].name});
   if (name === 'kitchen') return change({kitchen: v}, {key: 'kitchen', label: v === 'none' ? 'Kitchen removed' : 'Kitchenette added'});
   if (name === 'kitchenFinish') return change({kitchenFinish: v}, {key: 'kitchen', label: `${CABINETS[v].name} units`});
-  if (name === 'worktop') return change({worktop: v}, {key: 'kitchen', label: `${WORKTOPS[v].name} worktop`});
+  if (name === 'worktop') return change({worktop: v}, {key: 'worktop', label: `${WORKTOPS[v].name} worktop`});
   if (name === 'handles') return change({handles: v}, {key: 'kitchen', label: `${HANDLES[v].name} handles`});
   if (name === 'lighting') return change({lighting: v}, {key: 'lighting', label: INTERIOR_LIGHTS[v].name});
   if (Object.prototype.hasOwnProperty.call(ELECTRICS, name)) {
@@ -888,8 +890,8 @@ if (QA) {
     get rung() { return boot.rung; }, get boot() { return boot.diagnostics(); },
     get attempt() { return Math.max(0, boot.diagnostics().log.filter(e => e.event === 'ready').length - 1); },
     get fallback() { return $('#stage').dataset.fallback || null; },
-    change: (patch, key) => change(patch, {key}), set: s => { state = normalise({...s, step: state.step}); render(); },
-    step: i => selectStep(i, {focusHeading: false})
+    change: (patch, key, focus) => change(patch, {key, focus}), set: s => { state = normalise({...s, step: state.step}); render(); },
+    step: i => selectStep(i, {focusHeading: false}), normalise
   };
 }
 

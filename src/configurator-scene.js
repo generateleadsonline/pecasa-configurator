@@ -391,7 +391,10 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
     if (name === 'inside') {
       const {pos, at} = insideViewpoint(opts.lookAt);
       const dir = at.clone().sub(pos).normalize();
-      return {view: 'inside', fov: aspect < .9 ? 84 : 74, position: pos, target: pos.clone().addScaledVector(dir, .02)};
+      let fov = aspect < .9 ? 84 : 74;
+      // A small part (a socket, a switch) is zoomed into as well as turned to, so it can be seen.
+      if (opts.partSize) fov = THREE.MathUtils.clamp(THREE.MathUtils.radToDeg(2 * Math.atan((opts.partSize * 2.2 + .35) / (2 * pos.distanceTo(at)))) / Math.min(1, aspect), 24, fov);
+      return {view: 'inside', fov, position: pos, target: pos.clone().addScaledVector(dir, .02)};
     }
     if (name === 'plan') {
       const b = roomBox();
@@ -480,6 +483,8 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
   // ---- Highlight -------------------------------------------------------------------------
   function meshesTagged(tags) {
     const list = [];
+    // A part built a moment ago has no world matrix yet; measuring it would frame the origin.
+    room?.group.updateMatrixWorld(true);
     room?.group.traverse(o => {
       if (o.isMesh && o.visible && o.userData.tags && tags.some(t => o.userData.tags.includes(t)) && !o.userData.tags.includes('glass')) list.push(o);
     });
@@ -737,9 +742,11 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
       const wantView = spec.view || 'outside';
       if (wantView === 'inside') {
         const meshes = meshesTagged(tags);
-        const at = meshes.length ? boxOf(meshes).getCenter(new THREE.Vector3()) : null;
+        const box = meshes.length ? boxOf(meshes) : null;
+        const at = box ? box.getCenter(new THREE.Vector3()) : null;
         if (at && spec.lookDown) at.y = FLOOR;
-        moveTo(poseFor('inside', {lookAt: at}), true);
+        const partSize = box && !spec.lookDown ? box.getSize(new THREE.Vector3()).length() : 0;
+        moveTo(poseFor('inside', {lookAt: at, partSize: partSize && partSize < 1.6 ? partSize : 0}), true);
       } else if (wantView === 'plan') {
         moveTo(poseFor('plan'), true);
       } else {
@@ -752,9 +759,9 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
           const size0 = b.getSize(new THREE.Vector3());
           b = b.clone().expandByVector(new THREE.Vector3(Math.max(pad, size0.x * .15), Math.max(pad * .7, .3), Math.max(pad, size0.z * .15)));
           if (spec.whole) b = room0;
-          b.min.y = Math.max(0, b.min.y);
+          b.min.y = spec.ground ? 0 : Math.max(0, b.min.y);
         }
-        moveTo(poseFor('outside', {dir: spec.dir, box: b, minDistance: spec.minDistance || 3}), true);
+        moveTo(poseFor('outside', {dir: spec.dir, box: b, minDistance: spec.minDistance || 3, margin: spec.margin}), true);
       }
       if (spec.highlight !== false && tags.length) {
         pulse = {tags, start: performance.now() + (reducedMotion.matches ? 0 : 250), meshes: meshesTagged(tags)};
@@ -800,7 +807,9 @@ function setupScene(container, renderer, {onLost = () => {}, onBroken = () => {}
           const isDusk = name === 'dusk';
           if (night !== isDusk) { night = isDusk; applyLighting(); }
           let pose;
-          if (name === 'hero' || name === 'dusk') pose = poseFor('outside', {dir: new THREE.Vector3(-.62, .24, 1), margin: 1.06});
+          // 'view': exactly what the shopper is looking at (the option checks compare these).
+          if (name === 'view') pose = {view, fov: camera.fov, position: camera.position.clone(), target: controls.target.clone()};
+          else if (name === 'hero' || name === 'dusk') pose = poseFor('outside', {dir: new THREE.Vector3(-.62, .24, 1), margin: 1.06});
           else if (name === 'front') pose = poseFor('outside', {dir: new THREE.Vector3(0, .12, 1), margin: 1.06});
           else if (name === 'rear') pose = poseFor('outside', {dir: new THREE.Vector3(.75, .3, -1), margin: 1.06});
           // The four sides, square on with a little height, as the elevations of a drawing.

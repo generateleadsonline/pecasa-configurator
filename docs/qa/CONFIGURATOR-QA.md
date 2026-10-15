@@ -125,6 +125,7 @@ The first full run of the option check found 6 options that changed nothing on s
 | `check-flows.mjs` (local) | All flow checks passed |
 | Unlock check, local, fresh visitor | Callback, showroom, brochure, then Book a call, each with its confirmation text. Price still locked, the price form prefilled, and the PDF locked ("Enter your details above…"). Then the price form: £26,639 shown, Book a call shown, PDF `Pecasa-ecke-3.3x2.4-design.pdf` downloaded |
 | Same check on live before the change (POSTs answered in the browser) | FAIL: after the callback the price showed and the PDF downloaded |
+| Live after the change (commit 86e6369, Netlify CLI deploy `6ad115cbe6141ed7d3420b29` of `public/`; live `configurator.8ffdc922ac.js` is the local build; form detection still on) | PASS: all four other forms confirmed with their text. Price locked, form prefilled, PDF locked. Then the price form: £26,639, Book a call shown, PDF downloaded |
 
 ## How to repeat
 

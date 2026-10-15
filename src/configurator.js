@@ -58,8 +58,11 @@ function persist() {
   try { localStorage.setItem(STORAGE, JSON.stringify(state)); } catch {}
 }
 const specKey = s => JSON.stringify({...normalise(s), step: 0, openings: normalise(s).openings.map(o => [o.wall, o.type, o.w, o.h, o.p, o.glass])});
-// The price shows once the shopper has sent a design in this browser session.
-const unlocked = () => contact !== null;
+// The price shows once the shopper has sent the price step's own form in this browser session
+// (as on Oeco). The callback, Book a call, showroom and brochure forms keep the contact details,
+// which fill the price form, but unlock nothing.
+const unlocked = () => contact !== null && sentKey !== null;
+const prefill = root => { if (contact) for (const [n, v] of Object.entries({'first-name': contact.first, 'last-name': contact.last, email: contact.email, phone: contact.phone, postcode: contact.postcode})) { const el = root.querySelector(`[name="${n}"]`); if (el && !el.value) el.value = v; } };
 const upToDate = () => sentKey === specKey(state);
 
 // ---- Change handling ---------------------------------------------------------------------
@@ -294,6 +297,7 @@ function renderQuote() {
   const st = STYLES[state.style], price = priceFor(state), open = unlocked();
   $('#quote-summary').innerHTML = `<img id="summary-shot" src="${lastCapture || posterSrc(state.style)}" alt="" width="120" height="80"><div><strong>Pecasa ${esc(st.name)}</strong><span>${metres(state.width)} &times; ${metres(state.depth)}${isPergola() ? '' : `, ${esc(USES[state.use].name.toLowerCase())}`}</span></div>`;
   $('#quote-locked').hidden = open; $('#quote-unlocked').hidden = !open;
+  if (!open) prefill($('#quote-form'));
   if (open) {
     $('#price-value').textContent = price.value === null ? 'Quoted' : pounds(price.value);
     $('#price-label').textContent = price.value === null ? 'Your price' : 'Your price, including VAT';
@@ -595,7 +599,7 @@ function openDialog(name, from) {
     $('#bk-date').min = t.toISOString().slice(0, 10);
   }
   // Details already given in this session fill the next form.
-  if (contact) for (const [n, v] of Object.entries({'first-name': contact.first, 'last-name': contact.last, email: contact.email, phone: contact.phone, postcode: contact.postcode})) { const el = d.querySelector(`[name="${n}"]`); if (el && !el.value) el.value = v; }
+  prefill(d);
   d.querySelector('.dialog-done') && (d.querySelector('.dialog-done').hidden = true);
   d.querySelector('form') && (d.querySelector('form').hidden = false);
   d.showModal();
@@ -698,7 +702,9 @@ async function submit(e) {
       form.hidden = true; done.hidden = false;
       const copy = {
         callback: `Thanks, ${first}. Pecasa will call you on ${phone.display}, with your design in front of them.`,
-        book: `Thanks, ${first}. Pecasa will confirm your call for ${new Date(form.elements['call-date'].value + 'T12:00:00').toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long'})}, ${form.elements['call-time'].value}, on ${phone.display}.`,
+        // Only the Book a call form has a date and time: reading them for another form threw, which left
+        // the confirmation blank and skipped the brochure, the lead event and the price form's prefill.
+        book: kind === 'book' ? `Thanks, ${first}. Pecasa will confirm your call for ${new Date(form.elements['call-date'].value + 'T12:00:00').toLocaleDateString('en-GB', {weekday: 'long', day: 'numeric', month: 'long'})}, ${form.elements['call-time'].value}, on ${phone.display}.` : '',
         visit: `Thanks, ${first}. Pecasa will call or email to arrange your showroom visit in Watford.`,
         brochure: `Thanks, ${first}. The brochure is opening in a new tab.`
       }[kind];
@@ -706,7 +712,7 @@ async function submit(e) {
       done.querySelector('h2').focus();
       if (kind === 'brochure') window.open(CONTACT.brochure, '_blank', 'noopener');
       track('generate_lead', {lead_type: `pecasa_${kind}`, style: sending.style});
-      if (unlocked()) render();
+      if (state.step === 5) renderQuote();
     }
   } catch {
     status.hidden = false; status.classList.remove('ok');

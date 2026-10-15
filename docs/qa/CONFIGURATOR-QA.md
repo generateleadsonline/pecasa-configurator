@@ -111,6 +111,21 @@ The first full run of the option check found 6 options that changed nothing on s
 - **Live form delivery:** forms were not submitted to the live site, as asked. Delivery from Netlify Forms to Pecasa's inbox or CRM still needs a destination (confirmations item 4.6).
 - **Analytics:** events go to `dataLayer`. No Google Tag Manager container is connected yet (item 4.9).
 
+## 16 Oct 2026: only the price form unlocks the price
+
+**Why.** John's rule of 16 Oct 2026: as on Oeco, only the price step's own form unlocks the price. Before this change, `unlocked()` was `contact !== null`. Any form (callback, Book a call, showroom visit or brochure) stored the contact details, which revealed the price, Book a call and Download PDF.
+
+**What changed** (`src/configurator.js`):
+- **The lock.** `unlocked()` now also needs `sentKey`, which only the price form (and its "send this updated design" resend) sets. The other forms still post to Netlify Forms with the specification and design link. Their details fill the price form, so the visitor just presses Show my price.
+- **A bug fixed on the way.** The confirmation copy was built eagerly, so for every form other than Book a call it read the missing `call-date` field and threw. Callback, showroom and brochure therefore showed a blank confirmation. The brochure tab never opened, `generate_lead` never fired, and the new prefill could not run. Only Book a call reads its date now.
+
+| Check | Result |
+| --- | --- |
+| `npm test`, `sh build.sh` | Pass |
+| `check-flows.mjs` (local) | All flow checks passed |
+| Unlock check, local, fresh visitor | Callback, showroom, brochure, then Book a call, each with its confirmation text. Price still locked, the price form prefilled, and the PDF locked ("Enter your details above…"). Then the price form: £26,639 shown, Book a call shown, PDF `Pecasa-ecke-3.3x2.4-design.pdf` downloaded |
+| Same check on live before the change (POSTs answered in the browser) | FAIL: after the callback the price showed and the PDF downloaded |
+
 ## How to repeat
 
 ```sh
